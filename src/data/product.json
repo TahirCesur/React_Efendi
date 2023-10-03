@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "picture": "assets/images/blog/1-1.jpg",
+    "price": "$889.00",
+    "nav": "/product-details",
+    "title": "Solar Işıkları"
+  },
+  {
+    "id": "2",
+    "picture": "assets/images/blog/1-1.jpg",
+    "price": "$889.00",
+    "nav": "/product-details",
+    "title": "Solar Işıkları"
+  },
+  {
+    "id": "3",
+    "picture": "assets/images/blog/1-1.jpg",
+    "price": "$889.00",
+    "nav": "/product-details",
+    "title": "Solar Işıkları"
+  },
+  {
+    "id": "4",
+    "picture": "assets/images/blog/1-1.jpg",
+    "price": "$889.00",
+    "nav": "/product-details",
+    "title": "Solar Işıkları"
+  },
+  {
+    "id": "5",
+    "picture": "assets/images/blog/1-1.jpg",
+    "price": "$889.00",
+    "nav": "/product-details",
+    "title": "Solar Işıkları"
+  },
+  {
+    "id": "6",
+    "picture": "assets/images/blog/1-1.jpg",
+    "price": "$889.00",
+    "nav": "/product-details",
+    "title": "Solar Işıkları"
+  },
+  {
+    "id": "7",
+    "picture": "assets/images/blog/1-1.jpg",
+    "price": "$889.00",
+    "nav": "/product-details",
+    "title": "Solar Işıkları"
+  }
+]
