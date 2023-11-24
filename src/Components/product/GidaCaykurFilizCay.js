@@ -24,7 +24,7 @@ function GidaCaykurFilizCay() {
               </li>
             </ul>
             <h2 className="page-header__title">
-              C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
+              ÇAYKUR FİLİZ ÇAY
             </h2>
           </div>
         </section>
