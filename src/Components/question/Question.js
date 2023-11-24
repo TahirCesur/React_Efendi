@@ -9,12 +9,11 @@ function Question() {
           <div className="col-xl-6 wow fadeInLeft" data-wow-delay="200ms">
             <div className="section-title">
               <div className="section-title__triangle">
-                <span
-                  className="fas fa-sun fa-2x"
-                  style={{ color: "#f9d21c" }}
-                ></span>
+                <img src="assets/images/favicons/icon.ico" alt="icon" />
               </div>
-              <h5 className="section-title__tagline">BKB GÜNEŞ SİSTEMLERİ</h5>
+              <h5 className="section-title__tagline">
+                YENİDÜNYA ENDÜSTRİYEL TEDARİK
+              </h5>
               <h2 className="section-title__title">SIKÇA SORULAN SORULAR</h2>
             </div>
             <div className="row">
@@ -49,7 +48,8 @@ function Question() {
 
                   <p className="accrodion-one__right__text">
                     Aradığınız soruyu bulamadınız mı? <br />
-                    Bize İletişim sayfasından ve WhatsApp üzerinden ulaşabilirsiniz.
+                    Bize İletişim sayfasından ve WhatsApp üzerinden
+                    ulaşabilirsiniz.
                   </p>
                 </div>
               </div>
@@ -66,76 +66,89 @@ function Question() {
               >
                 <Accordion.Item eventKey="0" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    ÜRÜNÜN KULLANIM ALANI NERELERDİR?
+                    KONSANTRE TEMİZLİK ÜRÜNÜ NEDİR?
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
                       <p>
-                        Güneş panelli aydınlatma ürünlerimiz genel olarak sokak,
-                        yol, yürüyüş yolu, çocuk parkı, açık otopark gibi hemen
-                        her alanda kullanılabilmektedir. <br />
-                        Solar aydınlatma ürünlerimiz hakkında detaylı bilgi
-                        almak için iletişim kısmında bulunan bilgilerden bizlere
-                        ulaşabilirsiniz.
+                        Konsantre temizlik ürünleri su ile çoğaltılabilen
+                        ürünlerdir. <br />
+                        Aktif temizlik bileşenleri bakımından yoğun bir formüle
+                        sahip olan konsantre temizlik ürünlerinin en önemli
+                        özelliği direkt kullanımlı ürünlere kıyasla daha az
+                        tüketim daha yüksek temizlik performansını sağlamasıdır.{" "}
+                        <br />
+                        Taşıması ve depolaması çok daha kolay, daha az atık
+                        oluşturduğu için çevreci ürünlerdir.
                       </p>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    ÜRÜN NORMAL BİR SOKAK LAMBASI GİBİ AYDINLATIR MI?
+                    KONSANTRE TEMİZLİK ÜRÜNÜ DİREKT KULLANILIR MI?
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
                       <p>
-                        Güneş enerjili ürünlerimizde kullanılan LED’ler yüksek
-                        ışık akısına ve yüksek verimliliğe sahiptir. Ayrıca
-                        ürünlerimizde kullanılan lensler, ışığı sadece ihtiyaç
-                        duyulan bölgeye yoğunlaştırarak verimli bir aydınlatma
-                        sağlamakta ve ışık kirliliğini engellemektedir. Bu
-                        sayede oldukça güçlü aydınlatma sağlayabilmektedir.
+                        Konsantre temizlik ürünü, direkt temizlenmesi istenen
+                        yüzeylere uygulanmaz su ile seyreltilmesi gerekmektedir.
+                        Su ile seyreltilmemiş konsantre ürünler iyi performans
+                        gösteremedikleri gibi direkt kullanımlarda cilde teması
+                        halinde tahrişe neden olabilirler. <br />
+                        Kir yoğunluğuna göre etikette belirtilen seyreltme
+                        aralıklarında seyreltilmeleri ürünün düzgün çalışmasını
+                        sağlayacaktır.
+                        <br />
+                        Konsantre ürünler deterjan yapısını oluşturan hidrofilik
+                        (suyu seven) ve hidrofob (suyu iten) iyonik kısımlarını
+                        canlandırmamış ürünlerdir ve su ile çalışır hale
+                        gelirler. Aksi halde istenen performansı sağlayamazlar.
+                        <br />
+                        Sizde kullandığınız konsantre ürünlerimizi ambalajının
+                        arkasında bulunan kullanım şekline göre seyrelterek
+                        kullanınız.
                       </p>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    ÜRÜN ELEKTRONİK PARÇA İÇERİYOR. DIŞ MEKANDA KOLAY BOZULUR
-                    MU?
+                    KONSANTRE TEMİZLİK ÜRÜNÜ İLE EN ETKİLİ SONUÇ NASIL ALIRIM ?
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
                       <p>
-                        Ürünlerimizde kullanılan tüm parçalar 1. sınıf
-                        kalitededir. Ayrıca IP66 koruma sınıfına sahip
-                        armatürümüz sayesinde toz ve sudan izole edilmiştir.
-                        Üzerinde bulunan soğutma kanalları ile de ürünün ısıya
-                        bağlı ömür kayıpları en aza indirgenmiştir. Ayrıca güneş
-                        enerjili aydınlatma ürünlerimiz 2 sene garantiye sahip
-                        olduğu gibi performansından ödün vermeden yıllarca
-                        çalışabilecek şekilde tasarlanmıştır.
+                        Kullanmakta olduğunuz ürünün seyreltme oranlarını
+                        ambalaj üzerinde görebilirsiniz.
+                        <br /> Kirin yoğunluğuna göre de belirtilen oran
+                        aralığında seyreltme yapabilirsiniz. Bu hem ekonomik hem
+                        de en etkili temizlik sağlar.
+                        <br />
+                        Kullandığımız seyreltme suyunun daha yumuşak ve kireçsiz
+                        olması temizleme gücünü arttıracaktır. Su kalitesi
+                        temizleme gücünü arttıran en temel unsurlardan biridir.
                       </p>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    GÜNEŞ OLMAZSA NE OLUR? KARANLIKTA MI KALIRIM?
+                    KONSANTRE TEMİZLİK ÜRÜNÜ DAHA TEHLİKELİ MİDİR?
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
                       <p>
-                        Adından da anlaşılabileceği gibi güneş enerjili
-                        aydınlatma ürünleri, güneş sever ürünlerdir. Güneş
-                        panelinden aldığı güneş ışınımı ile doğru orantılı
-                        olarak performans göstermektedirler. Bu nedenle panel
-                        açısı ve ürünün kullanıldığı konum önemli bir rol
-                        oynamaktadır. Ancak bu, güneş olmadığında karanlıkta
-                        kalacağınız anlamıma gelmez. Çünkü ürünümüz, 6 saat
-                        güneş ışınımı alması halinde 3 geceye kadar sensörlü
-                        modda aydınlatma sağlayabilmektedir. Ayrıca zorlu
-                        koşullarda kullanım için panel ve/veya batarya grubu
-                        opsiyonel olarak değiştirilebilmektedir.
+                        Konsantre temizlik ürünleri yapılarında su ile
+                        seyreltildikten sonra daha iyi performans gösterdikleri
+                        için miktarca zenginleştirilmiş asidik, bazik, aktif ham
+                        maddelerle zenginleştirilmiş üründür. <br />
+                        Bu derişik pozisyonun cildinize veya malzemelerinize
+                        tahriş ediciliği görülebilir. <br />
+                        Fakat belirtilen oranlarda su ile seyreltilen ürünlerin
+                        tahrişliği azalmakla beraber ürün özelliğine göre doğru
+                        uygulandıkları alanlarda yüksek teknolojisiyle temizlik
+                        sağlar.
                       </p>
                     </div>
                   </Accordion.Body>

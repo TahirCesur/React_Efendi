@@ -78,14 +78,14 @@ function Contact() {
             className="cta-two__info-bottom wow fadeInDown"
             data-wow-delay="300ms"
           >
-            ÜCRETSİZ FİYAT TEKLİFİ İÇİN BİZİ ARAYIN:
+            ÜCRETSİZ FİYAT TEKLİFİ İÇİN BİZİ ARAYIN : &nbsp;
             <a href="tel:+02242116266">(0224) 211 62 66</a>
           </h5>
         </div>
       </section>
       <section className="google-map mt-60">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.7328526602423!2d29.063398875206037!3d40.23724166654529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3fc6d917271f%3A0xe62f33c9c9df812e!2sButtim%20Bursa%20Uluslararas%C4%B1%20Tekstil%20Ticaret%20Merkezi!5e0!3m2!1str!2str!4v1691322197916!5m2!1str!2str"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.613662760092!2d28.94080427498341!3d40.19541046908147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3f8db7372071%3A0x8d63b3d54341898!2sYenid%C3%BCnya%20End%C3%BCstriyel%20Tedarik!5e0!3m2!1str!2str!4v1698355162562!5m2!1str!2str"
           className="google-map__one"
           allowFullScreen=""
           title="Google Harita"

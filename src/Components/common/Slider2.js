@@ -39,7 +39,7 @@ function Slider2() {
         <div className={`carousel-item ${activeIndex === 1 ? "active" : ""}`}>
           <img
             className="d-block w-100 resimSlider"
-            src="assets/images/pvpanel.png"
+            src="assets/images/solar2.jpg"
             alt="Second slide"
             width="100%"
             height="500px"
@@ -48,11 +48,11 @@ function Slider2() {
         <div className={`carousel-item ${activeIndex === 2 ? "active" : ""}`}>
           <img
             className="d-block w-100 resimSlider"
-            src="assets/images/solar2.jpg"
+            src="assets/images/slide.jpg"
             alt="Third slide"
             width="100%"
             height="500px"
-            style={{ filter: "grayscale(100%)" }}
+            // style={{ filter: "grayscale(100%)" }}
           />
         </div>
       </div>

@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
@@ -31,26 +33,28 @@ function Footer() {
           <div className="main-footer__top wow fadeInUp" data-wow-delay="100ms">
             <Link as={Link} to="/" className="main-footer__logo">
               <img
-                src="assets/images/favicons/250x150 beyaz.png"
+                src="assets/images/yenidunya_logo.png"
                 alt="nisoz"
-                width="126"
-                height="84"
+                width="326"
+                height=""
               />
             </Link>
             <div className="main-footer__social">
-              <Link as={Link} to="https://www.facebook.com/">
+              <a href="https://www.facebook.com/" target="_blank">
                 <i className="fab fa-facebook"></i>
-              </Link>
-              <Link as={Link} to="https://www.instagram.com/">
+              </a>
+              <a
+                href="https://www.instagram.com/yenidunyaendustriyel/"
+                target="_blank"
+              >
                 <i className="fab fa-instagram"></i>
-              </Link>
-              <Link
-                as={Link}
-                to="https://wa.me/905434079323"
+              </a>
+              <a
+                href="https://wa.me/905465341963"
                 className="fab fa-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
-              ></Link>
+              ></a>
             </div>
           </div>
           <div className="row foot">
@@ -63,27 +67,47 @@ function Footer() {
                 <ul>
                   <li>
                     <Link as={Link} to="/" onClick={handleClick}>
-                      Anasayfa
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Anasayfa
                     </Link>
                   </li>
                   <li>
                     <Link as={Link} to="/aboutus" onClick={handleClick}>
-                      Hakkımızda
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Hakkımızda
                     </Link>
                   </li>
                   <li>
                     <Link as={Link} to="/product" onClick={handleClick}>
-                      Ürünlerimiz
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Ürünlerimiz
                     </Link>
                   </li>
                   <li>
                     <Link as={Link} to="/question" onClick={handleClick}>
-                      Sıkça Sorulan Sorular
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Sıkça Sorulan Sorular
                     </Link>
                   </li>
                   <li>
                     <Link as={Link} to="/contactus" onClick={handleClick}>
-                      İletişim
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; İletişim
                     </Link>
                   </li>
                 </ul>
@@ -97,28 +121,57 @@ function Footer() {
                 <h3 className="text-white">Ürünlerimiz</h3>
                 <ul>
                   <li>
-                    <Link as={Link} to="" onClick={handleClick}>
-                      Güvenlik
+                    <Link as={Link} to="/EndustriyelTemizlik" onClick={handleClick}>
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Endüstriyel Temizlik
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="" onClick={handleClick}>
-                      Ev ve Bahçe
+                    <Link as={Link} to="/EndustriyelKagit" onClick={handleClick}>
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Endüstriyel Kağıt
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="" onClick={handleClick}>
-                      Reklam Işıkları
+                    <Link as={Link} to="/KozmetikUrunleri" onClick={handleClick}>
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Kozmetik Ürünleri
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="" onClick={handleClick}>
-                      Kırsal Alan
+                    <Link as={Link} to="/BitkiselUrunler" onClick={handleClick}>
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Bitkisel Ürünler
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="" onClick={handleClick}>
-                      Özel Alan
+                    <Link as={Link} to="/Ambalaj" onClick={handleClick}>
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Ambalaj
+                    </Link>
+                  </li>
+                  <li>
+                    <Link as={Link} to="/Gida" onClick={handleClick}>
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; Gıda
                     </Link>
                   </li>
                 </ul>
@@ -131,20 +184,21 @@ function Footer() {
               <div className="main-footer__about">
                 <h3 className="text-white">İletişim</h3>
                 <p className="main-footer__about__text">
-                  Altınova Mh. Fuar Cd. <br />
-                  Buttim İş Merkezi <br />A Blok 4.Kat No:4033
+                  Üçevler Mahallesi <br />
+                  Denizciler Caddesi <br />
+                  96B / B, 16130
                   <br />
-                  Osmangazi / BURSA
+                  Nilüfer / BURSA
                 </p>
                 <ul className="main-footer__about__info">
                   <li>
                     <span className="fas fa-phone-square"></span>
-                    <a href="tel:+2242116266">(0224) 211 6266</a>
+                    <a href="tel:+2242234234">(0224) 223 4234</a>
                   </li>
                   <li>
                     <span className="fas fa-envelope"></span>
-                    <a href="mailto:info@bkbsolarlight.com">
-                      info@bkbsolarlight.com
+                    <a href="mailto:info@yenidunyaendustriyel.com">
+                      info@yenidunyaendustriyel.com
                     </a>
                   </li>
                 </ul>
@@ -158,14 +212,13 @@ function Footer() {
         <div className="container wow fadeInUp" data-wow-delay="500ms">
           <p className="copyright__text">
             <Link as={Link} to="/">
-              BKB Güneş Sistemleri © <span className="dynamic-year"></span>
+              Yenidünya Endüstriyel Tedarik © 2023
             </Link>
-            <br />
-            Tüm Hakları Saklıdır
           </p>
+          <p className="copyright__text">Tüm Hakları Saklıdır</p>
         </div>
       </section>
-      
+
       <a
         href="#"
         className="back d-flex align-items-center justify-content-center active"
@@ -182,7 +235,7 @@ function Footer() {
       </a>
 
       <a
-        href="https://wa.me/905434079323"
+        href="https://wa.me/905465341963"
         className="whatsapp-button"
         target="_blank"
         rel="noopener noreferrer"

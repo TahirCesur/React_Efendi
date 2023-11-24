@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "picture": "assets/images/endustriyelkagit/kagit-havlu.jpg",
+    "price": "detaylar",
+    "nav": "/EndustriyelKagitHareketliKagitHavlu",
+    "title": "21 CM HAREKETLİ KAĞIT HAVLU"
+  },
+  {
+    "id": "2",
+    "picture": "assets/images/endustriyelkagit/kagit-havlu.jpg",
+    "price": "detaylar",
+    "nav": "/EndustriyelKagitIctenCekmeliKagitHavlu",
+    "title": "İÇTEN ÇEKME KAĞIT HAVLU"
+  },
+  {
+    "id": "3",
+    "picture": "assets/images/endustriyelkagit/kagit-havlu.jpg",
+    "price": "detaylar",
+    "nav": "/EndustriyelKagitIctenCekmeliKagitHavluEko",
+    "title": "İÇTEN ÇEKME KAĞIT HAVLU EKO"
+  },
+  {
+    "id": "4",
+    "picture": "assets/images/endustriyelkagit/tuvalet-kagidi.jpg",
+    "price": "detaylar",
+    "nav": "/EndustriyelKagitMiniJumboTuvaletKagidi",
+    "title": "MİNİ JUMBO TUVALET KAĞIDI"
+  },
+  {
+    "id": "5",
+    "picture": "assets/images/endustriyelkagit/tuvalet-kagidi.jpg",
+    "price": "detaylar",
+    "nav": "/EndustriyelKagitMiniJumboTuvaletKagidiEko",
+    "title": "MİNİ J. TUVALET KAĞIDI EKO"
+  },
+  {
+    "id": "6",
+    "picture": "assets/images/endustriyelkagit/z-kat-havlu.jpg",
+    "price": "detaylar",
+    "nav": "/EndustriyelKagitZKatHavlu",
+    "title": "Z KAT HAVLU"
+  },
+  {
+    "id": "7",
+    "picture": "assets/images/endustriyelkagit/z-kat-havlu.jpg",
+    "price": "detaylar",
+    "nav": "/EndustriyelKagitZKatHavluEko",
+    "title": "Z KAT HAVLU EKO"
+  }
+]

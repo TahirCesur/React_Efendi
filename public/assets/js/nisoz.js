@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 (function ($) {
   "use strict";
 
@@ -35,6 +36,28 @@
       },
     });
   }
+
+  const btn = document.getElementById("button");
+
+  document.getElementById("form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    btn.value = "Sending...";
+
+    const serviceID = "default_service";
+    const templateID = "template_giqb4o4";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Send Email";
+        alert("Sent!");
+      },
+      (err) => {
+        btn.value = "Send Email";
+        alert(JSON.stringify(err));
+      }
+    );
+  });
 
   // mailchimp form
   if ($(".mc-form").length) {
@@ -312,8 +335,8 @@
     if ($(this).next().val() > 1) {
       if ($(this).next().val() > 1)
         $(this)
-        .next()
-        .val(+$(this).next().val() - 1);
+          .next()
+          .val(+$(this).next().val() - 1);
     }
   });
 
@@ -328,7 +351,7 @@
         slide: function (event, ui) {
           $(".price-ranger .ranger-min-max-block .min").val("$" + ui.values[0]);
           $(".price-ranger .ranger-min-max-block .max").val("$" + ui.values[1]);
-        }
+        },
       });
       $(".price-ranger .ranger-min-max-block .min").val(
         "$" + $(".price-ranger #slider-range").slider("values", 0)
@@ -341,7 +364,9 @@
 
   /*-- Checkout Accoradin --*/
   if ($(".checkout-page__payment__title").length) {
-    $(".checkout-page__payment__item").find(".checkout-page__payment__content").hide();
+    $(".checkout-page__payment__item")
+      .find(".checkout-page__payment__content")
+      .hide();
     $(".checkout-page__payment__item--active")
       .find(".checkout-page__payment__content")
       .show();
@@ -361,18 +386,18 @@
   }
 
   /*-- Dynamic year --*/
-  let dynamicyearElm = $('.dynamic-year');
+  let dynamicyearElm = $(".dynamic-year");
   if (dynamicyearElm.length) {
     let currentYear = new Date().getFullYear();
     dynamicyearElm.html(currentYear);
   }
 
   /*-- Hover Tilt --*/
-  let nisozTiltElm = $('.nisoz-tilt');
+  let nisozTiltElm = $(".nisoz-tilt");
   if (nisozTiltElm.length) {
     nisozTiltElm.each(function () {
       let self = $(this);
-      let options = self.data('tilt-options');
+      let options = self.data("tilt-options");
       let nisozTilt = self.tilt(
         "object" === typeof options ? options : JSON.parse(options)
       );
@@ -381,10 +406,10 @@
 
   // === Filter Masnry===
   function filterMasonaryLayout() {
-    let nisozMasonary = $('.nisoz-masonary');
+    let nisozMasonary = $(".nisoz-masonary");
     if (nisozMasonary.length) {
       nisozMasonary.isotope({
-        layoutMode: "masonry"
+        layoutMode: "masonry",
       });
     }
     if ($(".post-filter").length) {
@@ -400,8 +425,8 @@
             animationOptions: {
               duration: 500,
               easing: "linear",
-              queue: false
-            }
+              queue: false,
+            },
           });
           return false;
         });
@@ -481,7 +506,7 @@
         f = i - s.right,
         styles = {
           "margin-left": 0,
-          "margin-right": 0
+          "margin-right": 0,
         };
       if (Math.round(c) === Math.round(p)) {
         var h = parseFloat($this.css("margin-left") || 0);
@@ -497,31 +522,31 @@
 
   function thmOwlInit() {
     // owl slider
-    let nisozowlCarousel = $('.nisoz-owl__carousel');
+    let nisozowlCarousel = $(".nisoz-owl__carousel");
     if (nisozowlCarousel.length) {
       nisozowlCarousel.each(function () {
         let elm = $(this);
-        let options = elm.data('owl-options');
+        let options = elm.data("owl-options");
         let thmOwlCarousel = elm.owlCarousel(
           "object" === typeof options ? options : JSON.parse(options)
         );
       });
     }
-    let nisozowlCarouselNav = $('.nisoz-owl__carousel--custom-nav');
+    let nisozowlCarouselNav = $(".nisoz-owl__carousel--custom-nav");
     if (nisozowlCarouselNav.length) {
       nisozowlCarouselNav.each(function () {
         let elm = $(this);
-        let owlNavPrev = elm.data('owl-nav-prev');
-        let owlNavNext = elm.data('owl-nav-next');
+        let owlNavPrev = elm.data("owl-nav-prev");
+        let owlNavNext = elm.data("owl-nav-next");
         $(owlNavPrev).on("click", function (e) {
-          elm.trigger('prev.owl.carousel');
+          elm.trigger("prev.owl.carousel");
           e.preventDefault();
-        })
+        });
 
         $(owlNavNext).on("click", function (e) {
-          elm.trigger('next.owl.carousel');
+          elm.trigger("next.owl.carousel");
           e.preventDefault();
-        })
+        });
       });
     }
   }
@@ -536,21 +561,22 @@
   }
 
   // Popular Causes Progress Bar
-  let countbarElm = $('.count-bar');
+  let countbarElm = $(".count-bar");
   if (countbarElm.length) {
     countbarElm.appear(
       function () {
         var el = $(this);
         var percent = el.data("percent");
         $(el).css("width", percent).addClass("counted");
-      }, {
-        accY: -50
+      },
+      {
+        accY: -50,
       }
     );
   }
 
   //Fact Counter + Text Count
-  let countboxElm = $('.count-box');
+  let countboxElm = $(".count-box");
   if (countboxElm.length) {
     countboxElm.appear(
       function () {
@@ -561,22 +587,26 @@
         if (!$t.hasClass("counted")) {
           $t.addClass("counted");
           $({
-            countNum: $t.find(".count-text").text()
-          }).animate({
-            countNum: n
-          }, {
-            duration: r,
-            easing: "linear",
-            step: function () {
-              $t.find(".count-text").text(Math.floor(this.countNum));
+            countNum: $t.find(".count-text").text(),
+          }).animate(
+            {
+              countNum: n,
             },
-            complete: function () {
-              $t.find(".count-text").text(this.countNum);
+            {
+              duration: r,
+              easing: "linear",
+              step: function () {
+                $t.find(".count-text").text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $t.find(".count-text").text(this.countNum);
+              },
             }
-          });
+          );
         }
-      }, {
-        accY: 0
+      },
+      {
+        accY: 0,
       }
     );
   }
@@ -594,8 +624,9 @@
         var target = $(this);
         $("html, body")
           .stop()
-          .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+          .animate(
+            {
+              scrollTop: $(target.attr("href")).offset().top - headerH + "px",
             },
             900,
             "easeInOutExpo"
@@ -644,14 +675,14 @@
   }
 
   /*-- Back-to-top --*/
-  let scrollTop = $('.scroll-top path');
+  let scrollTop = $(".scroll-top path");
   if (scrollTop.length) {
     var e = document.querySelector(".scroll-top path"),
       t = e.getTotalLength();
     (e.style.transition = e.style.WebkitTransition = "none"),
-    (e.style.strokeDasharray = t + " " + t),
-    (e.style.strokeDashoffset = t),
-    e.getBoundingClientRect(),
+      (e.style.strokeDasharray = t + " " + t),
+      (e.style.strokeDashoffset = t),
+      e.getBoundingClientRect(),
       (e.style.transition = e.style.WebkitTransition =
         "stroke-dashoffset 10ms linear");
     var o = function () {
@@ -674,7 +705,7 @@
 
   // window load event
   $(window).on("load", function () {
-    let preloader = $('.preloader');
+    let preloader = $(".preloader");
     if (preloader.length) {
       preloader.fadeOut();
     }
@@ -683,7 +714,7 @@
     filterMasonaryLayout();
     priceFilter();
 
-    let circleProgress = $('.circle-progress');
+    let circleProgress = $(".circle-progress");
     if (circleProgress.length) {
       circleProgress.appear(function () {
         let circleProgress = $(".circle-progress");
@@ -694,7 +725,6 @@
         });
       });
     }
-
   });
 
   // window scroll event
@@ -710,5 +740,4 @@
     }
     OnePageMenuScroll();
   });
-
 })(jQuery);

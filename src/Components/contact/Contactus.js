@@ -11,10 +11,10 @@ function Contactus() {
 
     emailjs
       .sendForm(
-        "service_kol10j6",
-        "template_3dj27vj",
+        "service_lp35s39",
+        "template_giqb4o4",
         e.target,
-        "NzLGFAgtvciJq5EXd"
+        "7LseggvnGoIcgGHia"
       )
       .then(
         (result) => {
@@ -35,10 +35,7 @@ function Contactus() {
         <div className="container wow fadeInUp" data-wow-delay="300ms">
           <div className="section-title text-center">
             <div className="section-title__triangle">
-              <span
-                className="fas fa-sun fa-2x"
-                style={{ color: "#f9d21c" }}
-              ></span>
+              <img src="assets/images/favicons/icon.ico" alt="icon" />
             </div>
             <h5 className="section-title__tagline">BİZİMLE İLETİŞİM GEÇİN</h5>
             <h2 className="section-title__title">İLETİŞİM</h2>
@@ -65,10 +62,10 @@ function Contactus() {
                     </div>
                     <h3 className="service-one__item__title text-white">GSM</h3>
                     <p className="service-one__item__title1 text-white">
-                      0224 211 62 66
+                      0224 223 42 34
                       <br />
                       <br />
-                      0543 407 93 23
+                      0546 534 19 63
                     </p>
                   </div>
                 </div>
@@ -94,7 +91,7 @@ function Contactus() {
                       EMAİL
                     </h3>
                     <p className="service-one__item__title1 text-white">
-                      info@bkbsolarlight.com
+                      info@yenidunyaendustriyel.com
                       <br />
                       <br />
                       <br />
@@ -123,10 +120,9 @@ function Contactus() {
                       ADRESİMİZ
                     </h3>
                     <p className="service-one__item__title1 text-white">
-                      Altınova Mh. Fuar Cd. Buttim İş Merkezi A Blok 4.Kat
-                      No:4033
+                      Üçevler Mahallesi, Denizciler Caddesi 96B / B, 16130
                       <br />
-                      Osmangazi / BURSA
+                      Nilüfer / BURSA
                     </p>
                   </div>
                 </div>
@@ -136,6 +132,7 @@ function Contactus() {
 
           <div className="contact-one__form-box container-md mt-40">
             <form
+              // action="assets/inc/sendemail.php"
               onSubmit={sendEmail}
               className="contact-one__form contact-form-validated"
               noValidate="noValidate"
@@ -181,7 +178,7 @@ function Contactus() {
 
           <div className="container-md mt-4">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.7328526602423!2d29.063398875206037!3d40.23724166654529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3fc6d917271f%3A0xe62f33c9c9df812e!2sButtim%20Bursa%20Uluslararas%C4%B1%20Tekstil%20Ticaret%20Merkezi!5e0!3m2!1str!2str!4v1691322197916!5m2!1str!2str"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.613662760092!2d28.94080427498341!3d40.19541046908147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3f8db7372071%3A0x8d63b3d54341898!2sYenid%C3%BCnya%20End%C3%BCstriyel%20Tedarik!5e0!3m2!1str!2str!4v1698355162562!5m2!1str!2str"
               className="google-map__one"
               allowFullScreen=""
             ></iframe>

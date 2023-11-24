@@ -20,12 +20,7 @@ function About() {
   };
 
   return (
-    <section
-      className="about-one"
-      style={{
-        backgroundImage: "url(assets/images/shapes/about-1-bg-1.png)",
-      }}
-    >
+    <section className="about-one">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -43,27 +38,22 @@ function About() {
               {/* about content start*/}
               <div className="section-title">
                 <div className="section-title__triangle">
-                  <span
-                    className="fas fa-sun fa-2x"
-                    style={{ color: "#f9d21c" }}
-                  ></span>
+                  <img src="assets/images/favicons/icon.ico" alt="icon" />
                 </div>
-                <h5 className="section-title__tagline">BKB GÜNEŞ SİSTEMLERİ</h5>
+                <h5 className="section-title__tagline">
+                  YENİDÜNYA ENDÜSTRİYEL TEDARİK
+                </h5>
                 <h2 className="section-title__title">HAKKIMIZDA</h2>
               </div>
               {/* section-title */}
               <p className="about-one__content__text">
-                BKB Güneş Enerjisi Sistemleri 2022 yılında kaliteyi çözüm
-                ortaklarımız ile buluşturmak misyonu ile faaliyetlerine
-                başlamıştır. BKB Güneş Enerjisi Sistemleri olarak günümüz
-                koşullarına uygun, yenilikçi, çevre dostu tasarımları, iş
-                ortaklarımızın beklentisine uygun şekilde onlarla buluşturma
-                hedefi ile hareket ediyoruz. BKB Güneş Enerjisi Sistemleri başta
-                Tekstil Güneş Enerjisi Sistemleri, gıda Güneş Enerjisi
-                Sistemleri, kare tabanlı torba, doypack torba, yan körüklü torba
-                ve kağıt Güneş Enerjisi Sistemleri olmak üzere iş ortaklarımızın
-                ihtiyaçlarına uygun ürünleri çeyrek asra yakın tecrübemiz ile
-                tasarlıyor, üretiyor ve iş ortaklarımız ile buluşturuyoruz.
+                Yenidünya Endüstriyel Tedarik Firması, yüksek kaliteli
+                endüstriyel malzemelerin güvenilir tedarikçisidir. Yenidünya
+                Endüstriyel Tedarik Firması 2017 yılında kurulmuş ve başından
+                itibaren endüstriyel sektörde müşterilerimize mükemmel hizmet
+                sunma misyonunu benimsemiştir. Firma merkezimiz Bursa Türkiye
+                konumundadır ve ulusal ve uluslararası müşterilere hizmet
+                vermektedir.
               </p>
               <div className="row">
                 <div className="col-md-6">
@@ -82,7 +72,7 @@ function About() {
                   <div className="about-one__box">
                     <div className="about-one__box__top">
                       <h4 className="about-one__box__title">
-                        YÜKSEK KALİTELİ PROJELER
+                        YÜKSEK KALİTELİ ÜRÜNLER
                       </h4>
                       <div className="about-one__box__icon">
                         <span className="icon-good-quality"></span>

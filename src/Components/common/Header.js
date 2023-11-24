@@ -27,12 +27,22 @@ function Header() {
     i18n.changeLanguage(lng);
   };
 
+  const [showSubMenu, setShowSubMenu] = useState(false); // Alt menünün görünürlüğünü saklar
+
+  const handleMouseEnter = () => {
+    setShowSubMenu(true); // Mouse üstüne geldiğinde alt menüyü göster
+  };
+
+  const handleMouseLeave = () => {
+    setShowSubMenu(false); // Mouse menünün üstünden çıktığında alt menüyü gizle
+  };
+
   return (
     <>
       <header className="main-header sticky-top fixed-top">
         <div
           className="topbar fixed-top sticky-top"
-          style={{ backgroundColor: "#161617", padding: "10px" }}
+          style={{ backgroundColor: "#1c3844", padding: "10px" }}
         >
           <Container>
             <div className="d-flex justify-content-between align-items-center">
@@ -41,8 +51,8 @@ function Header() {
                   <ul className="list-unstyled topbar__list">
                     <li>
                       <span className="fas fa-envelope"></span>
-                      <a href="mailto:info@bkbsolarlight.com">
-                        info@bkbsolarlight.com
+                      <a href="mailto:info@yenidunyaendustriyel.com">
+                        info@yenidunyaendustriyel.com
                       </a>
                     </li>
                   </ul>
@@ -51,7 +61,7 @@ function Header() {
               <div className="d-flex">
                 <Button
                   style={{
-                    backgroundColor: "#f9d71c",
+                    backgroundColor: "#369159",
                     padding: "3px 7px 3px 7px",
                     fontSize: "13px",
                   }}
@@ -62,24 +72,13 @@ function Header() {
                 &nbsp;
                 <Button
                   style={{
-                    backgroundColor: "#f9d71c",
+                    backgroundColor: "#369159",
                     padding: "3px 7px 3px 7px",
                     fontSize: "13px",
                   }}
                   onClick={() => changeLanguage("en")}
                 >
                   EN
-                </Button>
-                &nbsp;
-                <Button
-                  style={{
-                    backgroundColor: "#f9d71c",
-                    padding: "3px",
-                    fontSize: "13px",
-                  }}
-                  onClick={() => changeLanguage("ar")}
-                >
-                  عربي
                 </Button>
               </div>
             </div>
@@ -96,12 +95,7 @@ function Header() {
           <Container fluid>
             <Navbar.Brand>
               <Link to="/" className="main-menu__logo" onClick={handleClick}>
-                <img
-                  src="assets/images/favicons/250x150.png"
-                  width="126"
-                  height="84"
-                  alt="BKB"
-                />
+                <img src="assets/images/logo.png" alt="BKB" />
               </Link>
             </Navbar.Brand>
 
@@ -136,54 +130,53 @@ function Header() {
                   title={t("ÜRÜNLERİMİZ")}
                   id="collasible-nav-dropdown"
                   className="nav-link scroolto"
+                  onMouseEnter={handleMouseEnter} // Mouse üstüne gelince alt menüyü göster
+                  onMouseLeave={handleMouseLeave} // Mouse menünün üstünden çıkınca alt menüyü gizle
+                  show={showSubMenu} //
                 >
                   <NavDropdown.Item
                     as={Link}
-                    to="/productdetails"
+                    to="/EndustriyelTemizlik"
                     onClick={handleClick}
                   >
-                    {t("ürün 1")}
+                    {t("Endüstrİyel TemİZLİk")}
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/productdetails"
+                    to="/EndustriyelKagit"
                     onClick={handleClick}
                   >
-                    {t("ürün 2")}
+                    {t("Endüstrİyel Kağıt")}
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/productdetails"
+                    to="/KozmetikUrunleri"
                     onClick={handleClick}
                   >
-                    {t("ürün 3")}
+                    {t("Kozmetİk Ürünlerİ")}
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/productdetails"
+                    to="/BitkiselUrunler"
                     onClick={handleClick}
                   >
-                    {t("ürün 4")}
+                    {t("BİTKİSEL Ürünler")}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/Ambalaj"
+                    onClick={handleClick}
+                  >
+                    {t("Ambalaj")}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/Gida"
+                    onClick={handleClick}
+                  >
+                    {t("Gıda")}
                   </NavDropdown.Item>
                 </NavDropdown>
-
-                <Nav.Link
-                  as={Link}
-                  to="/product"
-                  className="nav-link scrollto"
-                  onClick={handleClick}
-                >
-                  {t("ÜRETİM")}
-                </Nav.Link>
-
-                <Nav.Link
-                  as={Link}
-                  to="/productsimilar"
-                  className="nav-link scrollto"
-                  onClick={handleClick}
-                >
-                  {t("BENZER")}
-                </Nav.Link>
 
                 <Nav.Link
                   as={Link}
@@ -206,7 +199,7 @@ function Header() {
                 </Nav.Link> */}
               </Nav>
               <div class="main-menu__right">
-                <a href="tel:+02242116266" class="main-menu__phone">
+                <a href="tel:+02242234234" class="main-menu__phone">
                   <i class="icon-telephone"></i>
                 </a>
                 <a
@@ -215,6 +208,13 @@ function Header() {
                   class="main-menu__phone"
                 >
                   <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/yenidunyaendustriyel/"
+                  target="_blank"
+                  class="main-menu__phone"
+                >
+                  <i class="fab fa-instagram"></i>
                 </a>
               </div>
             </Navbar.Collapse>

@@ -20,13 +20,14 @@ function App() {
     i18n.changeLanguage(lng);
   };
 
+
   return (
     <>
-      <BrowserRouter>
-        <Header changeLanguage={changeLanguage} />
-        <CustomRoutes changeLanguage={changeLanguage} />
-        <Footer changeLanguage={changeLanguage} />
-      </BrowserRouter>
+        <BrowserRouter>
+          <Header changeLanguage={changeLanguage} />
+          <CustomRoutes changeLanguage={changeLanguage} />
+          <Footer changeLanguage={changeLanguage} />
+        </BrowserRouter>
     </>
   );
 }

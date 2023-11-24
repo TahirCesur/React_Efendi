@@ -3,16 +3,21 @@ import React from "react";
 function ProductDetails() {
   return (
     <>
-      <section class="page-header">
-        <div class="page-header__bg"></div>
-        <div class="page-header__shape1"></div>
-        <div class="page-header__shape2"></div>
+      <section className="page-header">
         <div
-          class="page-header__shape3 wow slideInRight"
+          className="cta-two__bg"
+          style={{
+            backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+          }}
+        ></div>
+        <div className="page-header__shape1"></div>
+        <div className="page-header__shape2"></div>
+        <div
+          className="page-header__shape3 wow slideInRight"
           data-wow-delay="300ms"
         ></div>
-        <div class="container">
-          <ul class="page-header__breadcrumb list-unstyled">
+        <div className="container">
+          <ul className="page-header__breadcrumb list-unstyled">
             <li>
               <a href="index.html">Anasayfa</a>
             </li>
@@ -20,158 +25,120 @@ function ProductDetails() {
               <span>ÜRÜNLERİMİZ</span>
             </li>
           </ul>
-          <h2 class="page-header__title">ÜRÜNLERİMİZ</h2>
+          <h2 className="page-header__title">ÜRÜNLERİMİZ</h2>
         </div>
       </section>
-      <section class="product">
-        <div class="container">
-          <div class="row">
+      <section className="product">
+        <div className="container">
+          <div className="row">
             <div
-              class="col-lg-6 col-xl-6 wow fadeInLeft"
+              className="col-lg-6 col-xl-6 wow fadeInLeft"
               data-wow-delay="200ms"
             >
-              <div class="product-details__img">
+              <div className="product-details__img">
                 <img src="assets/images/blog/1-1.jpg" alt="" />
-                <div class="product-details__img-search">
-                  <a class="img-popup" href="assets/images/blog/1-1.jpg">
-                    <span class="icon-magnifying-glass"></span>
+                <div className="product-details__img-search">
+                  <a className="img-popup" href="assets/images/blog/1-1.jpg">
+                    <span className="icon-magnifying-glass"></span>
                   </a>
                 </div>
               </div>
             </div>
             <div
-              class="col-lg-6 col-xl-6 wow fadeInRight"
+              className="col-lg-6 col-xl-6 wow fadeInRight"
               data-wow-delay="300ms"
             >
-              <div class="product-details__content">
-                <div class="product-details__top">
-                  <h3 class="product-details__title">TİCARİ solar</h3>
-                  <div class="product-details__price">$889.00</div>
+              <div className="product-details__content">
+                <div className="product-details__top">
+                  <h3 className="product-details__title">
+                    El Temİzleme Losyonu
+                  </h3>
+                  <div className="product-details__price">$5</div>
                 </div>
-                <div class="product-details__review">
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
+                <div className="product-details__review">
+                  <span className="fa fa-star"></span>
+                  <span className="fa fa-star"></span>
+                  <span className="fa fa-star"></span>
+                  <span className="fa fa-star"></span>
+                  <span className="fa fa-star"></span>
                 </div>
-                <div class="product-details__divider"></div>
-                <div class="product-details__excerpt">
-                  <p class="product-details__excerpt-text1">
-                    Ticari Solar Projektör, ticari serideki en son ürünümüzdür.
-                    Bu çok yönlü ışık, birçok uygulama için bir çözüm sağlayan 6
-                    benzersiz şekilde monte edilebilir.
-                    <br />
-                    Bu ürün güçlü bir 3000 lümen üretir. Ticari sınıf malzemeler
-                    ve korozyon önleyici teknoloji ile bu ışık, ticari tesisler
-                    için nihai çözümdür. <br />
-                    BKB güneş lambaları, Uyarlanabilir Aydınlatma , Değişken
-                    Frekans ve Sıcaklık Kontrolü patentli teknolojilerini bir
-                    araya getirdikleri için pil ömrünü ve pil şarj ömrünü en üst
-                    düzeye çıkarır . <br />
-                    <ul class="list-unstyled product-details__description__lists">
+                <div className="product-details__divider"></div>
+                <div className="product-details__excerpt">
+                  <p className="list-unstyled product-details__description__lists">
+                    <ul className="list-unstyled product-details__description__lists">
                       <li>
-                        <span class="icon-right-arrow"></span>Kurulumu kolay
+                        <span className="icon-right-arrow"></span>Temizlik ve
+                        Hijyen:
                       </li>
+                      El temizleme losyonları, elleri temizlemek ve hijyen
+                      sağlamak için kullanılır. Özellikle ellerin mikroplardan
+                      arındırılması gereken durumlarda tercih edilir.
                       <li>
-                        <span class="icon-right-arrow"></span>7+ gece sürekli
-                        aydınlatma
+                        <span className="icon-right-arrow"></span>Cilt Koruma:
                       </li>
+                      Birçok el temizleme losyonu, aynı zamanda cildin nemini
+                      korumaya yardımcı olan özel bileşenler içerebilir. Bu, sık
+                      sık el temizlemeye bağlı cilt kuruluğunu önlemeye yardımcı
+                      olabilir.
                       <li>
-                        <span class="icon-right-arrow"></span>PIR Hareket
-                        Sensörü
+                        <span className="icon-right-arrow"></span>Alkol Bazlı ve
+                        Alkol İçermeyen Seçenekler:
                       </li>
+                      El temizleme losyonları genellikle alkol bazlı veya alkol
+                      içermeyen versiyonlarda bulunur. Alkol bazlı ürünler,
+                      mikropları etkili bir şekilde öldürme yeteneğine sahiptir,
+                      ancak alkol içermeyen ürünler daha hassas ciltlere daha
+                      uygun olabilir.
                       <li>
-                        <span class="icon-right-arrow"></span>Güvenilir parlak
-                        geniş kapsama alanı
+                        <span className="icon-right-arrow"></span>Kullanım
+                        Alanları:
                       </li>
+                      El temizleme losyonları, hastaneler, restoranlar, ofisler,
+                      evler ve genel halka açık yerlerde yaygın olarak
+                      kullanılır. Mikropların yayılmasını önlemeye yardımcı
+                      olurlar.
                       <li>
-                        <span class="icon-right-arrow"></span> Ticari sınıf 5
-                        yıl garanti
-                      </li>{" "}
+                        <span className="icon-right-arrow"></span> Etkili
+                        Temizlik İçin Nasıl Kullanılır:
+                      </li>
+                      El temizleme losyonlarını kullanırken, bir miktar losyonu
+                      avuç içine alarak ellerinizi iyice ovup kuruyana kadar
+                      ovarak uygularsınız. Bu, mikropları ve kirleri etkili bir
+                      şekilde temizler. El temizleme losyonları, günlük hayatta
+                      ve özellikle sağlık sektöründe önemli bir rol oynar. El
+                      hijyeni konusunda dikkatli olmak, hastalıkların
+                      yayılmasını önlemek için kritik bir adımdır.
                       <br />
                       <li>
-                        <span class="icon-right-arrow"></span>{" "}
-                        <span class="fa fa-star"></span> Lütfen Dikkat : Direk
-                        montaj braketi, sipariş üzerine mevcuttur.
+                        <span className="fa fa-star"></span> Lütfen Dikkat :
+                        Kullanım Talimatını Okuyunuz!..
                         <br />
                       </li>
                     </ul>
                   </p>
                 </div>
 
-                <div class="product-details__socials">
-                  <h4 class="product-details__socials__title">
+                <div className="product-details__socials">
+                  <h4 className="product-details__socials__title">
                     ARKADAŞLARINLA PAYLAŞ
                   </h4>
                   <a href="https://twitter.com/X">
-                    <span class="fab fa-twitter"></span>
+                    <span className="fab fa-twitter"></span>
                   </a>
                   <a href="https://www.facebook.com/">
-                    <span class="fab fa-facebook"></span>
+                    <span className="fab fa-facebook"></span>
                   </a>
                   <a href="https://www.pinterest.com/">
-                    <span class="fab fa-pinterest-p"></span>
+                    <span className="fab fa-pinterest-p"></span>
                   </a>
                   <a href="https://www.instagram.com/">
-                    <span class="fab fa-instagram"></span>
+                    <span className="fab fa-instagram"></span>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="product-details__description wow fadeInUp"
-            data-wow-delay="300ms"
-          >
-            <h3 class="product-details__description__title">
-              TİCARİ SOLAR GÜNEŞ IŞIK ÖZELLİKLERİ
-            </h3>
-            <p class="product-details__description__text">
-              Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
-              phaedrum.
-            </p>
-            <ul class="list-unstyled product-details__description__lists">
-              <li>
-                <span class="icon-right-arrow"></span>Uzun ömürlü performans
-                için yüksek verimli monokristal güneş paneli
-              </li>
-              <li>
-                <span class="icon-right-arrow"></span>Çeşitli kurulum yöntemleri
-              </li>
-              <li>
-                <span class="icon-right-arrow"></span>PIR Hareket Sensörü
-              </li>
-            </ul>
-            <h5 class="product-details__description__title">
-              AYDINLATMA MODLARI
-            </h5>
-            <p class="product-details__description__text">
-              5 saat boyunca %100 parlaklık ve ardından şafağa kadar PIR ile
-              %20.
-            </p>
-            <h5 class="product-details__description__title">UYGULAMALAR</h5>
-            <ul class="list-unstyled product-details__description__lists">
-              <li>
-                <span class="icon-right-arrow"></span>Ticari ve konut mülkleri
-              </li>
-              <li>
-                <span class="icon-right-arrow"></span>Giriş çıkış
-              </li>
-              <li>
-                <span class="icon-right-arrow"></span>Patika
-              </li>
-              <li>
-                <span class="icon-right-arrow"></span>Otopark
-              </li>
-              <li>
-                <span class="icon-right-arrow"></span> Özel yollar
-              </li>
-              <li>
-                <span class="icon-right-arrow"></span> Konaklama
-              </li>
-            </ul>
-          </div>
+
         </div>
       </section>
     </>

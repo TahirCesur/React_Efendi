@@ -10,7 +10,12 @@ function PageHeader(props) {
   return (
     <>
       <section class="page-header">
-        <div class="page-header__bg"></div>
+        <div
+          className="cta-two__bg"
+          style={{
+            backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+          }}
+        ></div>
         <div class="page-header__shape1"></div>
         <div class="page-header__shape2"></div>
         <div

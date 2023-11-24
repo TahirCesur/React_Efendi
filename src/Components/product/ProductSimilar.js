@@ -11,7 +11,7 @@ function ProductSimilar() {
         <div class="container">
           <div class="section-title">
             <div class="section-title__triangle">
-              <span class="fas fa-sun fa-2x" style={{color: " #f9d21c"}}></span>
+              <img src="assets/images/favicons/icon.ico" alt="icon" />
             </div>
             <h2 class="section-title__title">BENZER ÜRÜNLER</h2>
           </div>
@@ -48,7 +48,7 @@ function ProductSimilar() {
                 <div class="product__item__img">
                   <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
                   <div class="product__item__btn">
-                    <a href="product-details.html">
+                    <a href="/ProductDetails">
                       <i class="fas fa-eye"></i>
                     </a>
                   </div>
@@ -63,14 +63,14 @@ function ProductSimilar() {
                     <span class="fa fa-star"></span>
                   </div>
                   <h4 class="product__item__title">
-                    <a href="product-details.html">SOLAR IŞIKLARI</a>
+                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
                   </h4>
-                  <a href="cart.html" class="nisoz-btn">
+                  <a href="/ProductDetails" class="nisoz-btn">
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$889.00</span>
+                    <span class="nisoz-btn__text">$5</span>
                   </a>
                 </div>
               </div>
@@ -80,7 +80,7 @@ function ProductSimilar() {
                 <div class="product__item__img">
                   <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
                   <div class="product__item__btn">
-                    <a href="product-details.html">
+                    <a href="/ProductDetails">
                       <i class="fas fa-eye"></i>
                     </a>
                   </div>
@@ -95,14 +95,14 @@ function ProductSimilar() {
                     <span class="fa fa-star"></span>
                   </div>
                   <h4 class="product__item__title">
-                    <a href="product-details.html">SOLAR IŞIKLARI</a>
+                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
                   </h4>
-                  <a href="cart.html" class="nisoz-btn">
+                  <a href="/ProductDetails" class="nisoz-btn">
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$889.00</span>
+                    <span class="nisoz-btn__text">$5</span>
                   </a>
                 </div>
               </div>
@@ -112,7 +112,7 @@ function ProductSimilar() {
                 <div class="product__item__img">
                   <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
                   <div class="product__item__btn">
-                    <a href="product-details.html">
+                    <a href="/ProductDetails">
                       <i class="fas fa-eye"></i>
                     </a>
                   </div>
@@ -127,14 +127,14 @@ function ProductSimilar() {
                     <span class="fa fa-star"></span>
                   </div>
                   <h4 class="product__item__title">
-                    <a href="product-details.html">SOLAR IŞIKLARI</a>
+                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
                   </h4>
-                  <a href="cart.html" class="nisoz-btn">
+                  <a href="/ProductDetails" class="nisoz-btn">
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$889.00</span>
+                    <span class="nisoz-btn__text">$5</span>
                   </a>
                 </div>
               </div>
@@ -144,7 +144,7 @@ function ProductSimilar() {
                 <div class="product__item__img">
                   <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
                   <div class="product__item__btn">
-                    <a href="product-details.html">
+                    <a href="/ProductDetails">
                       <i class="fas fa-eye"></i>
                     </a>
                   </div>
@@ -159,14 +159,14 @@ function ProductSimilar() {
                     <span class="fa fa-star"></span>
                   </div>
                   <h4 class="product__item__title">
-                    <a href="product-details.html">SOLAR IŞIKLARI</a>
+                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
                   </h4>
-                  <a href="cart.html" class="nisoz-btn">
+                  <a href="/ProductDetails" class="nisoz-btn">
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$889.00</span>
+                    <span class="nisoz-btn__text">$5</span>
                   </a>
                 </div>
               </div>
@@ -176,7 +176,7 @@ function ProductSimilar() {
                 <div class="product__item__img">
                   <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
                   <div class="product__item__btn">
-                    <a href="product-details.html">
+                    <a href="/ProductDetails">
                       <i class="fas fa-eye"></i>
                     </a>
                   </div>
@@ -191,14 +191,14 @@ function ProductSimilar() {
                     <span class="fa fa-star"></span>
                   </div>
                   <h4 class="product__item__title">
-                    <a href="product-details.html">SOLAR IŞIKLARI</a>
+                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
                   </h4>
-                  <a href="cart.html" class="nisoz-btn">
+                  <a href="/ProductDetails" class="nisoz-btn">
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$889.00</span>
+                    <span class="nisoz-btn__text">$5</span>
                   </a>
                 </div>
               </div>
@@ -208,7 +208,7 @@ function ProductSimilar() {
                 <div class="product__item__img">
                   <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
                   <div class="product__item__btn">
-                    <a href="product-details.html">
+                    <a href="/ProductDetails">
                       <i class="fas fa-eye"></i>
                     </a>
                   </div>
@@ -223,14 +223,14 @@ function ProductSimilar() {
                     <span class="fa fa-star"></span>
                   </div>
                   <h4 class="product__item__title">
-                    <a href="product-details.html">SOLAR IŞIKLARI</a>
+                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
                   </h4>
-                  <a href="cart.html" class="nisoz-btn">
+                  <a href="/ProductDetails" class="nisoz-btn">
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
                     <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$889.00</span>
+                    <span class="nisoz-btn__text">$5</span>
                   </a>
                 </div>
               </div>

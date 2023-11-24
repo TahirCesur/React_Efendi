@@ -2583,12 +2583,12 @@ fieldset:disabled .btn {
   opacity: 0.65;
 }
 .btn-primary {
-  color: #000;
-  border-color: #f9d71c;
+  color: #fff;
+  border-color: #396159;
 }
 .btn-primary:hover {
   color: #fff;
-  border-color: #000;
+  border-color: #1c3844;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
@@ -4153,7 +4153,7 @@ fieldset:disabled .btn {
   width: 100%;
   padding: 1.25rem;
   font-size: 1rem;
-  color: #f9d71c;
+  color: #396159;
   text-align: left;
   background-color: #fff;
   border: 0;
@@ -4169,23 +4169,23 @@ fieldset:disabled .btn {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #f9d71c;
+  color: var(--nisoz-base)!important;
   background-color: #fff;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
-  color: #f9d71c;
+  color: #1c3844;
   
 }
 .accordion-button::before {
   width: 35px;
   height: 35px;
-  background-color: var(--nisoz-black);
+  background-color: var(--nisoz-black)!important;
   content: "\e91b";
   font-family: "icomoon" !important;
   font-size: 12px;
-  color: var(--nisoz-base);
+  color: var(--nisoz-base)!important;
   position: absolute;
   top: 50%;
   right: 0;
@@ -4212,7 +4212,7 @@ fieldset:disabled .btn {
 .accordion-button:focus {
   z-index: 3;
   border-color: #161617;
-  color: #f9d71c;
+  color: #399159;
   outline: 0;
 }
 .accordion-header {
