@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function LekeKarsitiCiltBeyazlaticiBakimKremi() {
+const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function LekeKarsitiCiltBeyazlaticiBakimKremi() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              LEKE KARŞITI CİLT BEYAZLATICI BAKIM KREMİ
+              {t("LEKE KARŞITI CİLT BEYAZLATICI BAKIM KREMİ")}
             </h2>
           </div>
         </section>
@@ -38,7 +40,7 @@ function LekeKarsitiCiltBeyazlaticiBakimKremi() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/lopren/cilt-beyazlatici-bakim-kremi.jpg"
-                    alt=""
+                    alt="LEKE KARŞITI CİLT BEYAZLATICI BAKIM KREMİ"
                   />
                   <div className="product-details__img-search">
                     <a
@@ -55,7 +57,7 @@ function LekeKarsitiCiltBeyazlaticiBakimKremi() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      LEKE KARŞITI CİLT BEYAZLATICI BAKIM KREMİ
+                    {t("LEKE KARŞITI CİLT BEYAZLATICI BAKIM KREMİ")}
                       <span className="product-details__price">200ML</span>
                     </h3>
                   </div>
@@ -71,16 +73,13 @@ function LekeKarsitiCiltBeyazlaticiBakimKremi() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Faydaları")} :
                         </li>
-                        Leke Kremi; peptit ve alpha arbutinle zenginleştirilmiş
-                        formülüyle ciltteki koyu leke görünümünün azalmasını
-                        sağlamaya yardımcı olur. Renk tonu eşitsizliklerinin
-                        giderilmesine yardımcı olur. Cilde aydınlık ve canlı bir
-                        görünüm kazandırır.
+                        {t("Leke Kremi; peptit ve alpha arbutinle zenginleştirilmiş formülüyle ciltteki koyu leke görünümünün azalmasını sağlamaya yardımcı olur. Renk tonu eşitsizliklerinin giderilmesine yardımcı olur. Cilde aydınlık ve canlı bir görünüm kazandırır.")}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                        <span className="icon-right-arrow"></span>
+                          {t("İçindekiler")}:
                         </li>
                         Aqua, Niacinamide, Glycerin, Glycyrrhiza Glabra
                         RootExtract, Butyrospermum Parkii Butter, Allantoin,
@@ -96,29 +95,25 @@ function LekeKarsitiCiltBeyazlaticiBakimKremi() {
                         Carbomer,Dimethicone, Sodium PCA, Phenylpropanol,
                         GlycerylCaprylate.
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Şekli ve Uyarıları")} :
                         </li>
-                        Sabah ve akşam temizliğini tamamladığınız cildinize
-                        yukarı doğru hareketlerle masaj yaparak uygulayın.
-                        Tahriş olmuş ciltte kullanmayınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
+                        {t(
+                          "Sabah ve akşam temizliğini tamamladığınız cildinize yukarı doğru hareketlerle masaj yaparak uygulayın. Tahriş olmuş ciltte kullanmayınız. Ürünü kullanmadan önce istenmeyen olası yan etkileri ve tahrişi önlemek için yama testi yapmanız önerilir. Tahriş durumunda kullanmayı bırakınız ve dermatoloğa danışınız. Gözle direkt temasından kaçınınız. Temas halinde bol su ile durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza ediniz."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t(
+                          "Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız."
+                        )}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
+                          <span className="fa fa-star"></span>
+                          {t("Lütfen Dikkat")} :
+                          {t("Kullanım Talimatını Okuyunuz")}!..
                           <br />
                         </li>
                       </ul>
@@ -127,7 +122,7 @@ function LekeKarsitiCiltBeyazlaticiBakimKremi() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

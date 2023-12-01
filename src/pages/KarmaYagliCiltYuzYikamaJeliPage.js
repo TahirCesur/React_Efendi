@@ -6,7 +6,7 @@ function KarmaYagliCiltYuzYikamaJeliPage() {
   return (
     <>
       <KarmaYagliCiltYuzYikamaJeli />
-      <ProductSimilar />
+      <ProductSimilar />   
     </>
   );
 }

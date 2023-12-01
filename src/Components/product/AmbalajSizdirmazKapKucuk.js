@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function AmbalajSizdirmazKapKucuk() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,13 +20,13 @@ function AmbalajSizdirmazKapKucuk() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">SIZDIRMAZ KAP 500 ML</h2>
+            <h2 className="page-header__title">{t("SIZDIRMAZ KAP 500 ML")}</h2>
           </div>
         </section>
         <section className="product">
@@ -34,7 +37,7 @@ function AmbalajSizdirmazKapKucuk() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img src="assets/images/ambalaj/sizdirmaz-kap.jpg" alt="Sızdırmaz Kap" />
+                  <img src="assets/images/ambalaj/sizdirmaz-kap.jpg" alt={t("Sızdırmaz Kap")} />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
@@ -50,7 +53,7 @@ function AmbalajSizdirmazKapKucuk() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      SIZDIRMAZ KAP
+                      {t("SIZDIRMAZ KAP")}
                       <span className="product-details__price">500 ML</span>
                     </h3>
                   </div>
@@ -66,46 +69,30 @@ function AmbalajSizdirmazKapKucuk() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Boyut ve
-                          Kapasite :
+                          <span className="icon-right-arrow"></span>{t("Boyut ve Kapasite :")}
                         </li>
-                        500 cc, yani 500 mililitre veya yarım litre hacme
-                        sahiptir. Bu, genellikle orta büyüklükteki miktarları
-                        saklamak için uygun bir boyuttur. Şeffaf plastik
-                        malzemeden üretilmiştir. Bu, içeriği görüntülemeyi ve
-                        kolayca tanımlamayı sağlar. Gıda kabının sızdırmaz
-                        özelliklere sahip olması, içerideki sıvı veya nemli
-                        gıdaların dışarı sızmasını önler. Bu, taze kalıcılığı
-                        artırır.
+                        {t(
+                          "500 cc, yani 500 mililitre veya yarım litre hacme sahiptir. Bu, genellikle orta büyüklükteki miktarları saklamak için uygun bir boyuttur. Şeffaf plastik malzemeden üretilmiştir. Bu, içeriği görüntülemeyi ve kolayca tanımlamayı sağlar. Gıda kabının sızdırmaz özelliklere sahip olması, içerideki sıvı veya nemli gıdaların dışarı sızmasını önler. Bu, taze kalıcılığı artırır."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Alanları :
+                          <span className="icon-right-arrow"></span>{t("Kullanım Alanları :")}
                         </li>
-                        Mutfakta geniş bir kullanım alanına sahiptir.
-                        Yiyecekleri saklamak, dondurmak veya taşımak için
-                        kullanılabilir. Kaliteli plastik malzeme, dayanıklılık
-                        ve uzun ömür sağlar. Böylece tekrar tekrar
-                        kullanılabilir. Genellikle gıda güvenliği standartlarına
-                        uygun olarak üretilir, bu da gıdaların güvenli bir
-                        şekilde saklanmasını sağlar. Kapaklı veya kilitli bir
-                        kapatma sistemine sahip olabilir. Bu, içeriğin
-                        korunmasına ve taşınmasına yardımcı olur.
+                        {t(
+                          "Mutfakta geniş bir kullanım alanına sahiptir. Yiyecekleri saklamak, dondurmak veya taşımak için kullanılabilir. Kaliteli plastik malzeme, dayanıklılık ve uzun ömür sağlar. Böylece tekrar tekrar kullanılabilir. Genellikle gıda güvenliği standartlarına uygun olarak üretilir, bu da gıdaların güvenli bir şekilde saklanmasını sağlar. Kapaklı veya kilitli bir kapatma sistemine sahip olabilir. Bu, içeriğin korunmasına ve taşınmasına yardımcı olur."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Güvenlik ve
-                          Hijyen :
+                          <span className="icon-right-arrow"></span>{t("Güvenlik ve Hijyen :")}
                         </li>
-                        Genellikle gıda güvenliği standartlarına uygun olarak
-                        üretilir, bu da gıdaların güvenli bir şekilde
-                        saklanmasını sağlar. Kapaklı veya kilitli bir kapatma
-                        sistemine sahip olabilir. Bu, içeriğin korunmasına ve
-                        taşınmasına yardımcı olur.
+                        {t(
+                          "Genellikle gıda güvenliği standartlarına uygun olarak üretilir, bu da gıdaların güvenli bir şekilde saklanmasını sağlar. Kapaklı veya kilitli bir kapatma sistemine sahip olabilir. Bu, içeriğin korunmasına ve taşınmasına yardımcı olur."
+                        )}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

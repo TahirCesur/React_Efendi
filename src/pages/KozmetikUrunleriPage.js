@@ -8,7 +8,7 @@ function KozmetikUrunleriPage() {
     <>
       <PageHeader title="KOZMETİK ÜRÜNLERİ" />
       <Spacer2 />
-      <KozmetikUrunleri />
+      <KozmetikUrunleri />  
     </>
   );
 }

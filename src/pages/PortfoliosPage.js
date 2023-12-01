@@ -8,7 +8,7 @@ function PortfoliosPage() {
     <>
       <TopBar />
       <Spacer2/>
-      <Portfolios />
+      <Portfolios />  
     </>
   );
 }

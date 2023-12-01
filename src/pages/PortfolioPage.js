@@ -4,7 +4,7 @@ import Portfolio from "../Components/portfolio/Portfolio";
 function PortfolioPage() {
   return (
     <>
-      <Portfolio />
+      <Portfolio />  
     </>
   );
 }

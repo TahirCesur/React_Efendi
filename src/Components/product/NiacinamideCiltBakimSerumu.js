@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function NiacinamideCiltBakimSerumu() {
+const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function NiacinamideCiltBakimSerumu() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              NİACİNAMİDE %10 + HYALÜRONİK ASİT + PANTHENOL CİLT BAKIM SERUMU
+              {t("NİACİNAMİDE %10 + HYALÜRONİK ASİT + PANTHENOL CİLT BAKIM SERUMU")}
             </h2>
           </div>
         </section>
@@ -38,7 +40,7 @@ function NiacinamideCiltBakimSerumu() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/lopren/panthenol-cilt-bakim-serumu.jpg"
-                    alt=""
+                    alt="NİACİNAMİDE %10 + HYALÜRONİK ASİT + PANTHENOL CİLT BAKIM SERUMU"
                   />
                   <div className="product-details__img-search">
                     <a
@@ -55,8 +57,7 @@ function NiacinamideCiltBakimSerumu() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      NİACİNAMİDE %10 + HYALÜRONİK ASİT + PANTHENOL CİLT BAKIM
-                      SERUMU
+                    {t("NİACİNAMİDE %10 + HYALÜRONİK ASİT + PANTHENOL CİLT BAKIM SERUMU")}
                       <span className="product-details__price">30 ML</span>
                     </h3>
                   </div>
@@ -72,16 +73,13 @@ function NiacinamideCiltBakimSerumu() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Faydaları")} :
                         </li>
-                        Yüksek oranda niasinamide içeren ve hyalüronik asit ve
-                        pantenol ile zenginleştirilmiş özel formülü ile cilt
-                        yağını dengelemeye yardımcı olur. Cildin daha canlı ve
-                        aydınlık görünmesini destekler. Cildin pürüzsüz ve
-                        eşitlenmiş cilt tonu görünümü kazanmasına yardımcı olur.
+                        {t("Yüksek oranda niasinamide içeren ve hyalüronik asit ve pantenol ile zenginleştirilmiş özel formülü ile cilt yağını dengelemeye yardımcı olur. Cildin daha canlı ve aydınlık görünmesini destekler. Cildin pürüzsüz ve eşitlenmiş cilt tonu görünümü kazanmasına yardımcı olur")}.
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                        <span className="icon-right-arrow"></span>
+                          {t("İçindekiler")}:
                         </li>
                         Aqua, Niacinamide, Glycerin, Panthenol, Allantoin,
                         Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid,
@@ -92,8 +90,8 @@ function NiacinamideCiltBakimSerumu() {
                         Sodium Benzoate, Potassium Sorbate, Sodium PCA, Sodium
                         Lactate, PCA, ydroxyethylcellulose.
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Şekli ve Uyarıları")} :
                         </li>
                         Temiz cildinize sabah ve akşam masaj yaparak uygulayın.
                         Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız.
@@ -105,16 +103,18 @@ function NiacinamideCiltBakimSerumu() {
                         durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
                         ediniz.
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t(
+                          "Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız."
+                        )}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
+                          <span className="fa fa-star"></span>
+                          {t("Lütfen Dikkat")} :
+                          {t("Kullanım Talimatını Okuyunuz")}!..
                           <br />
                         </li>
                       </ul>
@@ -123,7 +123,7 @@ function NiacinamideCiltBakimSerumu() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

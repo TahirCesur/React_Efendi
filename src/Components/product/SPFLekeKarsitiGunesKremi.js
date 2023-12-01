@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function SPFLekeKarsitiGunesKremi() {
+const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function SPFLekeKarsitiGunesKremi() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              SPF+ 50 LEKE KARŞITI GÜNEŞ KREMİ
+              {t("SPF+ 50 LEKE KARŞITI GÜNEŞ KREMİ")}
             </h2>
           </div>
         </section>
@@ -36,7 +38,7 @@ function SPFLekeKarsitiGunesKremi() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img src="assets/images/lopren/gunes-kremi.jpg" alt="" />
+                  <img src="assets/images/lopren/gunes-kremi.jpg" alt="SPF+ 50 LEKE KARŞITI GÜNEŞ KREMİ" />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
@@ -52,7 +54,7 @@ function SPFLekeKarsitiGunesKremi() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      SPF+ 50 LEKE KARŞITI GÜNEŞ KREMİ
+                    {t("SPF+ 50 LEKE KARŞITI GÜNEŞ KREMİ")}
                       <span className="product-details__price">50 ML</span>
                     </h3>
                   </div>
@@ -68,24 +70,13 @@ function SPFLekeKarsitiGunesKremi() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Faydaları")} :
                         </li>
-                        SPF 50+ Leke Karşıtı Güneş Koruyucu Krem, cildi güneşin
-                        zararlı ışınlarına karşı korur, cilt lekelenmelerine
-                        engel olur ve yaşlanma belirtilerinin azalmasını sağlar.
-                        SPF+ 50 ile cilde UVA/UVB koruması sunarken; güneş
-                        ışınlarına karşı kalkan görevi görmekte ve tek tonda
-                        pürüzsüz bir cilt görünümü elde etmeye yardımcı
-                        olmaktadır. İçerisinde bulunan Alpha Arbutin ise var
-                        olan lekeleri hedefleyerek leke görünümünün azalmasını
-                        sağlamaktadır. Ürünün üretimi esnasında FDA tarafından
-                        güvenilir olarak kabul edilen filtreler kullanılmıştır.
-                        Krem su bazlıdır ve ciltte yağlılık hissi
-                        bırakmamaktadır. Dört mevsim boyunca tüm cilt tipleri
-                        için kullanıma uygundur.
+                        {t("SPF 50+ Leke Karşıtı Güneş Koruyucu Krem, cildi güneşin zararlı ışınlarına karşı korur, cilt lekelenmelerine engel olur ve yaşlanma belirtilerinin azalmasını sağlar. SPF+ 50 ile cilde UVA/UVB koruması sunarken; güneş ışınlarına karşı kalkan görevi görmekte ve tek tonda pürüzsüz bir cilt görünümü elde etmeye yardımcı olmaktadır. İçerisinde bulunan Alpha Arbutin ise var olan lekeleri hedefleyerek leke görünümünün azalmasını sağlamaktadır. Ürünün üretimi esnasında FDA tarafından güvenilir olarak kabul edilen filtreler kullanılmıştır. Krem su bazlıdır ve ciltte yağlılık hissi bırakmamaktadır. Dört mevsim boyunca tüm cilt tipleri için kullanıma uygundur.")}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                        <span className="icon-right-arrow"></span>
+                          {t("İçindekiler")}:
                         </li>
                         Aqua, Ethylhexyl Salicylate, Ethylhexyl
                         Methoxycinnamate,Homosalate, Glycerin, C12-15 Alkyl
@@ -96,30 +87,23 @@ function SPFLekeKarsitiGunesKremi() {
                         Carbomate,Phenoxyethanol, Xanthan Gum, Lactid
                         Acid,Ethylhexylglycerin, Tetrasodium EDTA.
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Şekli ve Uyarıları")} :
                         </li>
-                        Ürünü güneşe çıkmadan 15-20 dakika önce cildinize
-                        uygulayınız. Uzun süre güneşte kalacaksanız daha iyi
-                        koruma sağlaması adına 2 saatte bir uygulamayı
-                        tekrarlayınız. İstenmeyen herhangi bir durumla karşı
-                        karşıya kalmamak ve tahrişi önlemek adına ürünü
-                        kullanmadan önce yama testi yaparak cildin küçük bir
-                        bölümüne uygulamanız önerilir. Harici kullanıma
-                        uygundur. Gözle temas etmemeli ve teması halinde bölge
-                        bol su yardımıyla durulanmalıdır. Çocukların
-                        ulaşamayacağı yerde muhafaza ediniz.
+                        {t("Ürünü güneşe çıkmadan 15-20 dakika önce cildinize uygulayınız. Uzun süre güneşte kalacaksanız daha iyi koruma sağlaması adına 2 saatte bir uygulamayı tekrarlayınız. İstenmeyen herhangi bir durumla karşı karşıya kalmamak ve tahrişi önlemek adına ürünü kullanmadan önce yama testi yaparak cildin küçük bir bölümüne uygulamanız önerilir. Harici kullanıma uygundur. Gözle temas etmemeli ve teması halinde bölge bol su yardımıyla durulanmalıdır. Çocukların ulaşamayacağı yerde muhafaza ediniz.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t(
+                          "Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız."
+                        )}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
+                          <span className="fa fa-star"></span>
+                          {t("Lütfen Dikkat")} :
+                          {t("Kullanım Talimatını Okuyunuz")}!..
                           <br />
                         </li>
                       </ul>
@@ -128,7 +112,7 @@ function SPFLekeKarsitiGunesKremi() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

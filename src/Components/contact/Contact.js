@@ -59,10 +59,10 @@ function Contact() {
             ></div>
             <div className="section-title">
               <h2 className="section-title__title">
-                İLETİŞİM
+                {t("İLETİŞİM")}
                 <br />
                 <br />
-                <h3>BİZİMLE İRTİBATA GEÇİN!</h3>
+                <h3>{t("BİZİMLE İRTİBATA GEÇİN!")}</h3>
               </h2>
             </div>
             <Link
@@ -78,7 +78,7 @@ function Contact() {
             className="cta-two__info-bottom wow fadeInDown"
             data-wow-delay="300ms"
           >
-            ÜCRETSİZ FİYAT TEKLİFİ İÇİN BİZİ ARAYIN : &nbsp;
+            {t("ÜCRETSİZ FİYAT TEKLİFİ İÇİN BİZİ ARAYIN")}: &nbsp;
             <a href="tel:+02242116266">(0224) 211 62 66</a>
           </h5>
         </div>

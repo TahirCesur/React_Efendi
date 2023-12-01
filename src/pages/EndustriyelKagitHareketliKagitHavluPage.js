@@ -1,12 +1,12 @@
 import React from "react";
-import ProductSimilar from "../Components/product/ProductSimilar";
+import ProductSimilarEndustriyelKagit from "../Components/product/ProductSimilarEndustriyelKagit";
 import EndustriyelKagitHareketliKagitHavlu from "../Components/product/EndustriyelKagitHareketliKagitHavlu";
 
 function EndustriyelKagitHareketliKagitHavluPage() {
   return (
     <>
       <EndustriyelKagitHareketliKagitHavlu />
-      <ProductSimilar />
+      <ProductSimilarEndustriyelKagit />
     </>
   );
 }

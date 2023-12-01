@@ -1,12 +1,12 @@
 import React from "react";
-import ProductSimilar from "../Components/product/ProductSimilar";
+import ProductSimilarGida from "../Components/product/ProductSimilarGida";
 import GidaCaykurFilizCay from "../Components/product/GidaCaykurFilizCay";
 
 function GidaCaykurFilizCayPage() {
   return (
     <>
       <GidaCaykurFilizCay />
-      <ProductSimilar />
+      <ProductSimilarGida />
     </>
   );
 }

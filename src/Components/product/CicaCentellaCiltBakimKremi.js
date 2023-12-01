@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function CicaCentellaCiltBakimKremi() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function CicaCentellaCiltBakimKremi() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              CİCA CENTELLA CİLT BAKIM KREMİ
+              {t("CİCA CENTELLA CİLT BAKIM KREMİ")}
             </h2>
           </div>
         </section>
@@ -38,7 +40,7 @@ function CicaCentellaCiltBakimKremi() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/lopren/cica-centella-cilt-bakim-kremi.jpg"
-                    alt=""
+                    alt="CİCA CENTELLA CİLT BAKIM KREMİ"
                   />
                   <div className="product-details__img-search">
                     <a
@@ -55,7 +57,7 @@ function CicaCentellaCiltBakimKremi() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      CİCA CENTELLA CİLT BAKIM KREMİ
+                      {t("CİCA CENTELLA CİLT BAKIM KREMİ")}
                       <span className="product-details__price">200 ML</span>
                     </h3>
                   </div>
@@ -71,15 +73,15 @@ function CicaCentellaCiltBakimKremi() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Faydaları")} :
                         </li>
-                        Cilt bariyerini desteklemeye yardımcı olan ve yoğun
-                        nemlendirme sağlayan Centella Asiatica Özü ile formüle
-                        edilmiştir. Cilde daha yumuşak, pürüzsüz ve parlak bir
-                        görünüm kazandırır.
+                        {t(
+                          "Cilt bariyerini desteklemeye yardımcı olan ve yoğun nemlendirme sağlayan Centella Asiatica Özü ile formüle edilmiştir. Cilde daha yumuşak, pürüzsüz ve parlak birgörünüm kazandırır."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>
+                          {t("İçindekiler")} :
                         </li>
                         Aqua, Glycerin, Centella Asiatica Leaf Extract,
                         Niacinamide,Butyrospermum Parkii Butter, Sodium
@@ -89,29 +91,25 @@ function CicaCentellaCiltBakimKremi() {
                         Dehydroacetic acid,Phenoxyethanol, Xanthan Gum,
                         Tetrasodium EDTA.
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Şekli ve Uyarıları")}:
                         </li>
-                        Sabah ve akşam temizliğini tamamladığınız cildinize
-                        yukarı doğru hareketlerle masaj yaparak uygulayın.
-                        Tahriş olmuş ciltte kullanmayınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
+                        {t(
+                          "Sabah ve akşam temizliğini tamamladığınız cildinize yukarı doğru hareketlerle masaj yaparak uygulayın. Tahriş olmuş ciltte kullanmayınız. Ürünü kullanmadan önce istenmeyen olası yan etkileri ve tahrişi önlemek için yama testi yapmanız önerilir. Tahriş durumunda kullanmayı bırakınız ve dermatoloğa danışınız. Gözle direkt temasından kaçınınız. Temas halinde bol su ile durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza ediniz."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t(
+                          "Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız."
+                        )}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
+                          <span className="fa fa-star"></span>{" "}
+                          {t("Lütfen Dikkat")} :{" "}
+                          {t("Kullanım Talimatını Okuyunuz!..")}!..
                           <br />
                         </li>
                       </ul>
@@ -120,7 +118,7 @@ function CicaCentellaCiltBakimKremi() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

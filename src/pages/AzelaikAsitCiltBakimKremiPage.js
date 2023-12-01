@@ -1,12 +1,12 @@
 import React from "react";
-import ProductSimilar from "../Components/product/ProductSimilar";
+import ProductSimilarKozmetik from "../Components/product/ProductSimilarKozmetik";
 import AzelaikAsitCiltBakimKremi from "../Components/product/AzelaikAsitCiltBakimKremi";
 
 function AzelaikAsitCiltBakimKremiPage() {
   return (
     <>
       <AzelaikAsitCiltBakimKremi />
-      <ProductSimilar />
+      <ProductSimilarKozmetik />
     </>
   );
 }

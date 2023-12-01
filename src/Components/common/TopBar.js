@@ -13,37 +13,50 @@ const TopBar = () => {
     i18n.changeLanguage(lng);
   };
   return (
-    <div className="topbar fixed-top header-inner-pages">
-      <Container>
-        <Button
-          onClick={() => {
-            changeLanguage("tr");
-          }}
+    <div
+          className="topbar fixed-top sticky-top"
+          style={{ backgroundColor: "#1c3844", padding: "10px" }}
         >
-          {t("TR")}&nbsp;
-          <img
-            src="/assets/img/TR Bayragi.webp"
-            alt="Tr"
-            width="20"
-            height="17"
-          />
-        </Button>
-        &nbsp;&nbsp;
-        <Button
-          onClick={() => {
-            changeLanguage("en");
-          }}
-        >
-          {t("EN")}&nbsp;
-          <img
-            src="/assets/img/EN Bayragi.webp"
-            alt="En"
-            width="20"
-            height="17"
-          />
-        </Button>
-      </Container>
-    </div>
+          <Container>
+            <div className="d-flex justify-content-between align-items-center">
+              <div className="d-flex align-items-center">
+                <span className="topbar__wrapper">
+                  <ul className="list-unstyled topbar__list">
+                    <li>
+                      <span className="fas fa-envelope"></span>
+                      <a href="mailto:info@yenidunyaendustriyel.com">
+                        info@yenidunyaendustriyel.com
+                      </a>
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div className="d-flex">
+                <Button
+                  style={{
+                    backgroundColor: "#369159",
+                    padding: "3px 7px 3px 7px",
+                    fontSize: "13px",
+                  }}
+                  onClick={() => changeLanguage("tr")}
+                >
+                  {t("TR")}
+                </Button>
+                &nbsp;
+                <Button
+                  style={{
+                    backgroundColor: "#369159",
+                    padding: "3px 7px 3px 7px",
+                    fontSize: "13px",
+                  }}
+                  onClick={() => changeLanguage("en")}
+                >
+                  {t("EN")}
+                </Button>
+              </div>
+            </div>
+          </Container>
+        </div>
   );
 };
 

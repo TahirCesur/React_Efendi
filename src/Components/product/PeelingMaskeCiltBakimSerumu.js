@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function PeelingMaskeCiltBakimSerumu() {
+const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function PeelingMaskeCiltBakimSerumu() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              AHA %10 + BHA %2 PEELİNG MASKE CİLT BAKIM SERUMU
+              {t("AHA %10 + BHA %2 PEELİNG MASKE CİLT BAKIM SERUMU")}
             </h2>
           </div>
         </section>
@@ -38,7 +40,7 @@ function PeelingMaskeCiltBakimSerumu() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/lopren/b-peeling-maske-cilt-bakim-serumu.jpg"
-                    alt=""
+                    alt="AHA %10 + BHA %2 PEELİNG MASKE CİLT BAKIM SERUMU"
                   />
                   <div className="product-details__img-search">
                     <a
@@ -55,7 +57,7 @@ function PeelingMaskeCiltBakimSerumu() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      AHA %10 + BHA %2 PEELİNG MASKE CİLT BAKIM SERUMU
+                    {t("AHA %10 + BHA %2 PEELİNG MASKE CİLT BAKIM SERUMU")}
                       <span className="product-details__price">30 ML</span>
                     </h3>
                   </div>
@@ -71,15 +73,13 @@ function PeelingMaskeCiltBakimSerumu() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Faydaları")} :
                         </li>
-                        Aha asitleri ciltte peeling yaparak ölü deriyi
-                        uzaklaştırırlar. Cilt daha aydınlık ve canlı gözükür.
-                        Bha asiti tıkanmış gözenekleri arındırır. Akne, siyah
-                        nokta ve sivilce oluşumunu önlemeye yardımcı olur.
+                        {t("Aha asitleri ciltte peeling yaparak ölü deriyi uzaklaştırırlar. Cilt daha aydınlık ve canlı gözükür. Bha asiti tıkanmış gözenekleri arındırır. Akne, siyah nokta ve sivilce oluşumunu önlemeye yardımcı olur.")}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                        <span className="icon-right-arrow"></span>
+                          {t("İçindekiler")}:
                         </li>
                         Aqua, Glycolic Acid, Lactic Acid, Citric Acid,
                         PropyleneGlycol, Salicylic Acid, Sodium Hydroxide,
@@ -93,30 +93,23 @@ function PeelingMaskeCiltBakimSerumu() {
                         Hydroxyethylcellulose, Sodium Lactate, Sodium PCA,
                         Tetrasodium EDTA.
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Şekli ve Uyarıları")} :
                         </li>
-                        Göz çevresi hariç, temiz ve havlu kuruluğundaki
-                        cildinize yetecek miktarda sadece akşam uygulayın. En
-                        fazla 10 dakika bekletip bol su ile yıkayın. Hafta 1-2
-                        kez uygulanabilir. Haftada maksimum 2 kez
-                        uygulayabilirsiniz. Ürünü kullanmadan önce istenmeyen
-                        olası yan etkileri ve tahrişi önlemek için yama testi
-                        yapmanız önerilir. Tahriş durumunda kullanmayı bırakınız
-                        ve dermatoloğa danışınız. Gözle direkt temasından
-                        kaçınınız. Temas halinde bol su ile durulayınız.
-                        Çocukların ulaşamayacağı bir yerde muhafaza ediniz.
+                        {t("Göz çevresi hariç, temiz ve havlu kuruluğundaki cildinize yetecek miktarda sadece akşam uygulayın. En fazla 10 dakika bekletip bol su ile yıkayın. Hafta 1-2 kez uygulanabilir. Haftada maksimum 2 kez uygulayabilirsiniz. Ürünü kullanmadan önce istenmeyen olası yan etkileri ve tahrişi önlemek için yama testi yapmanız önerilir. Tahriş durumunda kullanmayı bırakınız ve dermatoloğa danışınız. Gözle direkt temasından kaçınınız. Temas halinde bol su ile durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza ediniz.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t(
+                          "Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız."
+                        )}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
+                          <span className="fa fa-star"></span>
+                          {t("Lütfen Dikkat")} :
+                          {t("Kullanım Talimatını Okuyunuz")}!..
                           <br />
                         </li>
                       </ul>
@@ -125,7 +118,7 @@ function PeelingMaskeCiltBakimSerumu() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

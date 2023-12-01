@@ -25,7 +25,7 @@
     "picture": "assets/images/ambalaj/aluminyum-folyo-30-100.jpg",
     "price": "detaylar",
     "nav": "/AmbalajAluminyumFolyoKisa",
-    "title": "ALÜMİNYUM FOLYO 30 CM 100 M"
+    "title": "ALÜMİNYUM FOLYO 30 CM 100 M KISA"
   },
   {
     "id": "5",
@@ -39,14 +39,14 @@
     "picture": "assets/images/ambalaj/strec-film.jpg",
     "price": "detaylar",
     "nav": "/AmbalajStrecFilmKisa",
-    "title": "STREÇ FİLM 30*300M 8 MİCRON"
+    "title": "STREÇ FİLM 30*300M 8 MİC"
   },
   {
     "id": "7",
     "picture": "assets/images/ambalaj/strec-film.jpg",
     "price": "detaylar",
     "nav": "/AmbalajStrecFilmUzun",
-    "title": "STREÇ FİLM 45*300M 8 MİCRON"
+    "title": "STREÇ FİLM 45*300M 8 MİC"
   },
   {
     "id": "8",

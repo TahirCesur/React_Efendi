@@ -4,7 +4,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 import { useTranslation } from "react-i18next";
 import { Col, Container, Row } from "react-bootstrap";
 import ProductOne from "./ProductOne";
-import data from "../../data/product.json";
+import data from "../../data/productbitkisel.json";
 import { Link } from "react-router-dom";
 
 function BitkiselUrunler() {
@@ -30,12 +30,12 @@ function BitkiselUrunler() {
                 <div className="col-md-12 wow fadeInUp" data-wow-delay="100ms">
                   <div className="section-title text-center">
                     <div className="section-title__triangle">
-                      <img src="assets/images/ico.ico" alt="icon" />
+                      <img src="assets/images/favicons/icon.ico" alt="icon" />
                     </div>
                     <h5 className="section-title__tagline">
-                      YENİDÜNYA ENDÜSTRİYEL TEDARİK
+                      {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
                     </h5>
-                    <h2 className="section-title__title">BİTKİSEL ÜRÜNLER</h2>
+                    <h2 className="section-title__title">{t("BİTKİSEL ÜRÜNLER")}</h2>
                   </div>
                 </div>
               </div>
@@ -47,7 +47,7 @@ function BitkiselUrunler() {
                 >
                   <div className="sidebar sidebar__left">
                     <div className="sidebar__single sidebar__category">
-                      <h3 className="sidebar__title">KATEGORİLER</h3>
+                      <h3 className="sidebar__title">{t("KATEGORİLER")}</h3>
                       <ul className="sidebar__category-list list-unstyled">
                         <li>
                           <Link
@@ -55,7 +55,7 @@ function BitkiselUrunler() {
                             to="/EndustriyelTemizlik"
                             onClick={handleClick}
                           >
-                            Endüstriyel Temizlik
+                            {t("Endüstriyel Temizlik")}
                           </Link>
                         </li>
                         <li>
@@ -64,7 +64,7 @@ function BitkiselUrunler() {
                             to="/EndustriyelKagit"
                             onClick={handleClick}
                           >
-                            Endüstriyel Kağıt
+                            {t("Endüstriyel Kağıt")}
                           </Link>
                         </li>
                         <li>
@@ -73,7 +73,7 @@ function BitkiselUrunler() {
                             to="/KozmetikUrunleri"
                             onClick={handleClick}
                           >
-                            Kozmetik Ürünleri
+                            {t("Kozmetik Ürünleri")}
                           </Link>
                         </li>
                         <li>
@@ -82,26 +82,26 @@ function BitkiselUrunler() {
                             to="/BitkiselUrunler"
                             onClick={handleClick}
                           >
-                            Bitkisel Ürünler
+                            {t("Bitkisel Ürünler")}
                           </Link>
                         </li>
                         <li>
                           <Link as={Link} to="/Ambalaj" onClick={handleClick}>
-                            Ambalaj
+                            {t("Ambalaj")}
                           </Link>
                         </li>
                         <li>
                           <Link as={Link} to="/Gida" onClick={handleClick}>
-                            Gıda
+                            {t("Gıda")}
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                {data.map((product) => {
-                  const { picture, id, nav, price } = product;
-                  const title = t(product.title);
+                {data.map((productbitkisel) => {
+                  const { picture, id, nav, price } = productbitkisel;
+                  const title = t(productbitkisel.title);
 
                   return (
                     <Col md={3} key={id} className="text-center mb-5">

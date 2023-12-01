@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function GidaKupSeker() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,15 +19,13 @@ function GidaKupSeker() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">
-              C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-            </h2>
+            <h2 className="page-header__title">{t("KÜP ŞEKER")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,14 +36,11 @@ function GidaKupSeker() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img
-                    src="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
-                    alt=""
-                  />
+                  <img src="assets/images/gida/kup-seker.jpg" alt="Küp Şeker" />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
+                      href="assets/images/gida/kup-seker.jpg"
                     ></a>
                   </div>
                 </div>
@@ -55,8 +52,10 @@ function GidaKupSeker() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-                      <span className="product-details__price">30 ML</span>
+                      {t("KÜP ŞEKER")}
+                      <span className="product-details__price">
+                        {t("TEKLİ")}
+                      </span>
                     </h3>
                   </div>
                   <div className="product-details__review">
@@ -71,55 +70,34 @@ function GidaKupSeker() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Bilgilendirme")}:
                         </li>
-                        Cildi nemlendirir, pürüzsüzleştirir ve aydınlatır. Dış
-                        etkenlere ve yaşlanma belirtilerine karşı korumaya
-                        yardımcı olur. Cilt yumuşak, ışıltılı ve canlı bir
-                        görünüm kazanır.
+                        {t(
+                          "Tek paketli küp şeker, genellikle kullanımı pratik hale getirmek ve dozajı kontrol etmek amacıyla bireysel paketlerde sunulan küp şekerlerdir. Bu tip şekerler, özellikle kahve, çay ve diğer içeceklerde şekerin miktarını belirli bir ölçüde tutmak isteyen kişiler için uygun bir seçenektir."
+                        )}
+
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>
+                          {t("Ambalaj ve Boyut")} :
                         </li>
-                        Aqua, Hydrolyzed Collagen, Niacinamide, Propylene
-                        Glycol, Pisum Sativum Peptide, Panthenol, Sodium
-                        Hyaluronate, Arginine, Aspartic Acid, Glycine, Alanine,
-                        Serine, Valine, Proline, Threonine, Isoleucine,
-                        Histidine, Phenylalanine, Sodium Benzoate, Potassium
-                        Sorbate, Hydroxyethylcellulose.
+                        {t(
+                          "Tek paketli küp şekerler genellikle tek kullanımlık paketlerde gelir. Bu paketler genellikle ince plastik veya kağıt malzemeden yapılmış olup, içeride tek bir küp şeker bulunur. Her paket, genellikle belirli bir miktar şeker içerir ve şeker küpünün boyutu standart bir ölçüde olabilir. Bu, içeceğe eklenecek şeker miktarını kolayca kontrol etmeyi sağlar. Tek paketli küp şekerler, taşınabilir olmaları sayesinde dışarıda veya seyahat sırasında kullanım için uygundur. İçeceklerinize eklemek istediğinizde kolayca taşınabilirler."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Hijyen ve Kolay Kullanım")}:
                         </li>
-                        Temiz cildinize sabah ve akşam masaj yaparak uygulayın.
-                        Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız.
-                        Gün içinde güneş koruyucu kullanınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
-                        <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
-                        </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
-                        <br />
-                        <br />
-                        <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
-                          <br />
-                        </li>
+                        {t(
+                          "Bireysel paketler, hijyen sağlar ve her paket tek kullanımlık olduğu için kullanımı kolaylaştırır. Tek paketli küp şekerler genellikle beyaz şekerin yanı sıra kahverengi şeker veya şeker kamışı şekeri gibi çeşitli şeker türlerinde bulunabilir. Bu tip küp şekerler, özellikle hijyen ve dozaj kontrolü gibi avantajlar sağlamak isteyen kullanıcılar için pratik bir çözüm sunar."
+                        )}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

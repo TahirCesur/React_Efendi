@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function AmbalajJumboCopTorbasi() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,14 +20,14 @@ function AmbalajJumboCopTorbasi() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              ENDÜSTRİYEL JUMBO ÇÖP TORBASI 80*110
+              {t("ENDÜSTRİYEL JUMBO ÇÖP TORBASI 80*110")}
             </h2>
           </div>
         </section>
@@ -38,7 +41,7 @@ function AmbalajJumboCopTorbasi() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/ambalaj/endustriyel-jumbo-cop-torbasi.jpg"
-                    alt="Jumbo Boy Çöp Torbası"
+                    alt={t("Jumbo Boy Çöp Torbası")}
                   />
                   <div className="product-details__img-search">
                     <a
@@ -55,7 +58,7 @@ function AmbalajJumboCopTorbasi() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      ENDÜSTRİYEL JUMBO ÇÖP TORBASI
+                      {t("ENDÜSTRİYEL JUMBO ÇÖP TORBASI")}
                       <span className="product-details__price">80*110</span>
                     </h3>
                   </div>
@@ -71,40 +74,27 @@ function AmbalajJumboCopTorbasi() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Boyut ve
-                          Kapasite :
+                          <span className="icon-right-arrow"></span>
+                          {t("Boyut ve Kapasite :")}
                         </li>
-                        Endüstriyel jumbo boy çöp torbaları, büyük hacimli
-                        atıkları taşımak için tasarlanmıştır. Genellikle
-                        standart çöp torbalarından çok daha büyük boyutlarda ve
-                        yüksek kapasiteli olabilirler.
+                        {t(`Endüstriyel jumbo boy çöp torbaları, büyük hacimli atıkları taşımak için tasarlanmıştır. Genellikle standart çöp torbalarından çok daha büyük boyutlarda ve yüksek kapasiteli olabilirler.`)}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Alanları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Alanları :")}
                         </li>
-                        İnşaat siteleri, fabrikalar, depolar ve diğer büyük
-                        ölçekli endüstriyel tesislerde geniş atık miktarlarını
-                        taşımak için kullanılır. Yüksek dayanıklılık, ağır
-                        yükleri sorunsuz bir şekilde taşıma yeteneğini sağlar.
-                        Genellikle geri dönüştürülebilir malzemelerden üretilir,
-                        çevresel sürdürülebilirlik açısından önemlidir. Büyük
-                        ölçekli temizlik operasyonları, inşaat atıkları,
-                        endüstriyel atıkların taşınması gibi geniş bir uygulama
-                        yelpazesine sahiptirler.
+                        {t(`İnşaat siteleri, fabrikalar, depolar ve diğer büyük ölçekli endüstriyel tesislerde geniş atık miktarlarını taşımak için kullanılır. Yüksek dayanıklılık, ağır yükleri sorunsuz bir şekilde taşıma yeteneğini sağlar. Genellikle geri dönüştürülebilir malzemelerden üretilir, çevresel sürdürülebilirlik açısından önemlidir. Büyük ölçekli temizlik operasyonları, inşaat atıkları, endüstriyel atıkların taşınması gibi geniş bir uygulama yelpazesine sahiptirler.`)}
                         <li>
-                          <span className="icon-right-arrow"></span>Güvenlik ve
-                          Hijyen :
+                          <span className="icon-right-arrow"></span>
+                          {t("Güvenlik ve Hijyen :")}
                         </li>
-                        Bazı modeller, atıkların sızmasını önlemek ve içeriğin
-                        hijyenik bir şekilde taşınmasını sağlamak için özel
-                        olarak tasarlanmıştır.
+                        {t(`Bazı modeller, atıkların sızmasını önlemek ve içeriğin hijyenik bir şekilde taşınmasını sağlamak için özel olarak tasarlanmıştır.`)}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

@@ -9,29 +9,29 @@ function PageHeader(props) {
 
   return (
     <>
-      <section class="page-header">
+      <section className="page-header">
         <div
           className="cta-two__bg"
           style={{
             backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
           }}
         ></div>
-        <div class="page-header__shape1"></div>
-        <div class="page-header__shape2"></div>
+        <div className="page-header__shape1"></div>
+        <div className="page-header__shape2"></div>
         <div
-          class="page-header__shape3 wow slideInRight"
+          className="page-header__shape3 wow slideInRight"
           data-wow-delay="300ms"
         ></div>
-        <div class="container">
-          <ul class="page-header__breadcrumb list-unstyled">
+        <div className="container">
+          <ul className="page-header__breadcrumb list-unstyled">
             <li>
-              <a href="/">Anasayfa</a>
+              <Link to="/">{t("Anasayfa")}</Link>
             </li>
             <li>
-              <span>{props.title}</span>
+              <span>{t(props.title)}</span>
             </li>
           </ul>
-          <h2 class="page-header__title">{props.title}</h2>
+          <h2 className="page-header__title">{t(props.title)}</h2>
         </div>
       </section>
     </>

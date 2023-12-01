@@ -36,8 +36,8 @@ function ProductOne(props) {
           <div className="product__item__img">
             <img src={picture} alt={title} />
             <div className="product__item__btn">
-
-
+              {/* İleride kullanılabilir */}
+              {/* İleride kullanılabilir */}
             </div>
             <div className="product__item__content">
               <div className="product__item__ratings">
@@ -49,7 +49,7 @@ function ProductOne(props) {
               </div>
               <h4 className="product__item__title">
                 <Link as={Link} to={nav} onClick={scrollToTop}>
-                  {title}
+                  {t(title)}
                 </Link>
               </h4>
               <Link
@@ -62,7 +62,7 @@ function ProductOne(props) {
                 <span className="nisoz-btn__shape"></span>
                 <span className="nisoz-btn__shape"></span>
                 <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__text">{price}</span>
+                <span className="nisoz-btn__text">{t(price)}</span>
               </Link>
             </div>
           </div>

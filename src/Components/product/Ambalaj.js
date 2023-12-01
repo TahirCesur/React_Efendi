@@ -20,6 +20,7 @@ function Ambalaj() {
     window.scrollTo(0, 0);
     setExpanded(false);
   };
+
   return (
     <SRLWrapper>
       <section className="blog-one">
@@ -30,12 +31,12 @@ function Ambalaj() {
                 <div className="col-md-12 wow fadeInUp" data-wow-delay="100ms">
                   <div className="section-title text-center">
                     <div className="section-title__triangle">
-                      <img src="assets/images/ico.ico" alt="icon" />
+                      <img src="assets/images/favicons/icon.ico" alt="icon" />
                     </div>
                     <h5 className="section-title__tagline">
-                      YENİDÜNYA ENDÜSTRİYEL TEDARİK
+                      {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
                     </h5>
-                    <h2 className="section-title__title">AMBALAJ</h2>
+                    <h2 className="section-title__title">{t("AMBALAJ")}</h2>
                   </div>
                 </div>
               </div>
@@ -47,7 +48,7 @@ function Ambalaj() {
                 >
                   <div className="sidebar sidebar__left">
                     <div className="sidebar__single sidebar__category">
-                      <h3 className="sidebar__title">KATEGORİLER</h3>
+                      <h3 className="sidebar__title">{t("KATEGORİLER")}</h3>
                       <ul className="sidebar__category-list list-unstyled">
                         <li>
                           <Link
@@ -55,7 +56,7 @@ function Ambalaj() {
                             to="/EndustriyelTemizlik"
                             onClick={handleClick}
                           >
-                            Endüstriyel Temizlik
+                            {t("Endüstriyel Temizlik")}
                           </Link>
                         </li>
                         <li>
@@ -64,7 +65,7 @@ function Ambalaj() {
                             to="/EndustriyelKagit"
                             onClick={handleClick}
                           >
-                            Endüstriyel Kağıt
+                            {t("Endüstriyel Kağıt")}
                           </Link>
                         </li>
                         <li>
@@ -73,7 +74,7 @@ function Ambalaj() {
                             to="/KozmetikUrunleri"
                             onClick={handleClick}
                           >
-                            Kozmetik Ürünleri
+                            {t("Kozmetik Ürünleri")}
                           </Link>
                         </li>
                         <li>
@@ -82,17 +83,17 @@ function Ambalaj() {
                             to="/BitkiselUrunler"
                             onClick={handleClick}
                           >
-                            Bitkisel Ürünler
+                            {t("Bitkisel Ürünler")}
                           </Link>
                         </li>
                         <li>
                           <Link as={Link} to="/Ambalaj" onClick={handleClick}>
-                            Ambalaj
+                            {t("Ambalaj")}
                           </Link>
                         </li>
                         <li>
                           <Link as={Link} to="/Gida" onClick={handleClick}>
-                            Gıda
+                            {t("Gıda")}
                           </Link>
                         </li>
                       </ul>

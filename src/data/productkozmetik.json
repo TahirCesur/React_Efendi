@@ -4,7 +4,7 @@
     "picture": "assets/images/lopren/panthenol-cilt-bakim-serumu.jpg",
     "price": "detaylar",
     "nav": "/NiacinamideCiltBakimSerumu",
-    "title": "NİACİNAMİDE CİLT BAKIM SERUMU"
+    "title": "NİACİNAMİDE PANTHENOL CİLT BAKIM SERUMU"
   },
   {
     "id": "2",
@@ -143,7 +143,7 @@
     "id": "20",
     "picture": "assets/images/lopren/hassas-cilt-yuz-yikama-jeli.jpg",
     "price": "detaylar",
-    "nav": "/HassasAtopikCiltYüzYikamaJeli",
+    "nav": "/HassasAtopikCiltYuzYikamaJeli",
     "title": "HASSAS VE ATOPİK CİLTLER İÇİN YÜZ YIKAMA JELİ"
   },
   {

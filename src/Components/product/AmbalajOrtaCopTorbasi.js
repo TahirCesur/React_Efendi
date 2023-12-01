@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function AmbalajOrtaCopTorbasi() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,13 +20,13 @@ function AmbalajOrtaCopTorbasi() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">ORTA BOY ÇÖP TORBASI 55*60</h2>
+            <h2 className="page-header__title">{t("ORTA BOY ÇÖP TORBASI 55*60")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,7 +39,7 @@ function AmbalajOrtaCopTorbasi() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/ambalaj/orta-boy-cop-torbasi.jpg"
-                    alt="Orta Boy Çöp Torbası"
+                    alt={t("Orta Boy Çöp Torbası")}
                   />
                   <div className="product-details__img-search">
                     <a
@@ -53,7 +56,7 @@ function AmbalajOrtaCopTorbasi() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      ORTA BOY ÇÖP TORBASI
+                      {t("Orta Boy Çöp Torbası")}
                       <span className="product-details__price">55*60</span>
                     </h3>
                   </div>
@@ -69,42 +72,30 @@ function AmbalajOrtaCopTorbasi() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Boyut ve
-                          Kapasite :
+                          <span className="icon-right-arrow"></span>{t("Boyut ve Kapasite")}
                         </li>
-                        Endüstriyel orta boy çöp torbaları, orta büyüklükteki
-                        atıkları taşımak için tasarlanmıştır. Standart ev
-                        kullanımı torbalarından daha büyük, ancak jumboboy
-                        torbalardan daha küçük olabilirler. Genellikle dayanıklı
-                        plastik malzemelerden üretilirler, böylece günlük
-                        atıkları güvenli bir şekilde taşıma kapasitesine
-                        sahiptirler.
+                        {t(
+                          "Endüstriyel orta boy çöp torbaları, orta büyüklükteki atıkları taşımak için tasarlanmıştır. Standart ev kullanımı torbalarından daha büyük, ancak jumboboy torbalardan daha küçük olabilirler. Genellikle dayanıklı plastik malzemelerden üretilirler, böylece günlük atıkları güvenli bir şekilde taşıma kapasitesine sahiptirler."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Alanları :
+                          <span className="icon-right-arrow"></span>{t("Kullanım Alanları")}
                         </li>
-                        İş yerlerinde, ofislerde, orta ölçekli endüstriyel
-                        tesislerde ve diğer ortamlarda günlük atıkların
-                        toplanması ve taşınması için kullanılır. Ağır yükleri
-                        taşıma konusunda yüksek performans gösterir, ancak
-                        jumboboy torbalar kadar büyük yükleri taşıma
-                        kapasitesine sahip değildirler. Genellikle geri
-                        dönüştürülebilir malzemelerden üretilir, çevresel
-                        sürdürülebilirlik açısından önemlidir.
+                        {t(
+                          "İş yerlerinde, ofislerde, orta ölçekli endüstriyel tesislerde ve diğer ortamlarda günlük atıkların toplanması ve taşınması için kullanılır. Ağır yükleri taşıma konusunda yüksek performans gösterir, ancak jumboboy torbalar kadar büyük yükleri taşıma kapasitesine sahip değildirler. Genellikle geri dönüştürülebilir malzemelerden üretilir, çevresel sürdürülebilirlik açısından önemlidir."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Güvenlik ve
-                          Hijyen :
+                          <span className="icon-right-arrow"></span>{t("Güvenlik ve Hijyen")}
                         </li>
-                        Bazı modeller, atıkların sızmasını önlemek ve içeriğin
-                        hijyenik bir şekilde taşınmasını sağlamak için özel
-                        olarak tasarlanmıştır.
+                        {t(
+                          "Bazı modeller, atıkların sızmasını önlemek ve içeriğin hijyenik bir şekilde taşınmasını sağlamak için özel olarak tasarlanmıştır."
+                        )}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

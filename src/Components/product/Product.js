@@ -20,10 +20,11 @@ function Product() {
     window.scrollTo(0, 0);
     setExpanded(false);
   };
+
   return (
     <>
       <SRLWrapper>
-        <section className="blog-one">
+        <section className="about-one">
           <div className="container">
             <div className="blog-page">
               <Container data-aos="fade-up">
@@ -37,60 +38,14 @@ function Product() {
                         <img src="assets/images/favicons/icon.ico" alt="icon" />
                       </div>
                       <h5 className="section-title__tagline">
-                        YENİDÜNYA ENDÜSTRİYEL TEDARİK
+                        {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
                       </h5>
-                      <h2 className="section-title__title">ÜRÜNLERİMİZ</h2>
+                      <h2 className="section-title__title">{t("ÜRÜNLERİMİZ")}</h2>
                     </div>
                   </div>
                 </div>
 
                 <Row>
-                  <div
-                    className="col-xl-3 col-lg-6 wow fadeInLeft"
-                    data-wow-delay="400ms"
-                  >
-                    <div className="sidebar sidebar__left">
-                      <div className="sidebar__single sidebar__category">
-                        <h3 className="sidebar__title">KATEGORİLER</h3>
-                        <ul className="sidebar__category-list list-unstyled">
-                          <li>
-                            <Link
-                              as={Link}
-                              to="/EndustriyelTemizlik"
-                              onClick={handleClick}
-                            >
-                              Endüstriyel Temizlik
-                            </Link>
-                          </li>
-                          <li>
-                            <Link as={Link} to="" onClick={handleClick}>
-                              Endüstriyel Kağıt
-                            </Link>
-                          </li>
-                          <li>
-                            <Link as={Link} to="" onClick={handleClick}>
-                              Kozmetik Ürünleri
-                            </Link>
-                          </li>
-                          <li>
-                            <Link as={Link} to="" onClick={handleClick}>
-                              Bitkisel Ürünler
-                            </Link>
-                          </li>
-                          <li>
-                            <Link as={Link} to="" onClick={handleClick}>
-                              Ambalaj
-                            </Link>
-                          </li>
-                          <li>
-                          <Link as={Link} to="/Gida" onClick={handleClick}>
-                            Gıda
-                          </Link>
-                        </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
                   {data.map((product) => {
                     const { picture, id, nav, price } = product;
                     const title = t(product.title);

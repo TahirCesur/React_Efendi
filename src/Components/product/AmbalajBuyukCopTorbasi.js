@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function AmbalajBuyukCopTorbasi() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,14 +20,14 @@ function AmbalajBuyukCopTorbasi() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              ENDÜSTRİYEL BÜYÜK ÇÖP TORBASI 65*80
+              {t("ENDÜSTRİYEL BÜYÜK ÇÖP TORBASI 65*80")}
             </h2>
           </div>
         </section>
@@ -38,7 +41,7 @@ function AmbalajBuyukCopTorbasi() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/ambalaj/endustriyel-buyuk-cop-torbasi.jpg"
-                    alt="Büyük Boy Çöp Torbası"
+                    alt={t("Büyük Boy Çöp Torbası")}
                   />
                   <div className="product-details__img-search">
                     <a
@@ -55,7 +58,7 @@ function AmbalajBuyukCopTorbasi() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      ENDÜSTRİYEL BÜYÜK ÇÖP TORBASI
+                      {t("ENDÜSTRİYEL BÜYÜK ÇÖP TORBASI")}{" "}
                       <span className="product-details__price">65*80</span>
                     </h3>
                   </div>
@@ -71,40 +74,27 @@ function AmbalajBuyukCopTorbasi() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Boyut ve
-                          Kapasite :
+                          <span className="icon-right-arrow"></span>
+                          {t("Boyut ve Kapasite :")}
                         </li>
-                        Endüstriyel büyük boy çöp torbaları genellikle standart
-                        ev kullanımı torbalarından daha büyük boyutlarda
-                        tasarlanmıştır. Çeşitli boyutlarda ve kapasitelerde
-                        bulunabilirler, genellikle büyük hacimli atıkları
-                        taşımak için uygundur.
+                        {t(`Endüstriyel büyük boy çöp torbaları genellikle standart ev kullanımı torbalarından daha büyük boyutlarda tasarlanmıştır. Çeşitli boyutlarda ve kapasitelerde bulunabilirler, genellikle büyük hacimli atıkları taşımak için uygundur.`)}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım Alanları
-                          :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Alanları :")}
                         </li>
-                        İnşaat siteleri, fabrikalar ve büyük ölçekli tesislerde
-                        yaygın olarak kullanılır. Ağır yükleri taşıma
-                        kapasitesine sahiptirler ve bazı modeller kokuları ve
-                        sızıntıları kontrol etmek için özelliklere sahiptir.
-                        Geri dönüştürülebilir malzemelerden yapılan çöp
-                        torbaları, çevresel sürdürülebilirlik açısından
-                        önemlidir.
+                        {t(`İnşaat siteleri, fabrikalar ve büyük ölçekli tesislerde yaygın olarak kullanılır. Ağır yükleri taşıma kapasitesine sahiptirler ve bazı modeller kokuları ve sızıntıları kontrol etmek için özelliklere sahiptir. Geri dönüştürülebilir malzemelerden yapılan çöp torbaları, çevresel sürdürülebilirlik açısından önemlidir.`)}
                         <li>
-                          <span className="icon-right-arrow"></span>Güvenlik ve
-                          Taşıma Kolaylığı :
+                          <span className="icon-right-arrow"></span>
+                          {t("Güvenlik ve Taşıma Kolaylığı :")}
                         </li>
-                        Güvenli taşıma için güçlendirilmiş taşıma kulpları veya
-                        askıları bulunabilir. Ayrıca, atıkların sızmasını
-                        önlemek ve içeriğin güvenli bir şekilde taşınmasını
-                        sağlamak için sızdırmazlık özellikleri de olabilir.
+                        {t(`Güvenli taşıma için güçlendirilmiş taşıma kulpları veya askıları bulunabilir. Ayrıca, atıkların sızmasını önlemek ve içeriğin güvenli bir şekilde taşınmasını sağlamak için sızdırmazlık özellikleri de olabilir.`)}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

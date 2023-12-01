@@ -67,7 +67,7 @@ function Header() {
                   }}
                   onClick={() => changeLanguage("tr")}
                 >
-                  TR
+                  {t("TR")}
                 </Button>
                 &nbsp;
                 <Button
@@ -78,7 +78,7 @@ function Header() {
                   }}
                   onClick={() => changeLanguage("en")}
                 >
-                  EN
+                  {t("EN")}
                 </Button>
               </div>
             </div>
@@ -95,7 +95,10 @@ function Header() {
           <Container fluid>
             <Navbar.Brand>
               <Link to="/" className="main-menu__logo" onClick={handleClick}>
-                <img src="assets/images/logo.png" alt="BKB" />
+                <img
+                  src="assets/images/logo.png"
+                  alt="Yenidünya Endüstriyel Tedarik Logo"
+                />
               </Link>
             </Navbar.Brand>
 
@@ -169,11 +172,7 @@ function Header() {
                   >
                     {t("Ambalaj")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/Gida"
-                    onClick={handleClick}
-                  >
+                  <NavDropdown.Item as={Link} to="/Gida" onClick={handleClick}>
                     {t("Gıda")}
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -203,7 +202,7 @@ function Header() {
                   <i class="icon-telephone"></i>
                 </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=100094870608591"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   class="main-menu__phone"
                 >
@@ -220,6 +219,8 @@ function Header() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+        {/* <hr style={{ marginTop: "121px", border:"2px solid #1c3844" }} />
+        <hr style={{ marginTop: "-18px", border:"2px solid #369159" }} /> */}
       </header>
     </>
   );

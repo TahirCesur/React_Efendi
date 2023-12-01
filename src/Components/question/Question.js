@@ -1,7 +1,9 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
+import { useTranslation } from "react-i18next";
 
 function Question() {
+  const { t } = useTranslation();
   return (
     <section className="accrodion-one">
       <div className="container">
@@ -12,9 +14,9 @@ function Question() {
                 <img src="assets/images/favicons/icon.ico" alt="icon" />
               </div>
               <h5 className="section-title__tagline">
-                YENİDÜNYA ENDÜSTRİYEL TEDARİK
+                {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
               </h5>
-              <h2 className="section-title__title">SIKÇA SORULAN SORULAR</h2>
+              <h2 className="section-title__title">{t("SIKÇA SORULAN SORULAR")}</h2>
             </div>
             <div className="row">
               <div className="col-md-5">
@@ -36,20 +38,19 @@ function Question() {
                           data-speed="1500"
                         ></span>
                       </span>
-                      +30
+                      +5
                     </div>
 
                     <h3 className="accrodion-one__experiance__title">
-                      YILDAN FAZLA
+                      {t("YILDAN FAZLA")}
                       <br />
-                      DENEYİM
+                      {t("DENEYİM")}
                     </h3>
                   </div>
 
                   <p className="accrodion-one__right__text">
-                    Aradığınız soruyu bulamadınız mı? <br />
-                    Bize İletişim sayfasından ve WhatsApp üzerinden
-                    ulaşabilirsiniz.
+                    {t("Aradığınız soruyu bulamadınız mı?")} <br />
+                    {t("Bize İletişim sayfasından ve WhatsApp üzerinden ulaşabilirsiniz.")}
                   </p>
                 </div>
               </div>

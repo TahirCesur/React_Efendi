@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function GidaCaykurRizeTuristCay() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function GidaCaykurRizeTuristCay() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
+              {t("ÇAYKUR RİZE TURİST ÇAYI")}
             </h2>
           </div>
         </section>
@@ -37,13 +39,13 @@ function GidaCaykurRizeTuristCay() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
-                    alt=""
+                    src="assets/images/gida/caykur-rize-turist-cay.jpg"
+                    alt="Çaykur Rize Turist Çay"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
+                      href="assets/images/gida/caykur-rize-turist-cay.jpg"
                     ></a>
                   </div>
                 </div>
@@ -55,8 +57,8 @@ function GidaCaykurRizeTuristCay() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-                      <span className="product-details__price">30 ML</span>
+                      {t("ÇAYKUR RİZE TURİST ÇAYI")}
+                      <span className="product-details__price"></span>
                     </h3>
                   </div>
                   <div className="product-details__review">
@@ -71,48 +73,19 @@ function GidaCaykurRizeTuristCay() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Bilgilendirme")}:
                         </li>
-                        Cildi nemlendirir, pürüzsüzleştirir ve aydınlatır. Dış
-                        etkenlere ve yaşlanma belirtilerine karşı korumaya
-                        yardımcı olur. Cilt yumuşak, ışıltılı ve canlı bir
-                        görünüm kazanır.
+                        {t(
+                          "Çaykur Kamelya Çay, Türkiye'nin önde gelen çay üreticilerinden biri olan Çaykur tarafından üretilen bir çay markasıdır. Türk çay kültüründe önemli bir yer tutan siyah çay, geleneksel demleme yöntemleriyle hazırlanır. Çaykur Kamelya Çayı daha çok kahvaltılarda ve çay saatlerinde tercih edilmektedir. Yumuşak içimli, hafif ve yoğun aroması olmayan bir çaydır. Karadeniz'in tarlalarından toplanmış olup harmanlanmaya uygun bir çayçeşididir. Kamelya çayı; siyah bir çay olup hafif bir tada sahiptir."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>
+                          {t("Marka İmajı")}:
                         </li>
-                        Aqua, Hydrolyzed Collagen, Niacinamide, Propylene
-                        Glycol, Pisum Sativum Peptide, Panthenol, Sodium
-                        Hyaluronate, Arginine, Aspartic Acid, Glycine, Alanine,
-                        Serine, Valine, Proline, Threonine, Isoleucine,
-                        Histidine, Phenylalanine, Sodium Benzoate, Potassium
-                        Sorbate, Hydroxyethylcellulose.
-                        <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
-                        </li>
-                        Temiz cildinize sabah ve akşam masaj yaparak uygulayın.
-                        Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız.
-                        Gün içinde güneş koruyucu kullanınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
-                        <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
-                        </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
-                        <br />
-                        <br />
-                        <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
-                          <br />
-                        </li>
+                        {t(
+                          "Çaykur çay çeşitleri arasında en çok tercih edilenlerinden biri olan Çaykur Rize Turist Çay’ı, siyah ve aromasız bir çaydır. Çay saatlerinin vazgeçilmezi olan Çaykur Rize Turist Çay’ı ıle keyifli anlarınızı lezzetlendirebilirsiniz. Hızla dememlenen iri çay yaprakları sayesinde her yudumunuzda çayın gerçek lezzetine varacaksınız. Çaykur siyah çaylar arasında “gerçek sarı” olarak da bilinen Çaykur Rize Turist Çay’ı güvendiğiniz kalitesi ile yıllardır size en ıyi çay deneyimini yaşatmaya devam etmektedir.  Çaykur Rize Turist Çay’ına; 100gr, 200gr, 500gr, 1000gr, 2000gr olarak ıstediğiniz ambalajlarda sahip olabilirsiniz. En lezzetli tadı alabilmek ıçin porselen veya cam demlik tercih edebilirsiniz. Demlik içerisindeki su iyice kaynadıktan sonra üzerine her bir bardak için iki çay kaşığı Çaykur Rize Turist Çay eklenmelidir. Demlenen çayı, çaydanlığın üzerine koyarak kısık ateşte 10-12 dakika boyunca demledikten sonra afiyet ile içebilirsiniz."
+                        )}
                       </ul>
                     </p>
                   </div>

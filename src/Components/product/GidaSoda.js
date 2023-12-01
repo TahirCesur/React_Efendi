@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
+
 function GidaSoda() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,15 +20,13 @@ function GidaSoda() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">
-              C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-            </h2>
+            <h2 className="page-header__title">{t("SODA")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,14 +37,11 @@ function GidaSoda() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img
-                    src="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
-                    alt=""
-                  />
+                  <img src="assets/images/gida/soda.jpg" alt="Soda" />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
+                      href="assets/images/gida/soda.jpg"
                     ></a>
                   </div>
                 </div>
@@ -55,8 +53,10 @@ function GidaSoda() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-                      <span className="product-details__price">30 ML</span>
+                      {t("SODA")}
+                      <span className="product-details__price">
+                        {t("ŞİŞE")}
+                      </span>
                     </h3>
                   </div>
                   <div className="product-details__review">
@@ -71,55 +71,30 @@ function GidaSoda() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Bilgilendirme")}:
                         </li>
-                        Cildi nemlendirir, pürüzsüzleştirir ve aydınlatır. Dış
-                        etkenlere ve yaşlanma belirtilerine karşı korumaya
-                        yardımcı olur. Cilt yumuşak, ışıltılı ve canlı bir
-                        görünüm kazanır.
+                        {t(
+                          "Maden suyu, genellikle doğal kaynaklardan elde edilen ve belirli mineraller içeren içme suyu türüdür. Bu su türü genellikle doğal gazlıdır, yani içinde çözülmüş karbondioksit gazı bulunur."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>
+                          {t("Soda ile Maden Suyu Arasındaki Fark")}:
                         </li>
-                        Aqua, Hydrolyzed Collagen, Niacinamide, Propylene
-                        Glycol, Pisum Sativum Peptide, Panthenol, Sodium
-                        Hyaluronate, Arginine, Aspartic Acid, Glycine, Alanine,
-                        Serine, Valine, Proline, Threonine, Isoleucine,
-                        Histidine, Phenylalanine, Sodium Benzoate, Potassium
-                        Sorbate, Hydroxyethylcellulose.
+                        {t(
+                          "Maden suları, içerdikleri mineral içeriğine bağlı olarak farklılık gösterebilir. Sodyum, kalsiyum, magnezyum, potasyum ve diğer mineraller maden sularında bulunabilir. Maden suyu, içerdiği karbon dioksit gazı nedeniyle gazlıdır. Bu gazlılık, içeceğin karakteristik bir özelliğidir ve tadını belirler. Maden suyu ve soda arasındaki temel fark, maden suyunun doğal kaynaklardan elde edilmesi ve içerdiği minerallerdir. Soda, genellikle karbonatlı suya eklenen tatlandırıcılar ve aromalar içerir."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>{t("Yararları")} :
                         </li>
-                        Temiz cildinize sabah ve akşam masaj yaparak uygulayın.
-                        Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız.
-                        Gün içinde güneş koruyucu kullanınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
-                        <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
-                        </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
-                        <br />
-                        <br />
-                        <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
-                          <br />
-                        </li>
+                        {t("Maden sularının içerdikleri mineraller nedeniyle bazı sağlık yararları olabilir. Örneğin, kalsiyum ve  magnezyum içeren maden suları, kemik sağlığını destekleyebilir.Maden suyu, içerdiği mineraller ve özgün tat profili ile dünya genelinde popüler bir içecektir. Farklı marka ve kaynaklardan gelen maden suları, içerdikleri minerallere, gaz miktarına ve lezzet profillerine göre çeşitlilik gösterebilir.")}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                    {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

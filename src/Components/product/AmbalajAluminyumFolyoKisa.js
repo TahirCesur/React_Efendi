@@ -1,8 +1,12 @@
+// AmbalajAluminyumFolyoKisa.js
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function AmbalajAluminyumFolyoKisa() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,13 +21,13 @@ function AmbalajAluminyumFolyoKisa() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">ALÜMİNYUM FOLYO</h2>
+            <h2 className="page-header__title">{t("ALÜMİNYUM FOLYO")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,7 +40,7 @@ function AmbalajAluminyumFolyoKisa() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/ambalaj/aluminyum-folyo-30-100.jpg"
-                    alt="Alüminyum Folyo"
+                    alt={t("Alüminyum Folyo")}
                   />
                   <div className="product-details__img-search">
                     <a
@@ -53,8 +57,10 @@ function AmbalajAluminyumFolyoKisa() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      ALÜMİNYUM FOLYO
-                      <span className="product-details__price">KISA</span>
+                      {t("ALÜMİNYUM FOLYO")}
+                      <span className="product-details__price">
+                        {t("KISA")}
+                      </span>
                     </h3>
                   </div>
                   <div className="product-details__review">
@@ -69,56 +75,47 @@ function AmbalajAluminyumFolyoKisa() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Nedir ?
+                          <span className="icon-right-arrow"></span>
+                          {t("Nedir?")}
                         </li>
-                        Alüminyum folyo, ince bir tabaka halindeki alüminyumdan
-                        yapılan bir malzemedir. Genellikle mutfakta yiyecekleri
-                        saklamak, pişirmek veya paketlemek için kullanılır.
+                        {t(
+                          "Alüminyum folyo, ince bir tabaka halindeki alüminyumdan yapılan bir malzemedir. Genellikle mutfakta yiyecekleri saklamak, pişirmek veya paketlemek için kullanılır."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Esneklik ve
-                          Dayanıklılık :
+                          <span className="icon-right-arrow"></span>
+                          {t("Esneklik ve Dayanıklılık :")}
                         </li>
-                        Alüminyum folyo, esnek ve hafif bir malzeme olduğu için
-                        kolayca şekil alabilir. Aynı zamanda dayanıklıdır,
-                        yüksek sıcaklıklara ve çeşitli koşullara dayanabilir.
-                        Alüminyum, iyi bir ısı iletkenidir. Bu nedenle, fırında
-                        veya buzdolabında kullanım için uygundur.
+                        {t(
+                          "Alüminyum folyo, esnek ve hafif bir malzeme olduğu için kolayca şekil alabilir. Aynı zamanda dayanıklıdır, yüksek sıcaklıklara ve çeşitli koşullara dayanabilir. Alüminyum, iyi bir ısı iletkenidir. Bu nedenle, fırında veya buzdolabında kullanım için uygundur."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Koruyucu
-                          Özellikler :
+                          <span className="icon-right-arrow"></span>
+                          {t("Koruyucu Özellikler :")}
                         </li>
-                        Mutfakta yiyecekleri saklamak, pişirmek veya paketlemek
-                        için yaygın olarak kullanılır. Isıyı iyi ileten bir
-                        malzeme olduğu için fırında kullanılmak üzere uygundur.
-                        Ayrıca, yiyecekleri dış etkenlere karşı koruyarak
-                        tazeliğini korur. Geri dönüştürülebilir bir malzemedir
-                        ve endüstriyel, ambalaj, ve tıbbi alanlarda çeşitli
-                        uygulamalara sahiptir.
+                        {t(
+                          "Mutfakta yiyecekleri saklamak, pişirmek veya paketlemek için yaygın olarak kullanılır. Isıyı iyi ileten bir malzeme olduğu için fırında kullanılmak üzere uygundur. Ayrıca, yiyecekleri dış etkenlere karşı koruyarak tazeliğini korur. Geri dönüştürülebilir bir malzemedir ve endüstriyel, ambalaj, ve tıbbi alanlarda çeşitli uygulamalara sahiptir."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>Endüstriyel
-                          Kullanımlar :
+                          <span className="icon-right-arrow"></span>
+                          {t("Endüstriyel Kullanımlar :")}
                         </li>
-                        Alüminyum folyo sadece mutfakta değil, aynı zamanda
-                        endüstriyel alanlarda da kullanılır. Elektrik yalıtımı,
-                        ses yalıtımı, ısı değişim ekipmanları gibi çeşitli
-                        uygulamalarda kullanılabilir.
-            
+                        {t(
+                          "Alüminyum folyo sadece mutfakta değil, aynı zamanda endüstriyel alanlarda da kullanılır. Elektrik yalıtımı, ses yalıtımı, ısı değişim ekipmanları gibi çeşitli uygulamalarda kullanılabilir."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span> Güvenlik ve
-                          Kullanım Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Güvenlik ve Kullanım Uyarıları :")}
                         </li>
-                        Alüminyum folyonun doğrudan temasından kaynaklanabilecek
-                        kimyasal reaksiyonları önlemek amacıyla bazı yiyecekleri
-                        alüminyum folyo ile temas ettirmemek önerilir. Ayrıca,
-                        folyonun fırında kullanımı sırasında dikkatli olunmalı
-                        ve doğrudan alevle temas ettirilmemelidir.
+                        {t(
+                          "Alüminyum folyonun doğrudan temasından kaynaklanabilecek kimyasal reaksiyonları önlemek amacıyla bazı yiyecekleri alüminyum folyo ile temas ettirmemek önerilir. Ayrıca, folyonun fırında kullanımı sırasında dikkatli olunmalı ve doğrudan alevle temas ettirilmemelidir."
+                        )}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

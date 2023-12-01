@@ -1,8 +1,12 @@
+// EndustriyelKagitHareketliKagitHavlu.jsx
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function EndustriyelKagitHareketliKagitHavlu() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,13 +21,13 @@ function EndustriyelKagitHareketliKagitHavlu() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">HAREKETLİ KAĞIT HAVLU 21 CM</h2>
+            <h2 className="page-header__title">{t("HAREKETLİ KAĞIT HAVLU 21 CM")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,7 +40,7 @@ function EndustriyelKagitHareketliKagitHavlu() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/endustriyelkagit/kagit-havlu.jpg"
-                    alt="Hareketli Kağıt Havlu"
+                    alt={t("Hareketli Kağıt Havlu")}
                   />
                   <div className="product-details__img-search">
                     <a
@@ -53,8 +57,8 @@ function EndustriyelKagitHareketliKagitHavlu() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      HAREKETLİ KAĞIT HAVLU
-                      <span className="product-details__price">21 CM </span>
+                      {t("HAREKETLİ KAĞIT HAVLU")}
+                      <span className="product-details__price">21 CM</span>
                     </h3>
                   </div>
                   <div className="product-details__review">
@@ -70,47 +74,26 @@ function EndustriyelKagitHareketliKagitHavlu() {
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
                           <span className="icon-right-arrow"></span>
-                          Bilgilendirme :
+                          {t("Bilgilendirme")} :
                         </li>
-                        Hareketli kağıt havlu sistemleri genellikle sensörlerle
-                        donatılmıştır. Kullanıcı ellerini sensörün önüne
-                        getirdiğinde, sistem otomatik olarak bir belirli
-                        uzunluktaki kağıt havluyu keser ve dağıtır.Kağıt havlu,
-                        genellikle el ve yüz temizliği için kullanılan, ince ve
-                        hafif bir kağıt malzemeden yapılan temizlik
-                        ürünüdür.Kağıt havlular, tek katmanlı veya çok katmanlı
-                        olabilir. Çeşitli kalınlıklarda ve dokularda bulunurlar,
-                        bu da farklı kullanım ihtiyaçlarına cevap
-                        verebilmelerini sağlar. Ayrıca, rulo modeller de bulunur,
-                        bu tür havlular özellikle mutfaklarda yaygın olarak
-                        kullanılır. Katlı kağıt havlular, genellikle daha
-                        dayanıklı ve emicidir. Tekli çekim modeller ise daha
-                        yaygın ve hızlı kullanım için tasarlanmıştır.
+                        {t("Hareketli kağıt havlu sistemleri genellikle sensörlerle donatılmıştır. Kullanıcı ellerini sensörün önüne getirdiğinde, sistem otomatik olarak bir belirli uzunluktaki kağıt havluyu keser ve dağıtır. Kağıt havlu, genellikle el ve yüz temizliği için kullanılan, ince ve hafif bir kağıt malzemeden yapılan temizlik ürünüdür. Kağıt havlular, tek katmanlı veya çok katmanlı olabilir. Çeşitli kalınlıklarda ve dokularda bulunurlar, bu da farklı kullanım ihtiyaçlarına cevap verebilmelerini sağlar. Ayrıca, rulo modeller de bulunur, bu tür havlular özellikle mutfaklarda yaygın olarak kullanılır. Katlı kağıt havlular, genellikle daha dayanıklı ve emicidir. Tekli çekim modeller ise daha yaygın ve hızlı kullanım için tasarlanmıştır.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Alanları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Alanları")} :
                         </li>
-                        Kağıt havlular genellikle mutfaklarda, banyolarda,
-                        ofislerde ve halka açık alanlarda kullanılır. El ve yüz
-                        temizliği, sıvı dökülmelerinin temizlenmesi gibi çeşitli
-                        amaçlar için kullanılır.
+                        {t("Kağıt havlular genellikle mutfaklarda, banyolarda, ofislerde ve halka açık alanlarda kullanılır. El ve yüz temizliği, sıvı dökülmelerinin temizlenmesi gibi çeşitli amaçlar için kullanılır.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Güvenlik ve
-                          Hijyen :
+                          <span className="icon-right-arrow"></span>
+                          {t("Güvenlik ve Hijyen")} :
                         </li>
-                        Kağıt havlular genellikle elleri kurulamak, yüzü
-                        temizlemek veya sıvı dökülmeleri temizlemek için
-                        kullanılır. Hijyen standartlarını koruma ve pratik
-                        kullanım sağlama amacı taşırlar. Hareketli kağıt havlu
-                        dağıtım sistemleri, otomatik sensörlerle çalışarak
-                        kullanıcılara temassız bir şekilde kağıt havlu sağlar.
+                        {t("Kağıt havlular genellikle elleri kurulamak, yüzü temizlemek veya sıvı dökülmeleri temizlemek için kullanılır. Hijyen standartlarını koruma ve pratik kullanım sağlama amacı taşırlar. Hareketli kağıt havlu dağıtım sistemleri, otomatik sensörlerle çalışarak kullanıcılara temassız bir şekilde kağıt havlu sağlar.")}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

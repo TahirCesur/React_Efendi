@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function AmbalajStrecFilmUzun() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,13 +19,13 @@ function AmbalajStrecFilmUzun() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">STREÇ FİLM 45*300M 8 MİCRON</h2>
+            <h2 className="page-header__title">{t("STREÇ FİLM 45*300M 8 MİKRON")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,7 +38,7 @@ function AmbalajStrecFilmUzun() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/ambalaj/strec-film.jpg"
-                    alt="Streç Film"
+                    alt={t("Streç Film")}
                   />
                   <div className="product-details__img-search">
                     <a
@@ -53,7 +55,7 @@ function AmbalajStrecFilmUzun() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      STREÇ FİLM 8 MİCRON
+                      {t("STREÇ FİLM 8 MİKRON")}
                       <span className="product-details__price">45*300M</span>
                     </h3>
                   </div>
@@ -70,48 +72,26 @@ function AmbalajStrecFilmUzun() {
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
                           <span className="icon-right-arrow"></span>
-                          Bilgilendirme :
+                          {t("Bilgilendirme :")}
                         </li>
-                        Streç film, genellikle plastik polietilen malzemeden
-                        üretilen, esnek, yapışkan ve gerilebilir bir film
-                        türüdür.Streç film, özellikle ambalajlama ve paletleme
-                        süreçlerinde kullanılır. Ürünleri sıkıca sarar ve bir
-                        arada tutar. Yüksek esneklik özelliği sayesinde, streç
-                        film geniş bir yüzeye yayılabilir ve ürünleri sıkıca
-                        sarar. Yüzeylere yapışma özelliği, sarılan ürünleri
-                        güvenli bir şekilde tutar ve taşınmasını kolaylaştırır.
-                        Streç film, gerilebilir özellikte olduğu için sıkıca
-                        çekilebilir ve ürünlerin etrafında sıkı bir şekilde
-                        sarılabilir.
+                        {t("Streç film, genellikle plastik polietilen malzemeden üretilen, esnek, yapışkan ve gerilebilir bir film türüdür. Streç film, özellikle ambalajlama ve paletleme süreçlerinde kullanılır. Ürünleri sıkıca sarar ve bir arada tutar. Yüksek esneklik özelliği sayesinde, streç film geniş bir yüzeye yayılabilir ve ürünleri sıkıca sarar. Yüzeylere yapışma özelliği, sarılan ürünleri güvenli bir şekilde tutar ve taşınmasını kolaylaştırır. Streç film, gerilebilir özellikte olduğu için sıkıca çekilebilir ve ürünlerin etrafında sıkı bir şekilde sarılabilir.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Alanları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Alanları :")}
                         </li>
-                        Depolama, taşıma ve sevkiyat süreçlerinde kullanılır.
-                        Ayrıca, ürünleri tozdan, nemden ve dış etkenlerden
-                        korumak için de kullanışlıdır. Genellikle şeffaf olan
-                        streç filmler, ürünleri görüntülemeyi kolaylaştırır.
-                        Farklı renk seçenekleri de bulunabilir. Bazı streç
-                        filmler geri dönüştürülebilir malzemelerden yapılmış
-                        olup çevresel etkiyi azaltabilir.Hem manuel hem de
-                        makine uygulamaları için tasarlanmış streç filmler
-                        bulunmaktadır. Hem endüstriyel depolama ve taşıma
-                        süreçlerinde hem de evde küçük ölçekli ambalajlama
-                        işlemlerinde yaygın olarak kullanılır.
+                        {t("Depolama, taşıma ve sevkiyat süreçlerinde kullanılır. Ayrıca, ürünleri tozdan, nemden ve dış etkenlerden korumak için de kullanışlıdır. Genellikle şeffaf olan streç filmler, ürünleri görüntülemeyi kolaylaştırır. Farklı renk seçenekleri de bulunabilir. Bazı streç filmler geri dönüştürülebilir malzemelerden yapılmış olup çevresel etkiyi azaltabilir. Hem manuel hem de makine uygulamaları için tasarlanmış streç filmler bulunmaktadır. Hem endüstriyel depolama ve taşıma süreçlerinde hem de evde küçük ölçekli ambalajlama işlemlerinde yaygın olarak kullanılır.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Güvenlik ve
-                          Hijyen :
+                          <span className="icon-right-arrow"></span>
+                          {t("Güvenlik ve Hijyen :")}
                         </li>
-                        Streç film, ürünlerin güvenli ve düzenli bir şekilde
-                        ambalajlanmasını sağlayan pratik ve etkili bir
-                        malzemedir.
-                      </ul>
+                        {t("Streç film, ürünlerin güvenli ve düzenli bir şekilde ambalajlanmasını sağlayan pratik ve etkili bir malzemedir.")}                    
+                        </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

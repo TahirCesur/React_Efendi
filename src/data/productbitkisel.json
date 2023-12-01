@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "picture": "assets/images/bitkisel/bitkisel-camasir-deterjani-levander-1.jpg",
+    "price": "detaylar",
+    "nav": "/BitkiselUrunlerBaproyLavanderCamasirDeterjani",
+    "title": "BAPROY LAVANDER BİTKİSEL ÇAMAŞIR DETERJANI"
+  },
+  {
+    "id": "2",
+    "picture": "assets/images/bitkisel/bitkisel-camasir-deterjani-baby.jpg",
+    "price": "detaylar",
+    "nav": "/BitkiselUrunlerBaproyBabyCamasirDeterjani",
+    "title": "BAPROY BABY BİTKİSEL ÇAMAŞIR DETERJANI"
+  },
+  {
+    "id": "3",
+    "picture": "assets/images/bitkisel/bitkisel-camasir-deterjani-sensitive-1.jpg",
+    "price": "detaylar",
+    "nav": "/BitkiselUrunlerBaproySensitiveCamasirDeterjani",
+    "title": "BAPROY SENSİTİVE BİTKİSEL ÇAMAŞIR DETERJANI"
+  }
+]

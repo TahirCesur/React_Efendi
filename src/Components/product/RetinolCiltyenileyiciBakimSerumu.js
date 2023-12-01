@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function RetinolCiltyenileyiciBakimSerumu() {
+const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function RetinolCiltyenileyiciBakimSerumu() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-            RETİNOL 0.5% CİLT YENİLEYİCİ BAKIM SERUMU
+            {t("RETİNOL 0.5% CİLT YENİLEYİCİ BAKIM SERUMU")}
             </h2>
           </div>
         </section>
@@ -38,7 +40,7 @@ function RetinolCiltyenileyiciBakimSerumu() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/lopren/cilt-yenileyici-bakim-serumu.jpg"
-                    alt=""
+                    alt="RETİNOL 0.5% CİLT YENİLEYİCİ BAKIM SERUMU"
                   />
                   <div className="product-details__img-search">
                     <a
@@ -55,7 +57,7 @@ function RetinolCiltyenileyiciBakimSerumu() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                    RETİNOL 0.5% CİLT YENİLEYİCİ BAKIM SERUMU
+                    {t("RETİNOL 0.5% CİLT YENİLEYİCİ BAKIM SERUMU")}
                       <span className="product-details__price">30 ML</span>
                     </h3>
                   </div>
@@ -71,16 +73,13 @@ function RetinolCiltyenileyiciBakimSerumu() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Faydaları")} :
                         </li>
-                        Retinol içeriği ile yoğun bakım uygulayarak cilt
-                        yenilenmesine destek olur. Daha aydınlık, canlı ve
-                        ışıltılı bir görünüm kazanmanıza yardımcı olur.
-                        Retinolün kurutucu özelliğini baskılamak için yağ bazlı
-                        formülize edilmiştir.
+                        {t("Retinol içeriği ile yoğun bakım uygulayarak cilt yenilenmesine destek olur. Daha aydınlık, canlı ve ışıltılı bir görünüm kazanmanıza yardımcı olur. Retinolün kurutucu özelliğini baskılamak için yağ bazlı formülize edilmiştir.")}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                        <span className="icon-right-arrow"></span>
+                          {t("İçindekiler")}:
                         </li>
                         C12-15 Alkyl Benzoate, Squalane, Simmondsia Chinensis
                         (Jojoba) Seed Oil, Prunus Armeniaca Kernel Oil, Prunus
@@ -91,30 +90,23 @@ function RetinolCiltyenileyiciBakimSerumu() {
                         Caprylic/Capric Triglyceride, Dimethiconol,
                         Cyclopentasiloxane, Phenoxyethanol, Bht.
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Şekli ve Uyarıları")} :
                         </li>
-                        Temizlediğiniz cildinize birkaç damla serumu akşam bakım
-                        kreminden önce uygulayınız. Bu ürünü kullandığınız
-                        dönemde cildinizi güneşten koruyunuz. Retinol ağır bir
-                        içeriktir. Göz ve dudak çevresinde kızarıklık ve tahrişe
-                        neden olabilir. Ürünü kullanmaya devam ettikçe
-                        cildinizin hassasiyeti azalabilir. Tahrişin devam etmesi
-                        adından ürün kullanımını bırakıp dermatoloğa danışınız.
-                        Göz ile temasından kaçınınız, herhangi bir temas
-                        durumunda yüzünüzü bol su ile yıkayınız. Çocukların
-                        ulaşamayacağı güvenilir bir yerde muhafaza ediniz.
+                        {t("Temizlediğiniz cildinize birkaç damla serumu akşam bakım kreminden önce uygulayınız. Bu ürünü kullandığınız dönemde cildinizi güneşten koruyunuz. Retinol ağır bir içeriktir. Göz ve dudak çevresinde kızarıklık ve tahrişe neden olabilir. Ürünü kullanmaya devam ettikçe cildinizin hassasiyeti azalabilir. Tahrişin devam etmesi adından ürün kullanımını bırakıp dermatoloğa danışınız. Göz ile temasından kaçınınız, herhangi bir temas durumunda yüzünüzü bol su ile yıkayınız. Çocukların ulaşamayacağı güvenilir bir yerde muhafaza ediniz.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t(
+                          "Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız."
+                        )}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
+                          <span className="fa fa-star"></span>
+                          {t("Lütfen Dikkat")} :
+                          {t("Kullanım Talimatını Okuyunuz")}!..
                           <br />
                         </li>
                       </ul>
@@ -123,7 +115,7 @@ function RetinolCiltyenileyiciBakimSerumu() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

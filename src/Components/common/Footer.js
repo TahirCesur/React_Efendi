@@ -32,12 +32,13 @@ function Footer() {
         <div className="container">
           <div className="main-footer__top wow fadeInUp" data-wow-delay="100ms">
             <Link as={Link} to="/" className="main-footer__logo">
-              <img
+              {/* <img
                 src="assets/images/yenidunya_logo.png"
                 alt="nisoz"
                 width="326"
                 height=""
-              />
+              /> */}
+              <h1 className="text-white">{t("Yenidünya Endüstriyel Tedarik")}</h1>
             </Link>
             <div className="main-footer__social">
               <a href="https://www.facebook.com/" target="_blank">
@@ -63,7 +64,7 @@ function Footer() {
               data-wow-delay="200ms"
             >
               <div className="main-footer__navmenu">
-                <h3 className="text-white">Kurumsal</h3>
+                <h3 className="text-white">{t("Kurumsal")}</h3>
                 <ul>
                   <li>
                     <Link as={Link} to="/" onClick={handleClick}>
@@ -71,7 +72,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Anasayfa
+                      &nbsp; {t("Anasayfa")}
                     </Link>
                   </li>
                   <li>
@@ -80,7 +81,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Hakkımızda
+                      &nbsp; {t("Hakkımızda")}
                     </Link>
                   </li>
                   <li>
@@ -89,7 +90,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Ürünlerimiz
+                      &nbsp; {t("Ürünlerimiz")}
                     </Link>
                   </li>
                   <li>
@@ -98,7 +99,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Sıkça Sorulan Sorular
+                      &nbsp; {t("Sıkça Sorulan Sorular")}
                     </Link>
                   </li>
                   <li>
@@ -107,7 +108,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; İletişim
+                      &nbsp; {t("İletişim")}
                     </Link>
                   </li>
                 </ul>
@@ -118,7 +119,7 @@ function Footer() {
               data-wow-delay="300ms"
             >
               <div className="main-footer__navmenu">
-                <h3 className="text-white">Ürünlerimiz</h3>
+                <h3 className="text-white">{t("Ürünlerimiz")}</h3>
                 <ul>
                   <li>
                     <Link as={Link} to="/EndustriyelTemizlik" onClick={handleClick}>
@@ -126,7 +127,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Endüstriyel Temizlik
+                      &nbsp; {t("Endüstriyel Temizlik")}
                     </Link>
                   </li>
                   <li>
@@ -135,7 +136,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Endüstriyel Kağıt
+                      &nbsp; {t("Endüstriyel Kağıt")}
                     </Link>
                   </li>
                   <li>
@@ -144,7 +145,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Kozmetik Ürünleri
+                      &nbsp; {t("Kozmetik Ürünleri")}
                     </Link>
                   </li>
                   <li>
@@ -153,7 +154,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Bitkisel Ürünler
+                      &nbsp; {t("Bitkisel Ürünler")}
                     </Link>
                   </li>
                   <li>
@@ -162,7 +163,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Ambalaj
+                      &nbsp; {t("Ambalaj")}
                     </Link>
                   </li>
                   <li>
@@ -171,7 +172,7 @@ function Footer() {
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
                       ></i>
-                      &nbsp; Gıda
+                      &nbsp; {t("Gıda")}
                     </Link>
                   </li>
                 </ul>
@@ -182,7 +183,7 @@ function Footer() {
               data-wow-delay="400ms"
             >
               <div className="main-footer__about">
-                <h3 className="text-white">İletişim</h3>
+                <h3 className="text-white">{t("İletişim")}</h3>
                 <p className="main-footer__about__text">
                   Üçevler Mahallesi <br />
                   Denizciler Caddesi <br />
@@ -212,10 +213,10 @@ function Footer() {
         <div className="container wow fadeInUp" data-wow-delay="500ms">
           <p className="copyright__text">
             <Link as={Link} to="/">
-              Yenidünya Endüstriyel Tedarik © 2023
+              {t("Yenidünya Endüstriyel Tedarik")} © 2023
             </Link>
           </p>
-          <p className="copyright__text">Tüm Hakları Saklıdır</p>
+          <p className="copyright__text">{t("Tüm Hakları Saklıdır")}</p>
         </div>
       </section>
 

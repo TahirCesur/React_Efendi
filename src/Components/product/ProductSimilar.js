@@ -1,10 +1,16 @@
-import React from "react";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 /* import $ from "jquery"; */
 import "owl.carousel";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Col, Row } from "react-bootstrap";
+import ProductOne from "./ProductOne";
+import data from "../../data/product.json";
 
 function ProductSimilar() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section class="product mt--120">
@@ -13,228 +19,29 @@ function ProductSimilar() {
             <div class="section-title__triangle">
               <img src="assets/images/favicons/icon.ico" alt="icon" />
             </div>
-            <h2 class="section-title__title">BENZER ÜRÜNLER</h2>
+            <h5 className="section-title__tagline">
+              {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
+            </h5>
+            <h2 class="section-title__title">{t("BENZER ÜRÜNLER")}</h2>
           </div>
-          <div
-            class="nisoz-owl__dots nisoz-owl__carousel owl-with-shadow owl-theme owl-carousel"
-            data-owl-options='{
-        "items": 4,
-        "margin": 30,
-        "smartSpeed": 700,
-        "loop":true,
-        "autoplay": true,
-        "nav":false,
-        "dots":true,
-        "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-        "responsive":{
-            "0":{
-                "items":1,
-                "margin": 0
-            },
-            "600":{
-                "items": 2
-            },
-            "768":{
-                "items": 3
-            },
-            "992":{
-                "items": 4
-            }
-        }
-        }'
-          >
-            <div class="item">
-              <div class="product__item">
-                <div class="product__item__img">
-                  <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
-                  <div class="product__item__btn">
-                    <a href="/ProductDetails">
-                      <i class="fas fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
+          <div class="nisoz-owl__dots nisoz-owl__carousel ">
+            <Row>
+              {data.map((product) => {
+                const { picture, id, nav, price } = product;
+                const title = t(product.title);
 
-                <div class="product__item__content">
-                  <div class="product__item__ratings">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <h4 class="product__item__title">
-                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
-                  </h4>
-                  <a href="/ProductDetails" class="nisoz-btn">
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$5</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product__item">
-                <div class="product__item__img">
-                  <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
-                  <div class="product__item__btn">
-                    <a href="/ProductDetails">
-                      <i class="fas fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="product__item__content">
-                  <div class="product__item__ratings">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <h4 class="product__item__title">
-                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
-                  </h4>
-                  <a href="/ProductDetails" class="nisoz-btn">
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$5</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product__item">
-                <div class="product__item__img">
-                  <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
-                  <div class="product__item__btn">
-                    <a href="/ProductDetails">
-                      <i class="fas fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="product__item__content">
-                  <div class="product__item__ratings">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <h4 class="product__item__title">
-                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
-                  </h4>
-                  <a href="/ProductDetails" class="nisoz-btn">
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$5</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product__item">
-                <div class="product__item__img">
-                  <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
-                  <div class="product__item__btn">
-                    <a href="/ProductDetails">
-                      <i class="fas fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="product__item__content">
-                  <div class="product__item__ratings">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <h4 class="product__item__title">
-                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
-                  </h4>
-                  <a href="/ProductDetails" class="nisoz-btn">
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$5</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product__item">
-                <div class="product__item__img">
-                  <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
-                  <div class="product__item__btn">
-                    <a href="/ProductDetails">
-                      <i class="fas fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="product__item__content">
-                  <div class="product__item__ratings">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <h4 class="product__item__title">
-                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
-                  </h4>
-                  <a href="/ProductDetails" class="nisoz-btn">
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$5</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product__item">
-                <div class="product__item__img">
-                  <img src="assets/images/blog/1-1.jpg" alt="nisoz" />
-                  <div class="product__item__btn">
-                    <a href="/ProductDetails">
-                      <i class="fas fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="product__item__content">
-                  <div class="product__item__ratings">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <h4 class="product__item__title">
-                    <a href="/ProductDetails">EL TEMİZLEME LOSYONU</a>
-                  </h4>
-                  <a href="/ProductDetails" class="nisoz-btn">
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__shape"></span>
-                    <span class="nisoz-btn__text">$5</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+                return (
+                  <Col md={3} key={id} className="text-center mb-5">
+                    <ProductOne
+                      picture={picture}
+                      title={title}
+                      price={price}
+                      nav={nav}
+                    />
+                  </Col>
+                );
+              })}
+            </Row>
           </div>
         </div>
       </section>

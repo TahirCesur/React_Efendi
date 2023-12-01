@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function AzelaikAsitCiltBakimKremi() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,14 +19,14 @@ function AzelaikAsitCiltBakimKremi() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              AZELAİK ASİT %5 CİLT BAKIM KREMİ
+              {t("AZELAİK ASİT %5 CİLT BAKIM KREMİ")}
             </h2>
           </div>
         </section>
@@ -55,7 +57,7 @@ function AzelaikAsitCiltBakimKremi() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      AZELAİK ASİT %5 CİLT BAKIM KREMİ
+                    {t("AZELAİK ASİT %5 CİLT BAKIM KREMİ")}
                       <span className="product-details__price">200ML</span>
                     </h3>
                   </div>
@@ -71,17 +73,11 @@ function AzelaikAsitCiltBakimKremi() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>{t("Faydaları")} :
                         </li>
-                        Yüksek konsantrasyonda Azelaik Asit içeren formülü, cilt
-                        yüzeyini pürüzsüzleştirmeye ve daha eşit bir cilt tonu
-                        için lekelerin görünümünü azaltmaya yardımcı olur.
-                        Pantenol ve Hyalüronik Asit yardımıyla cildi
-                        nemlendirir. Meyan Kökü Özü ile cildin daha aydınlık
-                        görünmesine yardımcı olur.
+                        {t("Yüksek konsantrasyonda Azelaik Asit içeren formülü, cilt yüzeyini pürüzsüzleştirmeye ve daha eşit bir cilt tonu için lekelerin görünümünü azaltmaya yardımcı olur. Pantenol ve Hyalüronik Asit yardımıyla cildi nemlendirir. Meyan Kökü Özü ile cildin daha aydınlık görünmesine yardımcı olur.")}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>{t("İçindekiler")} :
                         </li>
                         Aqua, Polyglycerin-6, Glycerin, Azelaic Acid, Stearic
                         Acid,Squalane, Glycyrrhiza Glabra Root Extract,
@@ -91,29 +87,16 @@ function AzelaikAsitCiltBakimKremi() {
                         Ethylhexylglycerin, SodiumHydroxide, Phenoxyethanol,
                         Tetrasodium EDTA.
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
-                        </li>
-                        Sabah ve akşam temizliğini tamamladığınız cildinize
-                        yukarı doğru hareketlerle masaj yaparak uygulayın.
-                        Tahriş olmuş ciltte kullanmayınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
+                          <span className="icon-right-arrow"></span>{t("Kullanım Şekli ve Uyarıları")} :
+                        </li>{t("Sabah ve akşam temizliğini tamamladığınız cildinize yukarı doğru hareketlerle masaj yaparak uygulayın. Tahriş olmuş ciltte kullanmayınız. Ürünü kullanmadan önce istenmeyen olası yan etkileri ve tahrişi önlemek için yama testi yapmanız önerilir. Tahriş durumunda kullanmayı bırakınız ve dermatoloğa danışınız. Gözle direkt temasından kaçınınız. Temas halinde bol su ile durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza ediniz.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>{t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t("Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız.")}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
+                          <span className="fa fa-star"></span> {t("Lütfen Dikkat")} : {t("Kullanım Talimatını Okuyunuz!..")}!..
                           <br />
                         </li>
                       </ul>
@@ -122,7 +105,7 @@ function AzelaikAsitCiltBakimKremi() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                    {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

@@ -1,12 +1,12 @@
 import React from "react";
-import ProductSimilar from "../Components/product/ProductSimilar";
+import ProductSimilarKozmetik from "../Components/product/ProductSimilarKozmetik";
 import GeceOnariciCiltbakimSerumu from "../Components/product/GeceOnariciCiltbakimSerumu";
 
 function GeceOnariciCiltbakimSerumuPage() {
   return (
     <>
       <GeceOnariciCiltbakimSerumu />
-      <ProductSimilar />
+      <ProductSimilarKozmetik  />
     </>
   );
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import ProductSimilar from "../Components/product/ProductSimilar";
+import ProductSimilarAmbalaj from "../Components/product/ProductSimilarAmbalaj";
 import AmbalajAluminyumFolyoKisa from "../Components/product/AmbalajAluminyumFolyoKisa";
 
 function AmbalajAluminyumFolyoKisaPage() {
   return (
     <>
       <AmbalajAluminyumFolyoKisa />
-      <ProductSimilar />
+      <ProductSimilarAmbalaj />
     </>
   );
 }

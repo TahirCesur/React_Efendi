@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function EndustriyelKagitIctenCekmeliKagitHavlu() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,13 +20,13 @@ function EndustriyelKagitIctenCekmeliKagitHavlu() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">İÇTEN ÇEKME KAĞIT HAVLU</h2>
+            <h2 className="page-header__title">{t("İÇTEN ÇEKMELİ KAĞIT HAVLU")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,7 +39,7 @@ function EndustriyelKagitIctenCekmeliKagitHavlu() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/endustriyelkagit/kagit-havlu.jpg"
-                    alt="İçten Çekmeli Kağıt Havlu"
+                    alt={t("İçten Çekmeli Kağıt Havlu")}
                   />
                   <div className="product-details__img-search">
                     <a
@@ -53,7 +56,7 @@ function EndustriyelKagitIctenCekmeliKagitHavlu() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      İÇTEN ÇEKME KAĞIT HAVLU
+                      {t("İÇTEN ÇEKMELİ KAĞIT HAVLU")}
                       <span className="product-details__price"> </span>
                     </h3>
                   </div>
@@ -70,51 +73,26 @@ function EndustriyelKagitIctenCekmeliKagitHavlu() {
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
                           <span className="icon-right-arrow"></span>
-                          Bilgilendirme :
+                          {t("Bilgilendirme")} :
                         </li>
-                        içten çekmeli kağıt havlu, bir rulo şeklinde bulunan
-                        kağıt havlu sistemidir. Bu sistemde, kağıt havlu rulosu,
-                        dispensere monte edilmiş ve kullanıcı, kağıt havluyu
-                        dispenserden içeri çekerek kullanır. Kağıt havlu,
-                        genellikle el ve yüz temizliği için kullanılan, ince ve
-                        hafif bir kağıt malzemeden yapılan temizlik
-                        ürünüdür.Kağıt havlu rulosu, özel bir dispenser
-                        içerisine monte edilmiştir. Dispenser, kullanıcının
-                        kağıt havluyu çekmesine ve kullanmasına olanak tanır.
-                        Kullanıcı, dispenserden çıkardığı kağıt havluyu tek bir
-                        çekimle alır. Bu tasarım, kağıt havlunun kontrollü bir
-                        şekilde kullanılmasını sağlar.
+                        {t("İçten çekmeli kağıt havlu, bir rulo şeklinde bulunan kağıt havlu sistemidir. Bu sistemde, kağıt havlu rulosu, dispensere monte edilmiş ve kullanıcı, kağıt havluyu dispenserden içeri çekerek kullanır. Kağıt havlu, genellikle el ve yüz temizliği için kullanılan, ince ve hafif bir kağıt malzemeden yapılan temizlik ürünüdür.Kağıt havlu rulosu, özel bir dispenser içerisine monte edilmiştir. Dispenser, kullanıcının kağıt havluyu çekmesine ve kullanmasına olanak tanır. Kullanıcı, dispenserden çıkardığı kağıt havluyu tek bir çekimle alır. Bu tasarım, kağıt havlunun kontrollü bir şekilde kullanılmasını sağlar.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Alanları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Alanları")} :
                         </li>
-                        İçten çekmeli kağıt havlu sistemleri, hem ev kullanımı
-                        hem de endüstriyel alanlarda yaygın olarak tercih
-                        edilir. Özellikle mutfak, banyo ve halka açık
-                        tuvaletlerde kullanımı yaygındır.Dispenserden içeri
-                        çekme sistemi, kullanıcıya kolaylık sağlar ve kağıt
-                        havlunun düzenli bir şekilde çekilmesini sağlar.Kağıt
-                        havlular genellikle mutfaklarda, banyolarda, ofislerde
-                        ve halka açık alanlarda kullanılır. El ve yüz temizliği,
-                        sıvı dökülmelerinin temizlenmesi gibi çeşitli amaçlar
-                        için kullanılır.
+                        {t("İçten çekmeli kağıt havlu sistemleri, hem ev kullanımı hem de endüstriyel alanlarda yaygın olarak tercih edilir. Özellikle mutfak, banyo ve halka açık tuvaletlerde kullanımı yaygındır.Dispenserden içeri çekme sistemi, kullanıcıya kolaylık sağlar ve kağıt havlunun düzenli bir şekilde çekilmesini sağlar.Kağıt havlular genellikle mutfaklarda, banyolarda, ofislerde ve halka açık alanlarda kullanılır. El ve yüz temizliği, sıvı dökülmelerinin temizlenmesi gibi çeşitli amaçlar için kullanılır.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Güvenlik ve
-                          Hijyen :
+                          <span className="icon-right-arrow"></span>
+                          {t("Güvenlik ve Hijyen")} :
                         </li>
-                        Kağıt havlular genellikle elleri kurulamak, yüzü
-                        temizlemek veya sıvı dökülmeleri temizlemek için
-                        kullanılır. Hijyen standartlarını koruma ve pratik
-                        kullanım sağlama amacı taşırlar. Hareketli kağıt havlu
-                        dağıtım sistemleri, otomatik sensörlerle çalışarak
-                        kullanıcılara temassız bir şekilde kağıt havlu sağlar.
+                        {t("Kağıt havlular genellikle elleri kurulamak, yüzü temizlemek veya sıvı dökülmeleri temizlemek için kullanılır. Hijyen standartlarını koruma ve pratik kullanım sağlama amacı taşırlar. Hareketli kağıt havlu dağıtım sistemleri, otomatik sensörlerle çalışarak kullanıcılara temassız bir şekilde kağıt havlu sağlar.")}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

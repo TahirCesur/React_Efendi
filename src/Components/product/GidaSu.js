@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useTranslation } from "react-i18next";
 
 function GidaSu() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,15 +19,13 @@ function GidaSu() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">
-              C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-            </h2>
+            <h2 className="page-header__title">{t("SU")}</h2>
           </div>
         </section>
         <section className="product">
@@ -36,14 +36,11 @@ function GidaSu() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img
-                    src="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
-                    alt=""
-                  />
+                  <img src="assets/images/gida/bardak-su.jpg" alt="Su" />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
+                      href="assets/images/gida/bardak-su.jpg"
                     ></a>
                   </div>
                 </div>
@@ -55,8 +52,8 @@ function GidaSu() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-                      <span className="product-details__price">30 ML</span>
+                    {t("SU")}
+                      <span className="product-details__price">200-500 ML</span>
                     </h3>
                   </div>
                   <div className="product-details__review">
@@ -71,55 +68,25 @@ function GidaSu() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>{" "}
+                          {t("Bilgilendirme")}:
                         </li>
-                        Cildi nemlendirir, pürüzsüzleştirir ve aydınlatır. Dış
-                        etkenlere ve yaşlanma belirtilerine karşı korumaya
-                        yardımcı olur. Cilt yumuşak, ışıltılı ve canlı bir
-                        görünüm kazanır.
+                        {t("Bardak paket su, genellikle tek kullanımlık plastik bardaklarda paketlenmiştir. Bu bardaklar genellikle kapaklı veya folyo mühürlüdür. Bardak paket suyun boyutu genellikle standart bir içecek bardağına benzer. Hacmi genellikle 200 ml ile 500 ml arasında değişebilir.")}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>{t("Hijyen ve Kolay Kullanım")}:
                         </li>
-                        Aqua, Hydrolyzed Collagen, Niacinamide, Propylene
-                        Glycol, Pisum Sativum Peptide, Panthenol, Sodium
-                        Hyaluronate, Arginine, Aspartic Acid, Glycine, Alanine,
-                        Serine, Valine, Proline, Threonine, Isoleucine,
-                        Histidine, Phenylalanine, Sodium Benzoate, Potassium
-                        Sorbate, Hydroxyethylcellulose.
+                        {t("Bu tür su paketleri, taşınabilir ve hafif olmaları nedeniyle dışarıda, seyahat sırasında veya acil durumlarda kullanım için uygundur. Bardak paket sular genellikle tek kullanımlıktır. İçildikten sonra genellikle geri dönüştürülebilir veya çöpe atılabilirler.Paketlenmiş bardak sular, hijyen sağlamak ve kullanımı kolaylaştırmak amacıyla kapak veya mühürleme sistemi ile kapatılır.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>{t("Kullanım Alanları :")}
                         </li>
-                        Temiz cildinize sabah ve akşam masaj yaparak uygulayın.
-                        Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız.
-                        Gün içinde güneş koruyucu kullanınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
-                        <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
-                        </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
-                        <br />
-                        <br />
-                        <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
-                          <br />
-                        </li>
+                        {t("İş yerleri, restoranlar, kafeler, piknik alanları ve etkinlikler gibi birçok yerde pratik bir içecek seçeneği olarak sunulabilirler.")}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                    {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

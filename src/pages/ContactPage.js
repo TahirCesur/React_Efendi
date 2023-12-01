@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <>
       <Spacer2/>
-      <Contact />
+      <Contact />  
     </>
   );
 }

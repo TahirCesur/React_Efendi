@@ -953,7 +953,25 @@
 
 @media (max-width: 767px) {
   .blog-one {
-    padding: 80px 0 50px;
+    padding: 0px 0 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-one {
+    padding: 0px 0 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-one {
+    padding: 0px 0 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .blog-one {
+    padding: 0px 0 50px;
   }
 }
 
@@ -1336,7 +1354,7 @@
 
 @media (max-width: 767px) {
   .blog-page {
-    padding: 80px 0 50px;
+    /* padding: 80px 0 50px; */
   }
 }
 
@@ -5811,12 +5829,12 @@ body.locked .page-wrapper {
   background-position: top left;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding: 120px 0;
+  padding: 60px 0;
 }
 
 @media (max-width: 767px) {
   .about-one {
-    padding: 80px 0;
+
   }
 }
 
@@ -10765,7 +10783,7 @@ body.locked .page-wrapper {
 
 /*-- Contact Form --*/
 .contact-page {
-  padding: 120px 0;
+  padding: 60px 0;
   background-color: var(--nisoz-white);
 }
 
@@ -14325,20 +14343,20 @@ body.boxed-wrapper .main-menu__phone {
 .resimSlider {
   height: 500px;
   background-color: #f2f2f2 !important;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 @media (max-width: 992px) {
   .resimSlider {
-    height: 500px;
+    height: 400px;
     background-color: #f2f2f2 !important;
-    margin-top: 120px;
+    margin-top: 140px;
   }
 }
 
 @media (max-width:780px) {
   .resimSlider {
-    height: 400px;
+    height: 280px;
     background-color: #f2f2f2 !important;
     margin-top: 130px;
   }
@@ -14346,23 +14364,23 @@ body.boxed-wrapper .main-menu__phone {
 
 @media (max-width: 576px) {
   .resimSlider {
-    height: 400px;
+    height: 240px;
     background-color: #f2f2f2 !important;
     margin-top: 130px;
   }
 }
 @media (max-width: 480px) {
   .resimSlider {
-    height: 300px;
+    height: 200px;
     background-color: #f2f2f2 !important;
-    margin-top: 80px;
+    margin-top: 140px;
   }
 }
 @media (max-width: 360px) {
   .resimSlider {
-    height: 300px;
+    height: 180px;
     background-color: #f2f2f2 !important;
-    margin-top: 60px!important;
+    margin-top: 80px!important;
   }
 }
 @media (max-width: 325px) {
@@ -14460,8 +14478,6 @@ body.boxed-wrapper .main-menu__phone {
   font-size:18px;
 }
 
-
-
 .dropdown-item:hover {
   display: block;
   width: 100%;
@@ -14475,8 +14491,6 @@ body.boxed-wrapper .main-menu__phone {
   background-color: var(--nisoz-black);
   border: 0;
 }
-
-
 
 .dropdown-item {
   font-size: 18px;

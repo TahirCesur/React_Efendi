@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function GidaCaykurTiryakiCay() {
+  const { t } = useTranslation();
   return (
     <>
       <SRLWrapper>
@@ -17,15 +19,13 @@ function GidaCaykurTiryakiCay() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
-            <h2 className="page-header__title">
-              C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-            </h2>
+            <h2 className="page-header__title">{t("ÇAYKUR TİRYAKİ ÇAY")}</h2>
           </div>
         </section>
         <section className="product">
@@ -37,13 +37,13 @@ function GidaCaykurTiryakiCay() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
-                    alt=""
+                    src="assets/images/gida/caykur-tiryaki-cay.jpg"
+                    alt="Çaykur Tiryaki Çay"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg"
+                      href="assets/images/gida/caykur-tiryaki-cay.jpg"
                     ></a>
                   </div>
                 </div>
@@ -55,8 +55,8 @@ function GidaCaykurTiryakiCay() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU
-                      <span className="product-details__price">30 ML</span>
+                      {t("ÇAYKUR TİRYAKİ ÇAY")}
+                      <span className="product-details__price"></span>
                     </h3>
                   </div>
                   <div className="product-details__review">
@@ -71,55 +71,24 @@ function GidaCaykurTiryakiCay() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Bilgilendirme")}:
                         </li>
-                        Cildi nemlendirir, pürüzsüzleştirir ve aydınlatır. Dış
-                        etkenlere ve yaşlanma belirtilerine karşı korumaya
-                        yardımcı olur. Cilt yumuşak, ışıltılı ve canlı bir
-                        görünüm kazanır.
+                        {t(
+                          "Çaykur Tiryaki Çay, Türkiye'nin önde gelen çay üreticilerinden biri olan Çaykur tarafından üretilen bir çay markasıdır. Türk çay kültüründe önemli bir yer tutan siyah çay, geleneksel demleme yöntemleriyle hazırlanır. Çaykur Tiryaki Çayı daha çok kahvaltılarda ve çay saatlerinde tercih edilmektedir. Yumuşak içimli, hafif ve yoğun aroması olmayan bir çaydır. Karadeniz'in tarlalarından toplanmış olup harmanlanmaya uygun bir çayçeşididir. Tiryaki çayı; siyah bir çay olup hafif bir tada sahiptir."
+                        )}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>
+                          {t("Marka İmajı")}:
                         </li>
-                        Aqua, Hydrolyzed Collagen, Niacinamide, Propylene
-                        Glycol, Pisum Sativum Peptide, Panthenol, Sodium
-                        Hyaluronate, Arginine, Aspartic Acid, Glycine, Alanine,
-                        Serine, Valine, Proline, Threonine, Isoleucine,
-                        Histidine, Phenylalanine, Sodium Benzoate, Potassium
-                        Sorbate, Hydroxyethylcellulose.
-                        <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
-                        </li>
-                        Temiz cildinize sabah ve akşam masaj yaparak uygulayın.
-                        Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız.
-                        Gün içinde güneş koruyucu kullanınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
-                        <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
-                        </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
-                        <br />
-                        <br />
-                        <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
-                          <br />
-                        </li>
+                        {t("Çaykur Tiryaki Çayı, kaliteli çay üretimi ve güvenilir bir marka imajıyla bilinir. Türkiye genelinde ve uluslararası düzeyde çay tüketicileri arasında popülerdir.Tiryaki Çayı genellikle lezzetli, tam renkli ve karakteristik bir Türk çayı tadına sahiptir. Çay kültürü, Türkiye'de sosyal bir aktivite olarak önemli bir yer tutar, ve Tiryaki Çayı bu kültüre katkıda bulunan bir markadır.")}
                       </ul>
                     </p>
                   </div>
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                    {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>

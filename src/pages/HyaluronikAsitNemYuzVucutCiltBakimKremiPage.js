@@ -1,12 +1,12 @@
 import React from "react";
-import ProductSimilar from "../Components/product/ProductSimilar";
+import ProductSimilarKozmetik from "../Components/product/ProductSimilarKozmetik";
 import HyaluronikAsitNemYuzVucutCiltBakimKremi from "../Components/product/HyaluronikAsitNemYuzVucutCiltBakimKremi";
 
 function HyaluronikAsitNemYuzVucutCiltBakimKremiPage() {
   return (
     <>
       <HyaluronikAsitNemYuzVucutCiltBakimKremi />
-      <ProductSimilar />
+      <ProductSimilarKozmetik  />
     </>
   );
 }

@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function GeceOnariciCiltbakimSerumu() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SRLWrapper>
@@ -17,14 +20,14 @@ function GeceOnariciCiltbakimSerumu() {
           <div className="container">
             <ul className="page-header__breadcrumb list-unstyled">
               <li>
-                <a href="index.html">Anasayfa</a>
+                <a href="index.html">{t("Anasayfa")}</a>
               </li>
               <li>
-                <span>ÜRÜNLERİMİZ</span>
+                <span>{t("ÜRÜNLERİMİZ")}</span>
               </li>
             </ul>
             <h2 className="page-header__title">
-              GECE ONARICI CİLT BAKIM SERUMU
+              {t("GECE ONARICI CİLT BAKIM SERUMU")}
             </h2>
           </div>
         </section>
@@ -55,7 +58,7 @@ function GeceOnariciCiltbakimSerumu() {
                 <div className="product-details__content">
                   <div className="product-details__top">
                     <h3 className="product-details__title">
-                      GECE ONARICI CİLT BAKIM SERUMU
+                      {t("GECE ONARICI CİLT BAKIM SERUMU")}
                       <span className="product-details__price">30 ML</span>
                     </h3>
                   </div>
@@ -71,17 +74,15 @@ function GeceOnariciCiltbakimSerumu() {
                     <p className="list-unstyled product-details__description__lists">
                       <ul className="list-unstyled product-details__description__lists">
                         <li>
-                          <span className="icon-right-arrow"></span>Faydaları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Faydaları")} :
                         </li>
-                        Zengin bitki özleri, peptitlerile güçlendirilmiş formülü
-                        ve hyalüronik asitler yardımcıyla cilt yenilenmesini
-                        destekler. Cildin yumuşak, pürüzsüz ve ışıltılı bir
-                        görünüm kazanmasına yardımcı olur.
+                        {t("Zengin bitki özleri, peptitlerile güçlendirilmiş formülü ve hyalüronik asitler yardımcıyla cilt yenilenmesini destekler. Cildin yumuşak, pürüzsüz ve ışıltılı bir görünüm kazanmasına yardımcı olur.")}
                         <li>
-                          <span className="icon-right-arrow"></span>İçindekiler
-                          :
+                          <span className="icon-right-arrow"></span>
+                          {t("İçindekiler")} :
                         </li>
-                        Aqua, Niacinamide, Glycerin, Buddleja Globosa Leaf
+                        "Aqua, Niacinamide, Glycerin, Buddleja Globosa Leaf
                         Extract, Panthenol, Palmitoyl Tripeptide-1, Palmitoyl
                         Tetrapeptide-7, Sodium Hyaluronate, Hydrolyzed
                         Hyaluronic Acid, Hyaluronic Acid, Sodium Hyaluronate
@@ -93,32 +94,22 @@ function GeceOnariciCiltbakimSerumu() {
                         Allantoin, Hydroxyethylcellulose, Maltodextrine,
                         Propanediol, Tetrasodium EDTA, Carbomer, Polysorbate 20,
                         Benzyl Alcohol, Sodium Benzoate, Potassium Sorbate,
-                        Lactic Acid, Citric Acid.
+                        Lactic Acid, Citric Acid."
                         <li>
-                          <span className="icon-right-arrow"></span>Kullanım
-                          Şekli ve Uyarıları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanım Şekli ve Uyarıları")} :
                         </li>
-                        Temiz cildinize sabah ve akşam masaj yaparak uygulayın.
-                        Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız.
-                        Gün içinde güneş koruyucu kullanınız. Ürünü kullanmadan
-                        önce istenmeyen olası yan etkileri ve tahrişi önlemek
-                        için yama testi yapmanız önerilir. Tahriş durumunda
-                        kullanmayı bırakınız ve dermatoloğa danışınız. Gözle
-                        direkt temasından kaçınınız. Temas halinde bol su ile
-                        durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza
-                        ediniz.
+                        {t("Temiz cildinize sabah ve akşam masaj yaparak uygulayın. Haricen kullanılır. Tahriş olmuş ciltte kullanmayınız. Gün içinde güneş koruyucu kullanınız. Ürünü kullanmadan önce istenmeyen olası yan etkileri ve tahrişi önlemek için yama testi yapmanız önerilir. Tahriş durumunda kullanmayı bırakınız ve dermatoloğa danışınız. Gözle direkt temasından kaçınınız. Temas halinde bol su ile durulayınız. Çocukların ulaşamayacağı bir yerde muhafaza ediniz.")}
                         <li>
-                          <span className="icon-right-arrow"></span>Saklama
-                          Koşulları :
+                          <span className="icon-right-arrow"></span>
+                          {t("Saklama Koşulları")} :
                         </li>
-                        Ürünü +5°C ve +25°C arasında oda sıcaklığında
-                        saklayınız.
+                        {t("Ürünü +5°C ve +25°C arasında oda sıcaklığında saklayınız.")}
                         <br />
                         <br />
                         <li>
-                          <span className="fa fa-star"></span> Lütfen Dikkat :
-                          Kullanım Talimatını Okuyunuz!..
-                          <br />
+                          <span className="fa fa-star"></span> {t("Lütfen Dikkat")} :
+                          {t("Kullanım Talimatını Okuyunuz")}. <br />
                         </li>
                       </ul>
                     </p>
@@ -126,7 +117,7 @@ function GeceOnariciCiltbakimSerumu() {
 
                   <div className="product-details__socials">
                     <h4 className="product-details__socials__title">
-                      ARKADAŞLARINLA PAYLAŞ
+                      {t("ARKADAŞLARINLA PAYLAŞ")}
                     </h4>
                     <a href="https://twitter.com/X">
                       <span className="fab fa-twitter"></span>
