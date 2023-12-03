@@ -13,7 +13,7 @@ function EndustriyelKagitIctenCekmeliKagitHavluEko() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -38,13 +38,13 @@ function EndustriyelKagitIctenCekmeliKagitHavluEko() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyelkagit/kagit-havlu.jpg"
+                    src="assets/images/endustriyelkagit/kagit-havlu.webp"
                     alt={t("İçten Çekmeli Kağıt Havlu")}
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyelkagit/kagit-havlu.jpg"
+                      href="assets/images/endustriyelkagit/kagit-havlu.webp"
                     ></a>
                   </div>
                 </div>

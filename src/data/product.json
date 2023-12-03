@@ -1,42 +1,42 @@
 [
   {
     "id": "1",
-    "picture": "assets/images/product/endustriyel-temizlik.png",
+    "picture": "assets/images/product/endustriyel-temizlik.webp",
     "price": "detaylar",
     "nav": "/EndustriyelTemizlik",
     "title": "ENDÜSTRİYEL TEMİZLİK"
   },
   {
     "id": "2",
-    "picture": "assets/images/product/kagit.png",
+    "picture": "assets/images/product/kagit.webp",
     "price": "detaylar",
     "nav": "/EndustriyelKagit",
     "title": "ENDÜSTRİYEL KAĞIT"
   },
   {
     "id": "3",
-    "picture": "assets/images/product/kozmetik.jpg",
+    "picture": "assets/images/product/kozmetik.webp",
     "price": "detaylar",
     "nav": "/KozmetikUrunleri",
     "title": "KOZMETİK ÜRÜNLERİ"
   },
   {
     "id": "4",
-    "picture": "assets/images/product/bitkisel.jpg",
+    "picture": "assets/images/product/bitkisel.webp",
     "price": "detaylar",
     "nav": "/BitkiselUrunler",
     "title": "BİTKİSEL ÜRÜNLER"
   },
   {
     "id": "5",
-    "picture": "assets/images/product/ambalaj.jpg",
+    "picture": "assets/images/product/ambalaj.webp",
     "price": "detaylar",
     "nav": "/Ambalaj",
     "title": "AMBALAJ"
   },
   {
     "id": "6",
-    "picture": "assets/images/product/gida.jpg",
+    "picture": "assets/images/product/gida.webp",
     "price": "detaylar",
     "nav": "/Gida",
     "title": "GIDA"

@@ -14,7 +14,7 @@ function TemizlikEldeBulasikYikamaMaddesi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikEldeBulasikYikamaMaddesi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/elde-bulasik-yikama-maddesi-m-102.jpg"
+                    src="assets/images/endustriyeltemizlik/elde-bulasik-yikama-maddesi-m-102.webp"
                     alt="ELDE BULAŞIK YIKAMA MADDESİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/elde-bulasik-yikama-maddesi-m-102.jpg"
+                      href="assets/images/endustriyeltemizlik/elde-bulasik-yikama-maddesi-m-102.webp"
                     ></a>
                   </div>
                 </div>

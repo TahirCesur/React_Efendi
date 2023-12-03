@@ -37,7 +37,7 @@ function KozmetikUrunleri() {
                       {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
                     </h5>
                     <h2 className="section-title__title">
-                      {t("ENDÜSTRİYEL KAĞIT")}
+                      {t("KOZMETİK ÜRÜNLERİ")}
                     </h2>
                   </div>
                 </div>

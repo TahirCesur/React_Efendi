@@ -1,12 +1,12 @@
 import React from "react";
-import ProductSimilar from "../Components/product/ProductSimilar";
+import ProductSimilarKozmetik from "../Components/product/ProductSimilarKozmetik";
 import KarmaYagliCiltYuzYikamaJeli from "../Components/product/KarmaYagliCiltYuzYikamaJeli";
 
 function KarmaYagliCiltYuzYikamaJeliPage() {
   return (
     <>
       <KarmaYagliCiltYuzYikamaJeli />
-      <ProductSimilar />   
+      <ProductSimilarKozmetik />   
     </>
   );
 }

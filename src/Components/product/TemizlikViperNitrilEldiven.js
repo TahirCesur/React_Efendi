@@ -14,7 +14,7 @@ function TemizlikViperNitrilEldiven() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikViperNitrilEldiven() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/viper-nitril-eldiven.jpg"
+                    src="assets/images/endustriyeltemizlik/viper-nitril-eldiven.webp"
                     alt="VİPER NİTRİL ELDİVEN"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/viper-nitril-eldiven.jpg"
+                      href="assets/images/endustriyeltemizlik/viper-nitril-eldiven.webp"
                     ></a>
                   </div>
                 </div>

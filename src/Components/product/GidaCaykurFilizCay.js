@@ -13,7 +13,7 @@ function GidaCaykurFilizCay() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -37,11 +37,11 @@ function GidaCaykurFilizCay() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img src="assets/images/gida/caykur-filiz-cay.jpg" alt={t("ÇAYKUR FİLİZ ÇAY")} />
+                  <img src="assets/images/gida/caykur-filiz-cay.webp" alt={t("ÇAYKUR FİLİZ ÇAY")} />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/gida/caykur-filiz-cay.jpg"
+                      href="assets/images/gida/caykur-filiz-cay.webp"
                     ></a>
                   </div>
                 </div>

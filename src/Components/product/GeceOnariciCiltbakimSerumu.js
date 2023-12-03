@@ -13,7 +13,7 @@ function GeceOnariciCiltbakimSerumu() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -40,13 +40,13 @@ function GeceOnariciCiltbakimSerumu() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/gece-onarici-cilt-bakim-serumu.jpg"
+                    src="assets/images/lopren/gece-onarici-cilt-bakim-serumu.webp"
                     alt=""
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/gece-onarici-cilt-bakim-serumu.jpg"
+                      href="assets/images/lopren/gece-onarici-cilt-bakim-serumu.webp"
                     ></a>
                   </div>
                 </div>

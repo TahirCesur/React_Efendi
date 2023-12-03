@@ -12,7 +12,7 @@ const { t } = useTranslation();
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ const { t } = useTranslation();
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/sikilastirici-krem.jpg"
+                    src="assets/images/lopren/sikilastirici-krem.webp"
                     alt="NİACİNAMİDE %10 LEKE KARŞITI VE GÖZENEK SIKILAŞTIRICI KREM"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/sikilastirici-krem.jpg"
+                      href="assets/images/lopren/sikilastirici-krem.webp"
                     ></a>
                   </div>
                 </div>

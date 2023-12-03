@@ -36,7 +36,7 @@ function Slider2() {
           <div className={`carousel-item ${activeIndex === 0 ? "active" : ""}`}>
             <img
               className="d-block w-100 resimSlider"
-              src="assets/images/slide1.png"
+              src="assets/images/slide1.webp"
               alt="First slide"
               width="100%"
               height="500px"
@@ -45,7 +45,7 @@ function Slider2() {
           <div className={`carousel-item ${activeIndex === 1 ? "active" : ""}`}>
             <img
               className="d-block w-100 resimSlider"
-              src="assets/images/bitkisel/slider-7.jpg"
+              src="assets/images/bitkisel/slider-7.webp"
               alt="Second slide"
               width="100%"
               height="500px"
@@ -54,7 +54,7 @@ function Slider2() {
           <div className={`carousel-item ${activeIndex === 2 ? "active" : ""}`}>
             <img
               className="d-block w-100 resimSlider"
-              src="assets/images/bitkisel/slider-5.jpg"
+              src="assets/images/bitkisel/slider-5.webp"
               alt="Third slide"
               width="100%"
               height="500px"
@@ -63,7 +63,7 @@ function Slider2() {
           <div className={`carousel-item ${activeIndex === 3 ? "active" : ""}`}>
             <img
               className="d-block w-100 resimSlider"
-              src="assets/images/bitkisel/slider-8.jpg"
+              src="assets/images/bitkisel/slider-8.webp"
               alt="Fourth slide"
               width="100%"
               height="500px"

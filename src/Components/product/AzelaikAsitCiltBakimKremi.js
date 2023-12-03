@@ -12,7 +12,7 @@ function AzelaikAsitCiltBakimKremi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function AzelaikAsitCiltBakimKremi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/azelaik-cilt-bakim-kremi.jpg"
+                    src="assets/images/lopren/azelaik-cilt-bakim-kremi.webp"
                     alt=""
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/azelaik-cilt-bakim-kremi.jpg"
+                      href="assets/images/lopren/azelaik-cilt-bakim-kremi.webp"
                     ></a>
                   </div>
                 </div>

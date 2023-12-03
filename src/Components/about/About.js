@@ -28,7 +28,7 @@ function About() {
                 className="about-four__thumb__item wow fadeInUp"
                 data-wow-delay="200ms"
               >
-                <img src="assets/images/Hakkımızda.jpg" alt="Hakkımızda" />
+                <img src="assets/images/Hakkımızda.webp" alt="Hakkımızda" />
               </div>
             </div>
           </div>

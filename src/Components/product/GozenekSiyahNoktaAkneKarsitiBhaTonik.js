@@ -12,7 +12,7 @@ function GozenekSiyahNoktaAkneKarsitiBhaTonik() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function GozenekSiyahNoktaAkneKarsitiBhaTonik() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/gozenek-siyah-nokta-bha-tonik.jpg"
+                    src="assets/images/lopren/gozenek-siyah-nokta-bha-tonik.webp"
                     alt="GÖZENEK SIKILAŞTIRICI, SİYAH NOKTA VE AKNE KARŞITI BHA TONİK"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/gozenek-siyah-nokta-bha-tonik.jpg"
+                      href="assets/images/lopren/gozenek-siyah-nokta-bha-tonik.webp"
                     ></a>
                   </div>
                 </div>

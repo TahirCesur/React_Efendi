@@ -13,7 +13,7 @@ function AmbalajBuyukCopTorbasi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -40,13 +40,13 @@ function AmbalajBuyukCopTorbasi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/ambalaj/endustriyel-buyuk-cop-torbasi.jpg"
+                    src="assets/images/ambalaj/endustriyel-buyuk-cop-torbasi.webp"
                     alt={t("Büyük Boy Çöp Torbası")}
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/ambalaj/endustriyel-buyuk-cop-torbasi.jpg"
+                      href="assets/images/ambalaj/endustriyel-buyuk-cop-torbasi.webp"
                     ></a>
                   </div>
                 </div>

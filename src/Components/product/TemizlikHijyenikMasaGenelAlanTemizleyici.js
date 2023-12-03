@@ -14,7 +14,7 @@ function TemizlikHijyenikMasaGenelAlanTemizleyici() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikHijyenikMasaGenelAlanTemizleyici() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/hijyenik-masa-temizleyici.png"
+                    src="assets/images/endustriyeltemizlik/hijyenik-masa-temizleyici.webp"
                     alt="HİJYENİK MASA VE GENEL ALAN TEMİZLEYİCİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/hijyenik-masa-temizleyici.png"
+                      href="assets/images/endustriyeltemizlik/hijyenik-masa-temizleyici.webp"
                     ></a>
                   </div>
                 </div>

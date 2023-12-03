@@ -1,175 +1,175 @@
 [
   {
     "id": "1",
-    "picture": "assets/images/lopren/panthenol-cilt-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/panthenol-cilt-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/NiacinamideCiltBakimSerumu",
     "title": "NİACİNAMİDE PANTHENOL CİLT BAKIM SERUMU"
   },
   {
     "id": "2",
-    "picture": "assets/images/lopren/azelaik-cilt-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/azelaik-cilt-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/AzelaikCiltBakimSerum",
     "title": "AZELAİK LEKE KARŞITI CİLT BAKIM SERUMU"
   },
   {
     "id": "3",
-    "picture": "assets/images/lopren/gece-onarici-cilt-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/gece-onarici-cilt-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/GeceOnariciCiltbakimSerumu",
     "title": "GECE ONARICI CİLT BAKIM SERUMU"
   },
   {
     "id": "4",
-    "picture": "assets/images/lopren/kolajen-yaslanma-karsiti-cilt-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/kolajen-yaslanma-karsiti-cilt-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/YaslanmaKarsitiCiltBakimSerumu",
     "title": "KOLAJEN YAŞLANMA KARŞITI CİLT BAKIM SERUMU"
   },
   {
     "id": "5",
-    "picture": "assets/images/lopren/aydinlatici-cilt-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/aydinlatici-cilt-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/AydinlaticiCiltBakimSerumu",
     "title": "C VİTAMİNİ VE PEPTİD AYDINLATICI CİLT BAKIM SERUMU"
   },
   {
     "id": "6",
-    "picture": "assets/images/lopren/cilt-yenileyici-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/cilt-yenileyici-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/RetinolCiltyenileyiciBakimSerumu",
     "title": "RETİNOL 0.5% CİLT YENİLEYİCİ BAKIM SERUMU"
   },
   {
     "id": "7",
-    "picture": "assets/images/lopren/goz-cevresi-serumu.jpg",
+    "picture": "assets/images/lopren/goz-cevresi-serumu.webp",
     "price": "detaylar",
     "nav": "/HyaluronikAsitGozCevresiSerumu",
     "title": "HYALÜRONİK ASİT GÖZ ÇEVRESİ SERUMU"
   },
   {
     "id": "8",
-    "picture": "assets/images/lopren/gınseng-cilt-yenileyici-serum.jpg",
+    "picture": "assets/images/lopren/gınseng-cilt-yenileyici-serum.webp",
     "price": "detaylar",
     "nav": "/GinsengCiltYenileyiciSerum",
     "title": "LOPREN GİNSENG CİLT YENİLEYİCİ SERUM"
   },
   {
     "id": "9",
-    "picture": "assets/images/lopren/k-peeling-maske-cilt-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/k-peeling-maske-cilt-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/PeelingMaskeCiltBakimSerumu",
     "title": "AHA %10 + BHA %2 PEELİNG MASKE CİLT BAKIM SERUMU"
   },
   {
     "id": "10",
-    "picture": "assets/images/lopren/beyazlatici-cilt-bakim-serumu.jpg",
+    "picture": "assets/images/lopren/beyazlatici-cilt-bakim-serumu.webp",
     "price": "detaylar",
     "nav": "/BeyazlaticiCiltBakimSerumu",
     "title": "LEKE KARŞITI VE BEYAZLATICI CİLT BAKIM SERUMU"
   },
   {
     "id": "11",
-    "picture": "assets/images/lopren/glutatyon-beyazlatici-serum.jpg",
+    "picture": "assets/images/lopren/glutatyon-beyazlatici-serum.webp",
     "price": "detaylar",
     "nav": "/GlutatyonBeyazlaticiCiltBakimSerumu",
     "title": "GLUTATYON BEYAZLATICI & LEKE KARŞITI SERUM"
   },
   {
     "id": "17",
-    "picture": "assets/images/lopren/leke-karsiti-tonik.jpg",
+    "picture": "assets/images/lopren/leke-karsiti-tonik.webp",
     "price": "detaylar",
     "nav": "/GlikolikAsitLekeKarsitiTonik",
     "title": "GLİKOLİK ASİT %7 AYDINLATICI & LEKE KARŞITI TONİK"
   },
   {
     "id": "12",
-    "picture": "assets/images/lopren/aydinlatici-aha-tonik.jpg",
+    "picture": "assets/images/lopren/aydinlatici-aha-tonik.webp",
     "price": "detaylar",
     "nav": "/LekeKarsitiCiltAydinlaticiAhaTonik",
     "title": "LEKE KARŞITI CİLT AYDINLATICI AHA TONİK"
   },
   {
     "id": "13",
-    "picture": "assets/images/lopren/gozenek-siyah-nokta-bha-tonik.jpg",
+    "picture": "assets/images/lopren/gozenek-siyah-nokta-bha-tonik.webp",
     "price": "detaylar",
     "nav": "/GozenekSiyahNoktaAkneKarsitiBhaTonik",
     "title": "GÖZENEK SIKILAŞTIRICI, SİYAH NOKTA, AKNE KARŞITI BHA TONİK"
   },
   {
     "id": "14",
-    "picture": "assets/images/lopren/karma-cilt-yuz-yikama-jeli.jpg",
+    "picture": "assets/images/lopren/karma-cilt-yuz-yikama-jeli.webp",
     "price": "detaylar",
     "nav": "/KarmaYagliCiltYuzYikamaJeli",
     "title": "KARMA VE YAĞLI CİLTLERE ÖZEL YÜZ YIKAMA JELİ"
   },
   {
     "id": "15",
-    "picture": "assets/images/lopren/cilt-beyazlatici-bakim-kremi.jpg",
+    "picture": "assets/images/lopren/cilt-beyazlatici-bakim-kremi.webp",
     "price": "detaylar",
     "nav": "/LekeKarsitiCiltBeyazlaticiBakimKremi",
     "title": "LEKE KARŞITI CİLT BEYAZLATICI BAKIM KREMİ"
   },
   {
     "id": "16",
-    "picture": "assets/images/lopren/yüz-vucut-cilt-bakim-kremi.jpg",
+    "picture": "assets/images/lopren/yüz-vucut-cilt-bakim-kremi.webp",
     "price": "detaylar",
     "nav": "/HyaluronikAsitNemYuzVucutCiltBakimKremi",
     "title": "HYALÜRONİK ASİT NEMLENDİRİCİ YÜZ VE VÜCUT CİLT BAKIM KREMİ"
   },
   {
     "id": "17",
-    "picture": "assets/images/lopren/bariyer-onarici-cilt-bakim-kremi.jpg",
+    "picture": "assets/images/lopren/bariyer-onarici-cilt-bakim-kremi.webp",
     "price": "detaylar",
     "nav": "/BariyerOnariciCiltBakimKremi",
     "title": "BARİYER ONARICI & GÜÇLENDİRİCİ CİLT BAKIM KREMİ"
   },
   {
     "id": "18",
-    "picture": "assets/images/lopren/azelaik-cilt-bakim-kremi.jpg",
+    "picture": "assets/images/lopren/azelaik-cilt-bakim-kremi.webp",
     "price": "detaylar",
     "nav": "/AzelaikAsitCiltBakimKremi",
     "title": "AZELAİK ASİT %5 CİLT BAKIM KREMİ"
   },
   {
     "id": "19",
-    "picture": "assets/images/lopren/sikilastirici-krem.jpg",
+    "picture": "assets/images/lopren/sikilastirici-krem.webp",
     "price": "detaylar",
     "nav": "/NiacinamideLekeKarsitiGözenekSikilastiriciKrem",
     "title": "NİACİNAMİDE %10 LEKE KARŞITI VE GÖZENEK SIKILAŞTIRICI KREM"
   },
   {
     "id": "20",
-    "picture": "assets/images/lopren/hassas-cilt-yuz-yikama-jeli.jpg",
+    "picture": "assets/images/lopren/hassas-cilt-yuz-yikama-jeli.webp",
     "price": "detaylar",
     "nav": "/HassasAtopikCiltYuzYikamaJeli",
     "title": "HASSAS VE ATOPİK CİLTLER İÇİN YÜZ YIKAMA JELİ"
   },
   {
     "id": "21",
-    "picture": "assets/images/lopren/b-temizleme-yagi.jpg",
+    "picture": "assets/images/lopren/b-temizleme-yagi.webp",
     "price": "detaylar",
     "nav": "/YagBazliYuzVucutTemizlemeJeli",
     "title": "YAĞ BAZLI TEMİZLEYİCİ - YÜZ VE VÜCUT İÇİN TEMİZLEME YAĞI"
   },
   {
     "id": "22",
-    "picture": "assets/images/lopren/cica-centella-cilt-bakim-kremi.jpg",
+    "picture": "assets/images/lopren/cica-centella-cilt-bakim-kremi.webp",
     "price": "detaylar",
     "nav": "/CicaCentellaCiltBakimKremi",
     "title": "CİCA CENTELLA CİLT BAKIM KREMİ"
   },
   {
     "id": "23",
-    "picture": "assets/images/lopren/gunes-kremi.jpg",
+    "picture": "assets/images/lopren/gunes-kremi.webp",
     "price": "detaylar",
     "nav": "/SPFLekeKarsitiGunesKremi",
     "title": "SPF+ 50 LEKE KARŞITI GÜNEŞ KREMİ"
   },
   {
     "id": "24",
-    "picture": "assets/images/lopren/bronzlastirici-yag.jpg",
+    "picture": "assets/images/lopren/bronzlastirici-yag.webp",
     "price": "detaylar",
     "nav": "/YogunBronzlastiriciYag",
     "title": "LOPREN YOĞUN BRONZLAŞTIRICI YAĞ"

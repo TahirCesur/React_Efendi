@@ -14,7 +14,7 @@ function TemizlikDolphinLateksPudrasizEldiven() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikDolphinLateksPudrasizEldiven() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/dolphin-lateks-pudrasiz-eldiven.png"
+                    src="assets/images/endustriyeltemizlik/dolphin-lateks-pudrasiz-eldiven.webp"
                     alt={t("Alüminyum Folyo")}
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/dolphin-lateks-pudrasiz-eldiven.png"
+                      href="assets/images/endustriyeltemizlik/dolphin-lateks-pudrasiz-eldiven.webp"
                     ></a>
                   </div>
                 </div>

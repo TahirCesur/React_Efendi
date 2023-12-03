@@ -14,7 +14,7 @@ function BitkiselUrunlerBaproyBabyCamasirDeterjani() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function BitkiselUrunlerBaproyBabyCamasirDeterjani() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/bitkisel/bitkisel-camasir-deterjani-baby.jpg"
+                    src="assets/images/bitkisel/bitkisel-camasir-deterjani-baby.webp"
                     alt="BAPROY BABY BİTKİSEL ÇAMAŞIR DETERJANI"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/bitkisel/bitkisel-camasir-deterjani-baby.jpg"
+                      href="assets/images/bitkisel/bitkisel-camasir-deterjani-baby.webp"
                     ></a>
                   </div>
                 </div>

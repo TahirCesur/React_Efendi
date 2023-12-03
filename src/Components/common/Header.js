@@ -41,8 +41,8 @@ function Header() {
     <>
       <header className="main-header sticky-top fixed-top">
         <div
-          className="topbar fixed-top sticky-top"
-          style={{ backgroundColor: "#1c3844", padding: "10px" }}
+          className="topbar fixed-top sticky-top mb-1"
+          style={{ backgroundColor: "#1c3844", padding: "7px" }}
         >
           <Container>
             <div className="d-flex justify-content-between align-items-center">
@@ -87,16 +87,14 @@ function Header() {
         <Navbar
           collapseOnSelect
           expand="lg"
-          bg="light"
-          variant="light"
-          className="main-menu pt-2"
+          className="main-menu"
           expanded={expanded}
         >
           <Container fluid>
             <Navbar.Brand>
               <Link to="/" className="main-menu__logo" onClick={handleClick}>
                 <img
-                  src="assets/images/logo.png"
+                  src="assets/images/logo.webp"
                   alt="Yenidünya Endüstriyel Tedarik Logo"
                 />
               </Link>

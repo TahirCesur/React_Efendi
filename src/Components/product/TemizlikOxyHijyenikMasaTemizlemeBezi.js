@@ -14,7 +14,7 @@ function TemizlikOxyHijyenikMasaTemizlemeBezi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikOxyHijyenikMasaTemizlemeBezi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/oxy-hijyenik-masa-temizleme.jpg"
+                    src="assets/images/endustriyeltemizlik/oxy-hijyenik-masa-temizleme.webp"
                     alt="OXY HİJYENİK MASA TEMİZLEME BEZİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/oxy-hijyenik-masa-temizleme.jpg"
+                      href="assets/images/endustriyeltemizlik/oxy-hijyenik-masa-temizleme.webp"
                     ></a>
                   </div>
                 </div>

@@ -14,7 +14,7 @@ function TemizlikBulasikMakinesiDurulamaMaddesi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikBulasikMakinesiDurulamaMaddesi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/bulasik-makinesi-durulama-maddesi.jpg"
+                    src="assets/images/endustriyeltemizlik/bulasik-makinesi-durulama-maddesi.webp"
                     alt="BULAŞIK MAKİNESİ DURULAMA MADDESİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/bulasik-makinesi-durulama-maddesi.jpg"
+                      href="assets/images/endustriyeltemizlik/bulasik-makinesi-durulama-maddesi.webp"
                     ></a>
                   </div>
                 </div>

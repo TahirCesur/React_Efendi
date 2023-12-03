@@ -13,7 +13,7 @@ function AmbalajStrecFilmKisa() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -38,13 +38,13 @@ function AmbalajStrecFilmKisa() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/ambalaj/strec-film.jpg"
+                    src="assets/images/ambalaj/strec-film.webp"
                     alt={t("Streç Film")}
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/ambalaj/strec-film.jpg"
+                      href="assets/images/ambalaj/strec-film.webp"
                     ></a>
                   </div>
                 </div>

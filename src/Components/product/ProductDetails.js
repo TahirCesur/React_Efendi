@@ -7,7 +7,7 @@ function ProductDetails() {
         <div
           className="cta-two__bg"
           style={{
-            backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+            backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
           }}
         ></div>
         <div className="page-header__shape1"></div>
@@ -36,9 +36,9 @@ function ProductDetails() {
               data-wow-delay="200ms"
             >
               <div className="product-details__img">
-                <img src="assets/images/blog/1-1.jpg" alt="" />
+                <img src="assets/images/blog/1-1.webp" alt="" />
                 <div className="product-details__img-search">
-                  <a className="img-popup" href="assets/images/blog/1-1.jpg">
+                  <a className="img-popup" href="assets/images/blog/1-1.webp">
                     <span className="icon-magnifying-glass"></span>
                   </a>
                 </div>

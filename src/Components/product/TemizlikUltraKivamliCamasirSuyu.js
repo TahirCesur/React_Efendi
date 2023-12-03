@@ -14,7 +14,7 @@ function TemizlikUltraKivamliCamasirSuyu() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikUltraKivamliCamasirSuyu() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/ultra-kivamli-camasir-suyu-30-lt.jpg"
+                    src="assets/images/endustriyeltemizlik/ultra-kivamli-camasir-suyu-30-lt.webp"
                     alt="ULTRA KIVAMLI ÇAMAŞIR SUYU"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/ultra-kivamli-camasir-suyu-30-lt.jpg"
+                      href="assets/images/endustriyeltemizlik/ultra-kivamli-camasir-suyu-30-lt.webp"
                     ></a>
                   </div>
                 </div>

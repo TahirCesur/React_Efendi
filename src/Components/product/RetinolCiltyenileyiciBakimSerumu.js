@@ -12,7 +12,7 @@ const { t } = useTranslation();
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ const { t } = useTranslation();
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/cilt-yenileyici-bakim-serumu.jpg"
+                    src="assets/images/lopren/cilt-yenileyici-bakim-serumu.webp"
                     alt="RETİNOL 0.5% CİLT YENİLEYİCİ BAKIM SERUMU"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/cilt-yenileyici-bakim-serumu.jpg"
+                      href="assets/images/lopren/cilt-yenileyici-bakim-serumu.webp"
                     ></a>
                   </div>
                 </div>

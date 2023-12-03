@@ -14,7 +14,7 @@ function TemizlikGenelTemizlikMaddesi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikGenelTemizlikMaddesi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/genel-temizlik-maddesi-5lt.jpg"
+                    src="assets/images/endustriyeltemizlik/genel-temizlik-maddesi-5lt.webp"
                     alt="GENEL TEMİZLİK MADDESİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/genel-temizlik-maddesi-5lt.jpg"
+                      href="assets/images/endustriyeltemizlik/genel-temizlik-maddesi-5lt.webp"
                     ></a>
                   </div>
                 </div>

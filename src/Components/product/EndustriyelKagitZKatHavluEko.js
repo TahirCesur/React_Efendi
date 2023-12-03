@@ -13,7 +13,7 @@ function EndustriyelKagitZKatHavluEko() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -38,13 +38,13 @@ function EndustriyelKagitZKatHavluEko() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyelkagit/z-kat-havlu.jpg"
+                    src="assets/images/endustriyelkagit/z-kat-havlu.webp"
                     alt={t("Z KAT HAVLU")}
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyelkagit/z-kat-havlu.jpg"
+                      href="assets/images/endustriyelkagit/z-kat-havlu.webp"
                     ></a>
                   </div>
                 </div>

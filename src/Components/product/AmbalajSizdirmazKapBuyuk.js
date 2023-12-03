@@ -13,7 +13,7 @@ function AmbalajSizdirmazKapBuyuk() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -40,13 +40,13 @@ function AmbalajSizdirmazKapBuyuk() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/ambalaj/sizdirmaz-kap.jpg"
+                    src="assets/images/ambalaj/sizdirmaz-kap.webp"
                     alt={t("Sızdırmaz Kap")}
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/ambalaj/sizdirmaz-kap.jpg"
+                      href="assets/images/ambalaj/sizdirmaz-kap.webp"
                     ></a>
                   </div>
                 </div>

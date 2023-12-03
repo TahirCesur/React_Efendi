@@ -14,7 +14,7 @@ function TemizlikBeybiLateksPudraliEldiven() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function TemizlikBeybiLateksPudraliEldiven() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/beybi-lateks-pudralı.jpg"
+                    src="assets/images/endustriyeltemizlik/beybi-lateks-pudralı.webp"
                     alt="BEYBİ LATEKS PUDRALI ELDİVEN"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/beybi-lateks-pudralı.jpg"
+                      href="assets/images/endustriyeltemizlik/beybi-lateks-pudralı.webp"
                     ></a>
                   </div>
                 </div>

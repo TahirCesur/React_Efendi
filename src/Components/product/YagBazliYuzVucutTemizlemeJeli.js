@@ -12,7 +12,7 @@ const { t } = useTranslation();
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -38,11 +38,11 @@ const { t } = useTranslation();
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img src="assets/images/lopren/b-temizleme-yagi.jpg" alt="YAĞ BAZLI TEMİZLEYİCİ - YÜZ VE VÜCUT İÇİN TEMİZLEME YAĞI" />
+                  <img src="assets/images/lopren/b-temizleme-yagi.webp" alt="YAĞ BAZLI TEMİZLEYİCİ - YÜZ VE VÜCUT İÇİN TEMİZLEME YAĞI" />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/b-temizleme-yagi.jpg"
+                      href="assets/images/lopren/b-temizleme-yagi.webp"
                     ></a>
                   </div>
                 </div>

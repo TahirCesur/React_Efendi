@@ -13,7 +13,7 @@ function EndustriyelKagitMiniJumboTuvaletKagidi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -40,13 +40,13 @@ function EndustriyelKagitMiniJumboTuvaletKagidi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyelkagit/tuvalet-kagidi.jpg"
+                    src="assets/images/endustriyelkagit/tuvalet-kagidi.webp"
                     alt={t("Mini Jumbo Tuvalet Kağıdı")}
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyelkagit/tuvalet-kagidi.jpg"
+                      href="assets/images/endustriyelkagit/tuvalet-kagidi.webp"
                     ></a>
                   </div>
                 </div>

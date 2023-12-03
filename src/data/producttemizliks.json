@@ -1,21 +1,21 @@
 [
   {
     "id": "3",
-    "picture": "assets/images/endustriyeltemizlik/dolphin-nitril-eldiven.jpg",
+    "picture": "assets/images/endustriyeltemizlik/dolphin-nitril-eldiven.webp",
     "price": "detaylar",
     "nav": "/TemizlikDolphinNitrilEldiven",
     "title": "DOLPHİN NİTRİL ELDİVEN"
   },
   {
     "id": "6",
-    "picture": "assets/images/endustriyeltemizlik/beybi-nitril-eldiven.jpg",
+    "picture": "assets/images/endustriyeltemizlik/beybi-nitril-eldiven.webp",
     "price": "detaylar",
     "nav": "/TemizlikBeybiNitrilEldiven",
     "title": "BEYBİ NİTRİL ELDİVEN"
   },
   {
     "id": "7",
-    "picture": "assets/images/endustriyeltemizlik/viper-nitril-eldiven.jpg",
+    "picture": "assets/images/endustriyeltemizlik/viper-nitril-eldiven.webp",
     "price": "detaylar",
     "nav": "/TemizlikViperNitrilEldiven",
     "title": "VİPER NİTRİL ELDİVEN"
@@ -29,70 +29,70 @@
   },
   {
     "id": "4",
-    "picture": "assets/images/endustriyeltemizlik/beybi-lateks-pudralı.jpg",
+    "picture": "assets/images/endustriyeltemizlik/beybi-lateks-pudralı.webp",
     "price": "detaylar",
     "nav": "/TemizlikBeybiLateksPudraliEldiven",
     "title": "BEYBİ LATEKS PUDRALI ELDİVEN 100 LÜ"
   },
   {
     "id": "2",
-    "picture": "assets/images/endustriyeltemizlik/dolphin-lateks-pudrasiz-eldiven.png",
+    "picture": "assets/images/endustriyeltemizlik/dolphin-lateks-pudrasiz-eldiven.webp",
     "price": "detaylar",
     "nav": "/TemizlikDolphinLateksPudrasizEldiven",
     "title": "DOLPHİN LATEKS PUDRASIZ ELDİVEN"
   },
   {
     "id": "1",
-    "picture": "assets/images/endustriyeltemizlik/dolphin-lateks-pudrali-eldiven.png",
+    "picture": "assets/images/endustriyeltemizlik/dolphin-lateks-pudrali-eldiven.webp",
     "price": "detaylar",
     "nav": "/TemizlikDolphinLateksPudraliEldiven",
     "title": "DOLPHİN LATEKS PUDRALI ELDİVEN"
   },
   {
     "id": "9",
-    "picture": "assets/images/endustriyeltemizlik/bulasik-makinesi-durulama-maddesi.jpg",
+    "picture": "assets/images/endustriyeltemizlik/bulasik-makinesi-durulama-maddesi.webp",
     "price": "detaylar",
     "nav": "/TemizlikBulasikMakinesiDurulamaMaddesi",
     "title": "BULAŞIK MAKİNESİ DURULAMA MADDESİ"
   },
   {
     "id": "9",
-    "picture": "assets/images/endustriyeltemizlik/bulasik-makinesi-sivi-deterjani.jpg",
+    "picture": "assets/images/endustriyeltemizlik/bulasik-makinesi-sivi-deterjani.webp",
     "price": "detaylar",
     "nav": "/TemizlikBulasikMakinesiSiviDeterjani",
     "title": "BULAŞIK MAKİNESİ SIVI DETERJANI"
   },
   {
     "id": "10",
-    "picture": "assets/images/endustriyeltemizlik/hijyenik-masa-temizleyici.png",
+    "picture": "assets/images/endustriyeltemizlik/hijyenik-masa-temizleyici.webp",
     "price": "detaylar",
     "nav": "/TemizlikHijyenikMasaGenelAlanTemizleyici",
     "title": "HİJYENİK MASA VE GENEL ALAN TEMİZLEYİCİ"
   },
   {
     "id": "11",
-    "picture": "assets/images/endustriyeltemizlik/firin-gril-yanmis-yag-temizleyici-fisfis.jpg",
+    "picture": "assets/images/endustriyeltemizlik/firin-gril-yanmis-yag-temizleyici-fisfis.webp",
     "price": "detaylar",
     "nav": "/TemizlikFirinGrillYanmisYagTemizleyici",
     "title": "FIRIN IZGARA GRİLL VE YANMIŞ YAĞ TEMİZLEYİCİ"
   },
   {
     "id": "19",
-    "picture": "assets/images/endustriyeltemizlik/oxy-hijyenik-masa-temizleme.jpg",
+    "picture": "assets/images/endustriyeltemizlik/oxy-hijyenik-masa-temizleme.webp",
     "price": "detaylar",
     "nav": "/TemizlikOxyHijyenikMasaTemizlemeBezi",
     "title": "OXY HİJYEN ISLAK TEMİZLEME BEZİ"
   },
   {
     "id": "8",
-    "picture": "assets/images/endustriyeltemizlik/clark-hijyen-kovasi-bezi.jpg",
+    "picture": "assets/images/endustriyeltemizlik/clark-hijyen-kovasi-bezi.webp",
     "price": "detaylar",
     "nav": "/TemizlikClarkHijyenKovasi",
     "title": "CLARK HİJYEN KOVASI & BEZİ"
   },
   {
     "id": "13",
-    "picture": "assets/images/endustriyeltemizlik/camasir-suyu-30-lt.jpg",
+    "picture": "assets/images/endustriyeltemizlik/camasir-suyu-30-lt.webp",
     "price": "detaylar",
     "nav": "/TemizlikCamasirSuyu30kg",
     "title": "ÇAMAŞIR SUYU"
@@ -100,56 +100,56 @@
 
   {
     "id": "14",
-    "picture": "assets/images/endustriyeltemizlik/elde-bulasik-yikama-maddesi-m-102.jpg",
+    "picture": "assets/images/endustriyeltemizlik/elde-bulasik-yikama-maddesi-m-102.webp",
     "price": "detaylar",
     "nav": "/TemizlikEldeBulasikYikamaMaddesi",
     "title": "ELDE BULAŞIK YIKAMA MADDESİ"
   },
   {
     "id": "15",
-    "picture": "assets/images/endustriyeltemizlik/genel-temizlik-maddesi-5lt.jpg",
+    "picture": "assets/images/endustriyeltemizlik/genel-temizlik-maddesi-5lt.webp",
     "price": "detaylar",
     "nav": "/TemizlikGenelTemizlikMaddesi",
     "title": "GENEL TEMİZLİK MADDESİ"
   },
   {
     "id": "20",
-    "picture": "assets/images/endustriyeltemizlik/ultra-kivamli-camasir-suyu-30-lt.jpg",
+    "picture": "assets/images/endustriyeltemizlik/ultra-kivamli-camasir-suyu-30-lt.webp",
     "price": "detaylar",
     "nav": "/TemizlikUltraKivamliCamasirSuyu",
     "title": "ULTRA KIVAMLI ÇAMAŞIR SUYU"
   },
   {
     "id": "16",
-    "picture": "assets/images/endustriyeltemizlik/inoksclean-camasir-suyu-tableti.jpg",
+    "picture": "assets/images/endustriyeltemizlik/inoksclean-camasir-suyu-tableti.webp",
     "price": "detaylar",
     "nav": "/TemizlikCamasirSuyuTableti",
     "title": "ÇAMAŞIR SUYU TABLETİ"
   },
   {
     "id": "17",
-    "picture": "assets/images/endustriyeltemizlik/lavabo-gider-acici.jpg",
+    "picture": "assets/images/endustriyeltemizlik/lavabo-gider-acici.webp",
     "price": "detaylar",
     "nav": "/TemizliklavaboGiderAcici",
     "title": "LAVABO GİDER AÇICI"
   },
   {
     "id": "18",
-    "picture": "assets/images/endustriyeltemizlik/mineralli-ovma-kremi.jpg",
+    "picture": "assets/images/endustriyeltemizlik/mineralli-ovma-kremi.webp",
     "price": "detaylar",
     "nav": "/TemizlikMineralliOvmaKremi",
     "title": "MİNERALLİ OVAMA KREMİ"
   },
   {
     "id": "21",
-    "picture": "assets/images/endustriyeltemizlik/yag-cozucu.jpg",
+    "picture": "assets/images/endustriyeltemizlik/yag-cozucu.webp",
     "price": "detaylar",
     "nav": "/TemizlikYagCozucu",
     "title": "YAĞ ÇÖZÜCÜ"
   },
   {
     "id": "22",
-    "picture": "assets/images/endustriyeltemizlik/kolonya.jpg",
+    "picture": "assets/images/endustriyeltemizlik/kolonya.webp",
     "price": "detaylar",
     "nav": "/TemizlikKolonya",
     "title": "KOLONYA"

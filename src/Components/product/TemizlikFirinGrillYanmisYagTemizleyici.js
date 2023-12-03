@@ -14,7 +14,7 @@ function TemizlikFirinGrillYanmisYagTemizleyici() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikFirinGrillYanmisYagTemizleyici() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/firin-gril-yanmis-yag-temizleyici-fisfis.jpg"
+                    src="assets/images/endustriyeltemizlik/firin-gril-yanmis-yag-temizleyici-fisfis.webp"
                     alt="FIRIN IZGARA GRİLL VE YANMIŞ YAĞ TEMİZLEYİCİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/firin-gril-yanmis-yag-temizleyici-fisfis.jpg"
+                      href="assets/images/endustriyeltemizlik/firin-gril-yanmis-yag-temizleyici-fisfis.webp"
                     ></a>
                   </div>
                 </div>

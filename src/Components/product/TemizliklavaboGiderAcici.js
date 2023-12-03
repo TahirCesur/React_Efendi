@@ -14,7 +14,7 @@ function TemizliklavaboGiderAcici() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function TemizliklavaboGiderAcici() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/lavabo-gider-acici.jpg"
+                    src="assets/images/endustriyeltemizlik/lavabo-gider-acici.webp"
                     alt="LAVABO GİDER AÇICI"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/lavabo-gider-acici.jpg"
+                      href="assets/images/endustriyeltemizlik/lavabo-gider-acici.webp"
                     ></a>
                   </div>
                 </div>

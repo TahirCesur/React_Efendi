@@ -12,7 +12,7 @@ function HassasAtopikCiltYuzYikamaJeli() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function HassasAtopikCiltYuzYikamaJeli() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/hassas-cilt-yuz-yikama-jeli.jpg"
+                    src="assets/images/lopren/hassas-cilt-yuz-yikama-jeli.webp"
                     alt="HASSAS VE ATOPİK CİLTLER İÇİN YÜZ YIKAMA JELİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/hassas-cilt-yuz-yikama-jeli.jpg"
+                      href="assets/images/lopren/hassas-cilt-yuz-yikama-jeli.webp"
                     ></a>
                   </div>
                 </div>

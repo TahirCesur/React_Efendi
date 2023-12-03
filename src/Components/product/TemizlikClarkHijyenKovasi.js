@@ -14,7 +14,7 @@ function TemizlikClarkHijyenKovasi() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function TemizlikClarkHijyenKovasi() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/clark-hijyen-kovasi-bezi.jpg"
+                    src="assets/images/endustriyeltemizlik/clark-hijyen-kovasi-bezi.webp"
                     alt="CLARK HİJYEN KOVASI"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/clark-hijyen-kovasi-bezi.jpg"
+                      href="assets/images/endustriyeltemizlik/clark-hijyen-kovasi-bezi.webp"
                     ></a>
                   </div>
                 </div>

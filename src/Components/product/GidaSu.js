@@ -12,7 +12,7 @@ function GidaSu() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -36,11 +36,11 @@ function GidaSu() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img src="assets/images/gida/bardak-su.jpg" alt="Su" />
+                  <img src="assets/images/gida/bardak-su.webp" alt="Su" />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/gida/bardak-su.jpg"
+                      href="assets/images/gida/bardak-su.webp"
                     ></a>
                   </div>
                 </div>

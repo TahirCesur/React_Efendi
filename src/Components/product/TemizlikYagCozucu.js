@@ -14,7 +14,7 @@ function TemizlikYagCozucu() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function TemizlikYagCozucu() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/yag-cozucu.jpg"
+                    src="assets/images/endustriyeltemizlik/yag-cozucu.webp"
                     alt="YAĞ ÇÖZÜCÜ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/yag-cozucu.jpg"
+                      href="assets/images/endustriyeltemizlik/yag-cozucu.webp"
                     ></a>
                   </div>
                 </div>

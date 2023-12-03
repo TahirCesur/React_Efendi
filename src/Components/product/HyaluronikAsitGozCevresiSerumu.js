@@ -13,7 +13,7 @@ function HyaluronikAsitGozCevresiSerumu() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -40,13 +40,13 @@ function HyaluronikAsitGozCevresiSerumu() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/goz-cevresi-serumu.jpg"
+                    src="assets/images/lopren/goz-cevresi-serumu.webp"
                     alt="CAFFEİNE %5 + PEPTİDES + HYALÜRONİK ASİT GÖZ ÇEVRESİ SERUMU"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/goz-cevresi-serumu.jpg"
+                      href="assets/images/lopren/goz-cevresi-serumu.webp"
                     ></a>
                   </div>
                 </div>

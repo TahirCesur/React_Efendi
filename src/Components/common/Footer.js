@@ -26,14 +26,14 @@ function Footer() {
         <div
           className="main-footer__bg"
           style={{
-            backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+            backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
           }}
         ></div>
         <div className="container">
           <div className="main-footer__top wow fadeInUp" data-wow-delay="100ms">
             <Link as={Link} to="/" className="main-footer__logo">
               {/* <img
-                src="assets/images/yenidunya_logo.png"
+                src="assets/images/yenidunya_logo.webp"
                 alt="nisoz"
                 width="326"
                 height=""

@@ -12,7 +12,7 @@ function GlikolikAsitLekeKarsitiTonik() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -39,13 +39,13 @@ function GlikolikAsitLekeKarsitiTonik() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/lopren/leke-karsiti-tonik.jpg"
+                    src="assets/images/lopren/leke-karsiti-tonik.webp"
                     alt="GLİKOLİK ASİT %7 AYDINLATICI & LEKE KARŞITI TONİK"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/lopren/leke-karsiti-tonik.jpg"
+                      href="assets/images/lopren/leke-karsiti-tonik.webp"
                     ></a>
                   </div>
                 </div>

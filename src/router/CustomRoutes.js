@@ -4,8 +4,6 @@ import AboutPage from "../pages/AboutPage";
 import AboutusPage from "../pages/AboutusPage";
 import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
-import PortfolioPage from "../pages/PortfolioPage";
-import PortfoliosPage from "../pages/PortfoliosPage";
 import ProductPage from "../pages/ProductPage";
 import QuestionPage from "../pages/QuestionPage";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
@@ -421,8 +419,6 @@ const CustomRoutes = () => {
       <Route exact path="/Question" element={<QuestionPage />} />
       {/* <Route exact path="/TopBar" element={<TopBarPage />} /> */}
       <Route exact path="/Product" element={<ProductPage />} />
-      <Route exact path="/Portfolio" element={<PortfolioPage />} />
-      <Route exact path="/Portfolios" element={<PortfoliosPage />} />
       <Route path="/Contact" element={<ContactPage />} />
       <Route path="/Aboutus" element={<AboutusPage />} />
       <Route path="/About" element={<AboutPage />} />

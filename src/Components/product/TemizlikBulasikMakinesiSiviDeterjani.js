@@ -14,7 +14,7 @@ function TemizlikBulasikMakinesiSiviDeterjani() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikBulasikMakinesiSiviDeterjani() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/bulasik-makinesi-sivi-deterjani.jpg"
+                    src="assets/images/endustriyeltemizlik/bulasik-makinesi-sivi-deterjani.webp"
                     alt="BULAŞIK MAKİNESİ SIVI DETERJANI"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/bulasik-makinesi-sivi-deterjani.jpg"
+                      href="assets/images/endustriyeltemizlik/bulasik-makinesi-sivi-deterjani.webp"
                     ></a>
                   </div>
                 </div>

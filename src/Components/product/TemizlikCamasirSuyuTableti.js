@@ -14,7 +14,7 @@ function TemizlikCamasirSuyuTableti() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -41,13 +41,13 @@ function TemizlikCamasirSuyuTableti() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/endustriyeltemizlik/inoksclean-camasir-suyu-tableti.jpg"
+                    src="assets/images/endustriyeltemizlik/inoksclean-camasir-suyu-tableti.webp"
                     alt="FIRIN IZGARA GRİLL VE YANMIŞ YAĞ TEMİZLEYİCİ"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/endustriyeltemizlik/inoksclean-camasir-suyu-tableti.jpg"
+                      href="assets/images/endustriyeltemizlik/inoksclean-camasir-suyu-tableti.webp"
                     ></a>
                   </div>
                 </div>

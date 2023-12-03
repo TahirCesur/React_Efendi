@@ -68,7 +68,7 @@ function Contactus() {
                       className="service-one__item__hover"
                       style={{
                         backgroundImage:
-                          "url(assets/images/shapes/service-1-hover-shape.png)",
+                          "url(assets/images/shapes/service-1-hover-shape.webp)",
                       }}
                     ></div>
                     <div className="clearfix"></div>
@@ -95,7 +95,7 @@ function Contactus() {
                       className="service-one__item__hover"
                       style={{
                         backgroundImage:
-                          "url(assets/images/shapes/service-1-hover-shape.png)",
+                          "url(assets/images/shapes/service-1-hover-shape.webp)",
                       }}
                     ></div>
                     <div className="clearfix"></div>
@@ -124,7 +124,7 @@ function Contactus() {
                       className="service-one__item__hover"
                       style={{
                         backgroundImage:
-                          "url(assets/images/shapes/service-1-hover-shape.png)",
+                          "url(assets/images/shapes/service-1-hover-shape.webp)",
                       }}
                     ></div>
                     <div className="clearfix"></div>

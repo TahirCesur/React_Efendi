@@ -13,7 +13,7 @@ function GidaSoda() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -37,11 +37,11 @@ function GidaSoda() {
                 data-wow-delay="200ms"
               >
                 <div className="product-details__img">
-                  <img src="assets/images/gida/soda.jpg" alt="Soda" />
+                  <img src="assets/images/gida/soda.webp" alt="Soda" />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/gida/soda.jpg"
+                      href="assets/images/gida/soda.webp"
                     ></a>
                   </div>
                 </div>

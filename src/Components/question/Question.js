@@ -24,7 +24,7 @@ function Question() {
                   className="accrodion-one__thumb nisoz-tilt"
                   data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 15, "speed": 700, "scale": 1 }'
                 >
-                  <img src="assets/images/soru1.png" alt="nisoz" />
+                  <img src="assets/images/soru1.webp" alt="nisoz" />
                 </div>
               </div>
               <div className="col-md-7">

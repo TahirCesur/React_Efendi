@@ -12,7 +12,7 @@ function GidaCaykurKamelyaCay() {
           <div
             className="cta-two__bg"
             style={{
-              backgroundImage: "url(assets/images/shapes/footer-bg-1.png)",
+              backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
             }}
           ></div>
 
@@ -37,13 +37,13 @@ function GidaCaykurKamelyaCay() {
               >
                 <div className="product-details__img">
                   <img
-                    src="assets/images/gida/caykur-kamelya-cay.jpg"
+                    src="assets/images/gida/caykur-kamelya-cay.webp"
                     alt="Çaykur Kamelya Çay"
                   />
                   <div className="product-details__img-search">
                     <a
                       className="img-popup"
-                      href="assets/images/gida/caykur-kamelya-cay.jpg"
+                      href="assets/images/gida/caykur-kamelya-cay.webp"
                     ></a>
                   </div>
                 </div>

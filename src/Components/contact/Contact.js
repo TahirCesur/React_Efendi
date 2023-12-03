@@ -54,7 +54,7 @@ function Contact() {
             <div
               className="cta-two__bg"
               style={{
-                backgroundImage: "url(assets/images/shapes/cta-bg-2.png)",
+                backgroundImage: "url(assets/images/shapes/cta-bg-2.webp)",
               }}
             ></div>
             <div className="section-title">
