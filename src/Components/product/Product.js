@@ -40,7 +40,36 @@ function Product() {
                       <h5 className="section-title__tagline">
                         {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
                       </h5>
-                      <h2 className="section-title__title">{t("ÜRÜNLERİMİZ")}</h2>
+                      <h2 className="section-title__title">
+                        {t("ÜRÜNLERİMİZ")}
+                      </h2>
+                      <br />
+                      <div className="row">
+                        <span className="col-lg-6">
+                          <h6>
+                            <a
+                              href="assets/pdf/Yenidünya-Katalog.pdf"
+                              download
+                              className="sidebar__singles sidebar__download text-center"
+                            >
+                              <i class="fa fa-download"></i>&nbsp;
+                              {t("Yenidünya Endüstriyel PDF İndir")}
+                            </a>
+                          </h6>
+                        </span>
+                        <span className="col-lg-6">
+                          <h6>
+                            <a
+                              href="assets/pdf/Baproy-Bitkisel-Katalog.pdf"
+                              download
+                              className="sidebar__singles sidebar__download text-center"
+                            >
+                              <i class="fa fa-download"></i>&nbsp;
+                              {t("Baproy Bitkisel PDF İndir")}
+                            </a>
+                          </h6>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

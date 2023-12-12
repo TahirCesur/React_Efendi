@@ -67,89 +67,48 @@ function Question() {
               >
                 <Accordion.Item eventKey="0" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    KONSANTRE TEMİZLİK ÜRÜNÜ NEDİR?
+                    {t("KONSANTRE TEMİZLİK ÜRÜNÜ NEDİR?")}
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
                       <p>
-                        Konsantre temizlik ürünleri su ile çoğaltılabilen
-                        ürünlerdir. <br />
-                        Aktif temizlik bileşenleri bakımından yoğun bir formüle
-                        sahip olan konsantre temizlik ürünlerinin en önemli
-                        özelliği direkt kullanımlı ürünlere kıyasla daha az
-                        tüketim daha yüksek temizlik performansını sağlamasıdır.{" "}
-                        <br />
-                        Taşıması ve depolaması çok daha kolay, daha az atık
-                        oluşturduğu için çevreci ürünlerdir.
+                        {t("Konsantre temizlik ürünleri su ile çoğaltılabilen ürünlerdir. Aktif temizlik bileşenleri bakımından yoğun bir formüle sahip olan konsantre temizlik ürünlerinin en önemli özelliği direkt kullanımlı ürünlere kıyasla daha az tüketim daha yüksek temizlik performansını sağlamasıdır. Taşıması ve depolaması çok daha kolay, daha az atık oluşturduğu için çevreci ürünlerdir.")}
                       </p>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    KONSANTRE TEMİZLİK ÜRÜNÜ DİREKT KULLANILIR MI?
+                    {t("KONSANTRE TEMİZLİK ÜRÜNÜ DİREKT KULLANILIR MI?")}
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
                       <p>
-                        Konsantre temizlik ürünü, direkt temizlenmesi istenen
-                        yüzeylere uygulanmaz su ile seyreltilmesi gerekmektedir.
-                        Su ile seyreltilmemiş konsantre ürünler iyi performans
-                        gösteremedikleri gibi direkt kullanımlarda cilde teması
-                        halinde tahrişe neden olabilirler. <br />
-                        Kir yoğunluğuna göre etikette belirtilen seyreltme
-                        aralıklarında seyreltilmeleri ürünün düzgün çalışmasını
-                        sağlayacaktır.
-                        <br />
-                        Konsantre ürünler deterjan yapısını oluşturan hidrofilik
-                        (suyu seven) ve hidrofob (suyu iten) iyonik kısımlarını
-                        canlandırmamış ürünlerdir ve su ile çalışır hale
-                        gelirler. Aksi halde istenen performansı sağlayamazlar.
-                        <br />
-                        Sizde kullandığınız konsantre ürünlerimizi ambalajının
-                        arkasında bulunan kullanım şekline göre seyrelterek
-                        kullanınız.
+                      {t("Konsantre temizlik ürünü, direkt temizlenmesi istenen yüzeylere uygulanmaz su ile seyreltilmesi gerekmektedir. Su ile seyreltilmemiş konsantre ürünler iyi performans gösteremedikleri gibi direkt kullanımlarda cilde teması halinde tahrişe neden olabilirler. Kir yoğunluğuna göre etikette belirtilen seyreltme aralıklarında seyreltilmeleri ürünün düzgün çalışmasını sağlayacaktır. Konsantre ürünler deterjan yapısını oluşturan hidrofilik (suyu seven) ve hidrofob (suyu iten) iyonik kısımlarını canlandırmamış ürünlerdir ve su ile çalışır hale gelirler. Aksi halde istenen performansı sağlayamazlar. Sizde kullandığınız konsantre ürünlerimizi ambalajının arkasında bulunan kullanım şekline göre seyrelterek kullanınız.")}
                       </p>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    KONSANTRE TEMİZLİK ÜRÜNÜ İLE EN ETKİLİ SONUÇ NASIL ALIRIM ?
+                    {t("KONSANTRE TEMİZLİK ÜRÜNÜ İLE EN ETKİLİ SONUÇ NASIL ALIRIM ?")}
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
-                      <p>
-                        Kullanmakta olduğunuz ürünün seyreltme oranlarını
-                        ambalaj üzerinde görebilirsiniz.
-                        <br /> Kirin yoğunluğuna göre de belirtilen oran
-                        aralığında seyreltme yapabilirsiniz. Bu hem ekonomik hem
-                        de en etkili temizlik sağlar.
-                        <br />
-                        Kullandığımız seyreltme suyunun daha yumuşak ve kireçsiz
-                        olması temizleme gücünü arttıracaktır. Su kalitesi
-                        temizleme gücünü arttıran en temel unsurlardan biridir.
+                    <p>
+                      {t("Kullanmakta olduğunuz ürünün seyreltme oranlarını ambalaj üzerinde görebilirsiniz. Kirin yoğunluğuna göre de belirtilen oran aralığında seyreltme yapabilirsiniz. Bu hem ekonomik hem de en etkili temizlik sağlar. Kullandığımız seyreltme suyunun daha yumuşak ve kireçsiz olması temizleme gücünü arttıracaktır. Su kalitesi temizleme gücünü arttıran en temel unsurlardan biridir.")}
                       </p>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3" className="accrodion active">
                   <Accordion.Header className="accrodion-title">
-                    KONSANTRE TEMİZLİK ÜRÜNÜ DAHA TEHLİKELİ MİDİR?
+                    {t("KONSANTRE TEMİZLİK ÜRÜNÜ DAHA TEHLİKELİ MİDİR?")}
                   </Accordion.Header>
                   <Accordion.Body className="accrodion-content">
                     <div className="inner">
                       <p>
-                        Konsantre temizlik ürünleri yapılarında su ile
-                        seyreltildikten sonra daha iyi performans gösterdikleri
-                        için miktarca zenginleştirilmiş asidik, bazik, aktif ham
-                        maddelerle zenginleştirilmiş üründür. <br />
-                        Bu derişik pozisyonun cildinize veya malzemelerinize
-                        tahriş ediciliği görülebilir. <br />
-                        Fakat belirtilen oranlarda su ile seyreltilen ürünlerin
-                        tahrişliği azalmakla beraber ürün özelliğine göre doğru
-                        uygulandıkları alanlarda yüksek teknolojisiyle temizlik
-                        sağlar.
+                      {t("Konsantre temizlik ürünleri yapılarında su ile seyreltildikten sonra daha iyi performans gösterdikleri için miktarca zenginleştirilmiş asidik, bazik, aktif hammaddelerle zenginleştirilmiş üründür. Bu derişik pozisyonun cildinize veya malzemelerinize tahriş ediciliği görülebilir. Fakat belirtilen oranlarda su ile seyreltilen ürünlerin tahrişliği azalmakla beraber ürün özelliğine göre doğru uygulandıkları alanlarda yüksek teknolojisiyle temizlik sağlar.")}
                       </p>
                     </div>
                   </Accordion.Body>

@@ -60,7 +60,7 @@ function TemizlikHijyenikMasaGenelAlanTemizleyici() {
                   <div className="product-details__top">
                     <h3 className="product-details__title">
                       {t("HİJYENİK MASA VE GENEL ALAN TEMİZLEYİCİ")}
-                      <span className="product-details__price">{t()}</span>
+                      <span className="product-details__price">{t("K301")}</span>
                     </h3>
                   </div>
                   <div className="product-details__review">

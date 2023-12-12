@@ -1389,6 +1389,15 @@
   }
 }
 
+.sidebar__singles {
+  position: relative;
+  padding: 0px;
+}
+
+.sidebar__singles:hover {
+  color: #010101!important;
+}
+
 .sidebar__single + .sidebar__single {
   margin-top: 30px;
 }
@@ -1557,7 +1566,7 @@
 
 .sidebar__category {
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 10px;
 }
 
 .sidebar__category .sidebar__title {
@@ -2475,6 +2484,7 @@ h6 {
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
   margin-top: 7px;
+  text-align: center;
 }
 
 .nisoz-btn__text {
@@ -5829,7 +5839,7 @@ body.locked .page-wrapper {
   background-position: top left;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 @media (max-width: 767px) {
@@ -9972,7 +9982,7 @@ body.locked .page-wrapper {
 }
 
 .copyright__text a:hover {
-  color: var(--nisoz-base);
+  color: var(--nisoz-black);
 }
 
 /*--------------------------------------------------------------
@@ -14344,17 +14354,73 @@ body.boxed-wrapper .main-menu__phone {
   margin-top: 120px;
 }
 
+@media (max-width: 2100px) {
+  .resimSlider {
+    height: 740px;
+    background-color: #f2f2f2 !important;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .resimSlider {
+    height: 675px;
+    background-color: #f2f2f2 !important;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .resimSlider {
+    height: 635px;
+    background-color: #f2f2f2 !important;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .resimSlider {
+    height: 600px;
+    background-color: #f2f2f2 !important;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .resimSlider {
+    height: 500px;
+    background-color: #f2f2f2 !important;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .resimSlider {
+    height: 500px;
+    background-color: #f2f2f2 !important;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .resimSlider {
+    height: 470px;
+    background-color: #f2f2f2 !important;
+    margin-top: 120px;
+  }
+}
+
 @media (max-width: 992px) {
   .resimSlider {
     height: 400px;
     background-color: #f2f2f2 !important;
-    margin-top: 140px;
+    margin-top: 130px;
   }
 }
 
 @media (max-width: 780px) {
   .resimSlider {
-    height: 280px;
+    height: 290px;
     background-color: #f2f2f2 !important;
     margin-top: 130px;
   }
@@ -14371,7 +14437,7 @@ body.boxed-wrapper .main-menu__phone {
   .resimSlider {
     height: 200px;
     background-color: #f2f2f2 !important;
-    margin-top: 140px;
+    margin-top: 110px;
   }
 }
 @media (max-width: 360px) {

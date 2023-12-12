@@ -38,6 +38,17 @@ function EndustriyelTemizlik() {
                     <h2 className="section-title__title">
                       {t("ENDÜSTRİYEL TEMİZLİK")}
                     </h2>
+                    <br />
+                    <h6>
+                      <a
+                        href="assets/pdf/Yenidünya-Katalog.pdf"
+                        download
+                        className="sidebar__singles sidebar__download text-center"
+                      >
+                        <i class="fa fa-download"></i>&nbsp;
+                        {t("Yenidünya Endüstriyel PDF İndir")}
+                      </a>
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -58,6 +69,15 @@ function EndustriyelTemizlik() {
                             onClick={handleClick}
                           >
                             {t("Endüstriyel Temizlik")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            as={Link}
+                            to="/EndustriyelMutfak"
+                            onClick={handleClick}
+                          >
+                            {t("Endüstriyel Mutfak")}
                           </Link>
                         </li>
                         <li>

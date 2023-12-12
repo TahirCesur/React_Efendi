@@ -62,6 +62,15 @@ function Ambalaj() {
                         <li>
                           <Link
                             as={Link}
+                            to="/EndustriyelMutfak"
+                            onClick={handleClick}
+                          >
+                            {t("Endüstriyel Mutfak")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            as={Link}
                             to="/EndustriyelKagit"
                             onClick={handleClick}
                           >

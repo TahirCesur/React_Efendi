@@ -22,7 +22,7 @@
   },
   {
     "id": "5",
-    "picture": "assets/images/endustriyeltemizlik/beybi-lateks-pudrasiz.jpeg",
+    "picture": "assets/images/endustriyeltemizlik/beybi-lateks-pudrasiz.webp",
     "price": "detaylar",
     "nav": "/TemizlikBeybiLateksPudrasizEldiven",
     "title": "BEYBİ LATEKS PUDRASIZ ELDİVEN 100 LÜ"
@@ -153,5 +153,75 @@
     "price": "detaylar",
     "nav": "/TemizlikKolonya",
     "title": "KOLONYA"
+  },
+  {
+    "id": "32",
+    "picture": "assets/images/endustriyeltemizlik/sivi-el-sabunu.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikSiviElYikamaMaddesi",
+    "title": "SIVI EL YIKAMA MADDESİ"
+  },
+  {
+    "id": "23",
+    "picture": "assets/images/endustriyeltemizlik/agir-kir-yag-cozucu.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikAgirKirYagCozucu",
+    "title": "AĞIR KİR VE YAĞ ÇÖZÜCÜ"
+  },
+  {
+    "id": "24",
+    "picture": "assets/images/endustriyeltemizlik/bulasik-makinesi-kireç-temzileme-bakim.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikEndustriyelBulasikMakinesKirecTemzileme",
+    "title": "ENDÜSTRİYEL BULAŞIK MAKİNASI KİREÇ TEMİZLEME VE BAKIM"
+  },
+  {
+    "id": "25",
+    "picture": "assets/images/endustriyeltemizlik/alkol-bazli-yuzey-temizleme-maddesi.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikAlkolBazliYuzeyTemizleme",
+    "title": "ALKOL BAZLI YÜZEY TEMİZLEME MADDESİ"
+  },
+  {
+    "id": "26",
+    "picture": "assets/images/endustriyeltemizlik/qac-bazli-yuzey-temizleme-maddesi.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikQacBazliYuzeyTemizleme",
+    "title": "QAC BAZLI YÜZEY TEMİZLEME MADDESİ"
+  },
+  {
+    "id": "27",
+    "picture": "assets/images/endustriyeltemizlik/kurum-pas-silikat-asidik-temzilmeme-maddesi.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikKurumPasSilikatAsidikTemizleme",
+    "title": "KURUM PAS SİLİKAT SÖKÜCÜ YÜKSEK ASİDİK TEMİZLEYİCİ"
+  },
+  {
+    "id": "29",
+    "picture": "assets/images/endustriyeltemizlik/banyo-armatür-derz-temizleyici.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikBanyoArmatürDerzTemizleyicisi",
+    "title": "BANYO ARMATÜR DERZ TEMİZLEYİCİ"
+  },
+  {
+    "id": "30",
+    "picture": "assets/images/endustriyeltemizlik/wc-klozet-pisuar-temizleyici.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikWcKlozetPisuarTemizleme",
+    "title": "WC KLOZET PİSUAR TEMİZLEYİCİ G-208"
+  },
+  {
+    "id": "28",
+    "picture": "assets/images/endustriyeltemizlik/zemin-temizlik-otomat-sivisi.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikZeminTemizlikOtomatSivisi",
+    "title": "ZEMİN TEMİZLİK VE OTOMAT SIVISI G-209"
+  },
+  {
+    "id": "31",
+    "picture": "assets/images/endustriyeltemizlik/sivi-on-daldirma-maddesi.webp",
+    "price": "detaylar",
+    "nav": "/TemizlikSiviOnDaldirmaMaddesi",
+    "title": "BAPROY SIVI ÖN DALDIRMA MADDESİ M-108"
   }
 ]

@@ -25,10 +25,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_kol10j6",
-        "template_3dj27vj",
+        "service_vzhem5v",
+        "template_q6tt0ps",
         e.target,
-        "NzLGFAgtvciJq5EXd"
+        "vHITrMwYs-OEE439x"
       )
       .then(
         (result) => {

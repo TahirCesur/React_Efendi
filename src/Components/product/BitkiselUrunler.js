@@ -35,7 +35,20 @@ function BitkiselUrunler() {
                     <h5 className="section-title__tagline">
                       {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
                     </h5>
-                    <h2 className="section-title__title">{t("BİTKİSEL ÜRÜNLER")}</h2>
+                    <h2 className="section-title__title">
+                      {t("BİTKİSEL ÜRÜNLER")}
+                    </h2>
+                    <br />
+                    <h6>
+                      <a
+                        href="assets/pdf/Baproy-Bitkisel-Katalog.pdf"
+                        download
+                        className="sidebar__singles sidebar__download text-center"
+                      >
+                        <i class="fa fa-download"></i>&nbsp;
+                        {t("Baproy Bitkisel PDF İndir")}
+                      </a>
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -56,6 +69,15 @@ function BitkiselUrunler() {
                             onClick={handleClick}
                           >
                             {t("Endüstriyel Temizlik")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            as={Link}
+                            to="/EndustriyelMutfak"
+                            onClick={handleClick}
+                          >
+                            {t("Endüstriyel Mutfak")}
                           </Link>
                         </li>
                         <li>

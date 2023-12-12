@@ -120,7 +120,7 @@ function Header() {
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
-                  to="/aboutus"
+                  to="/Aboutus"
                   className="nav-link scrollto"
                   onClick={handleClick}
                 >
@@ -141,6 +141,13 @@ function Header() {
                     onClick={handleClick}
                   >
                     {t("Endüstrİyel TemİZLİk")}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/EndustriyelMutfak"
+                    onClick={handleClick}
+                  >
+                    {t("Endüstrİyel Mutfak")}
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
@@ -168,7 +175,7 @@ function Header() {
                     to="/Ambalaj"
                     onClick={handleClick}
                   >
-                    {t("Ambalaj")}
+                    {t("AMBALAJ")}
                   </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/Gida" onClick={handleClick}>
                     {t("Gıda")}
@@ -177,7 +184,7 @@ function Header() {
 
                 <Nav.Link
                   as={Link}
-                  to="/contactus"
+                  to="/Contactus"
                   className="nav-link scrollto"
                   onClick={handleClick}
                 >

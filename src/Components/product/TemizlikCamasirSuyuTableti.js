@@ -42,7 +42,7 @@ function TemizlikCamasirSuyuTableti() {
                 <div className="product-details__img">
                   <img
                     src="assets/images/endustriyeltemizlik/inoksclean-camasir-suyu-tableti.webp"
-                    alt="FIRIN IZGARA GRİLL VE YANMIŞ YAĞ TEMİZLEYİCİ"
+                    alt="ÇAMAŞIR SUYU TABLETİ"
                   />
                   <div className="product-details__img-search">
                     <a
@@ -60,7 +60,7 @@ function TemizlikCamasirSuyuTableti() {
                   <div className="product-details__top">
                     <h3 className="product-details__title">
                       {t("ÇAMAŞIR SUYU TABLETİ")}
-                      <span className="product-details__price">{t("İNOKSCLEAN")}</span>
+                      <span className="product-details__price">{t("İNOKSCLEAN G-212")}</span>
                     </h3>
                   </div>
                   <div className="product-details__review">

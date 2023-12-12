@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Col, Row } from "react-bootstrap";
 import ProductOne from "./ProductOne";
-import data from "../../data/productambalaj.json";
+import data from "../../data/productambalajs.json";
 
 function ProductSimilarAmbalaj() {
   const { t } = useTranslation();
@@ -22,9 +22,9 @@ function ProductSimilarAmbalaj() {
           </div>
           <div class="nisoz-owl__dots nisoz-owl__carousel ">
             <Row>
-              {data.map((productambalaj) => {
-                const { picture, id, nav, price } = productambalaj;
-                const title = t(productambalaj.title);
+              {data.map((productambalajs) => {
+                const { picture, id, nav, price } = productambalajs;
+                const title = t(productambalajs.title);
 
                 return (
                   <Col md={3} key={id} className="text-center mb-5">

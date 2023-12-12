@@ -73,14 +73,22 @@ function TemizlikFirinGrillYanmisYagTemizleyici() {
                   <div className="product-details__divider"></div>
                   <div className="product-details__excerpt">
                     <p className="list-unstyled product-details__description__lists">
-                      <ul className="list-unstyled product-details__description__lists">
+                    <ul className="list-unstyled product-details__description__lists">
                         <li>
                           <span className="icon-right-arrow"></span>
-                          {t("Bilgilendirme :")}
+                          {t("Kullanım Alanları")}
                         </li>
-                        {t(
-                          "Mutfakta yağ çözücü olarak tasarlanmış bir üründür. Özellikle sıcak yüzeylerde etkin performans sağlar. Fırın ızgara davlumbaz, Grill ve mutfaktaki tüm yüzeylerde gönül rahatlığı ile kulllanılabilen profesyonel bir yağ çözücüdür."
-                        )}
+                        {t("Ocak, fırın, ızgara, grill, fritöz gibi mutfak aletleri üzerinde biriken yanmış yağları ovma, kazıma gerektirmeden kolayca temizler. İçerdiği yağ çözücü kimyasallar, surfaktantlar ve alkali maddeler sayesinde çok süratli ve kolay sonuç alınır. Köpük olarakta kullanıma uygundur. Alüminyum yüzeyler için uygun değildir.")}
+                        <li>
+                          <span className="icon-right-arrow"></span>
+                          {t("Ürün İçeriği")}
+                        </li>
+                        {t("Yüzey aktif madde, alkali madde, solvent..")}
+                        <li>
+                          <span className="icon-right-arrow"></span>
+                          {t("Kullanma Talimatı")}
+                        </li>
+                        {t("BAPROY M103 Fırın Temizleme Maddesi 45-50°C’ye ısıtılmış ağır yağlı yüzeylere püskürtülerek direkt uygulanır ve daha iyi sonuç almak için yüzey üzerinde oluşan köpük tabakası bir süre bekletilir. Fırça veya sünger yardımıyla temizlenir ve yüzey durulanır.")}
                       </ul>
                     </p>
                   </div>

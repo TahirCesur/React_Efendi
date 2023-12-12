@@ -92,8 +92,24 @@ import TemizlikUltraKivamliCamasirSuyuPage from "../pages/TemizlikUltraKivamliCa
 import TemizlikYagCozucuPage from "../pages/TemizlikYagCozucuPage";
 import TemizlikKolonyaPage from "../pages/TemizlikKolonyaPage";
 import BitkiselUrunlerBaproySensitiveCamasirDeterjaniPage from "../pages/BitkiselUrunlerBaproySensitiveCamasirDeterjaniPage";
-import BitkiselUrunlerBaproyLavanderCamasirDeterjaniPage from "../pages/BitkiselUrunlerBaproyLavanderCamasirDeterjaniPage";
 import BitkiselUrunlerBaproyBabyCamasirDeterjaniPage from "../pages/BitkiselUrunlerBaproyBabyCamasirDeterjaniPage";
+import EndustriyelMutfakPage from "../pages/EndustriyelMutfakPage";
+import EndustriyelMutfakInoksanBulasikMakinesiPage from "../pages/EndustriyelMutfakInoksanBulasikMakinesiPage";
+import EndustriyelMutfakOztiryakilerBulasikMakinesiPage from "../pages/EndustriyelMutfakOztiryakilerBulasikMakinesiPage";
+import EndustriyelMutfakOztiryakilerBardakYikamaMakinesiPage from "../pages/EndustriyelMutfakOztiryakilerBardakYikamaMakinesiPage";
+import TemizlikEndustriyelBulasikMakinesKirecTemzilemePage from "../pages/TemizlikEndustriyelBulasikMakinesKirecTemzilemePage";
+import TemizlikAgirKirYagCozucuPage from "../pages/TemizlikAgirKirYagCozucuPage";
+import TemizlikAlkolBazliYuzeyTemizlemePage from "../pages/TemizlikAlkolBazliYuzeyTemizlemePage";
+import TemizlikSiviOnDaldirmaMaddesiPage from "../pages/TemizlikSiviOnDaldirmaMaddesiPage";
+import TemizlikQacBazliYuzeyTemizlemePage from "../pages/TemizlikQacBazliYuzeyTemizlemePage";
+import TemizlikKurumPasSilikatAsidikTemizlemePage from "../pages/TemizlikKurumPasSilikatAsidikTemizlemePage";
+import TemizlikWcKlozetPisuarTemizlemePage from "../pages/TemizlikWcKlozetPisuarTemizlemePage";
+import TemizlikZeminTemizlikOtomatSivisiPage from "../pages/TemizlikZeminTemizlikOtomatSivisiPage";
+import TemizlikBanyoArmatürDerzTemizleyicisiPage from "../pages/TemizlikBanyoArmatürDerzTemizleyicisiPage";
+import TemizlikSiviElYikamaMaddesiPage from "../pages/TemizlikSiviElYikamaMaddesiPage";
+import BitkiselUrunlerBaproyBabyBitkiselCamasirYumusaticiPage from "../pages/BitkiselUrunlerBaproyBabyBitkiselCamasirYumusaticiPage";
+import BitkiselUrunlerBaproyBitkiselCamasirYumusaticiPage from "../pages/BitkiselUrunlerBaproyBitkiselCamasirYumusaticiPage";
+import BitkiselUrunlerBaproyBitkiselBiberonEmzikTemzileyiciPage from "../pages/BitkiselUrunlerBaproyBitkiselBiberonEmzikTemzileyiciPage";
 
 /* import TopBarPage from "../pages/TopBarPage"; */
 
@@ -121,8 +137,30 @@ const CustomRoutes = () => {
       <Route exact path="/Ambalaj" element={<AmbalajPage />} />
       <Route exact path="/BitkiselUrunler" element={<BitkiselUrunlerPage />} />
       <Route exact path="/BitkiselUrunlerBaproyBabyCamasirDeterjani" element={<BitkiselUrunlerBaproyBabyCamasirDeterjaniPage />} />
-      <Route exact path="/BitkiselUrunlerBaproyLavanderCamasirDeterjani" element={<BitkiselUrunlerBaproyLavanderCamasirDeterjaniPage />} />
       <Route exact path="/BitkiselUrunlerBaproySensitiveCamasirDeterjani" element={<BitkiselUrunlerBaproySensitiveCamasirDeterjaniPage />} />
+      <Route exact path="/BitkiselUrunlerBaproyBitkiselCamasirYumusatici" element={<BitkiselUrunlerBaproyBitkiselCamasirYumusaticiPage />} />
+      <Route exact path="/BitkiselUrunlerBaproyBabyBitkiselCamasirYumusatici" element={<BitkiselUrunlerBaproyBabyBitkiselCamasirYumusaticiPage />} />
+      <Route exact path="/BitkiselUrunlerBaproyBitkiselBiberonEmzikTemzileyici" element={<BitkiselUrunlerBaproyBitkiselBiberonEmzikTemzileyiciPage />} />
+      <Route
+        exact
+        path="/EndustriyelMutfakOztiryakilerBardakYikamaMakinesi"
+        element={<EndustriyelMutfakOztiryakilerBardakYikamaMakinesiPage />}
+      />
+      <Route
+        exact
+        path="/EndustriyelMutfakOztiryakilerBulasikMakinesi"
+        element={<EndustriyelMutfakOztiryakilerBulasikMakinesiPage />}
+      />
+      <Route
+        exact
+        path="/EndustriyelMutfakInoksanBulasikMakinesi"
+        element={<EndustriyelMutfakInoksanBulasikMakinesiPage />}
+      />
+      <Route
+        exact
+        path="/EndustriyelMutfak"
+        element={<EndustriyelMutfakPage />}
+      />
       <Route
         exact
         path="/EndustriyelKagitZKatHavlu"
@@ -162,6 +200,56 @@ const CustomRoutes = () => {
         exact
         path="/EndustriyelKagit"
         element={<EndustriyelKagitPage />}
+      />
+      <Route
+        exact
+        path="/TemizlikSiviElYikamaMaddesi"
+        element={<TemizlikSiviElYikamaMaddesiPage />}
+      />
+      <Route
+        exact
+        path="/TemizlikBanyoArmatürDerzTemizleyicisi"
+        element={<TemizlikBanyoArmatürDerzTemizleyicisiPage />}
+      />
+      <Route
+        exact
+        path="/TemizlikZeminTemizlikOtomatSivisi"
+        element={<TemizlikZeminTemizlikOtomatSivisiPage />}
+      />
+      <Route
+        exact
+        path="/TemizlikWcKlozetPisuarTemizleme"
+        element={<TemizlikWcKlozetPisuarTemizlemePage />}
+      />
+      <Route
+        exact
+        path="/TemizlikKurumPasSilikatAsidikTemizleme"
+        element={<TemizlikKurumPasSilikatAsidikTemizlemePage />}
+      />
+      <Route
+        exact
+        path="TemizlikQacBazliYuzeyTemizleme"
+        element={<TemizlikQacBazliYuzeyTemizlemePage />}
+      />
+      <Route
+        exact
+        path="/TemizlikSiviOnDaldirmaMaddesi"
+        element={<TemizlikSiviOnDaldirmaMaddesiPage />}
+      />
+      <Route
+        exact
+        path="/TemizlikAlkolBazliYuzeyTemizleme"
+        element={<TemizlikAlkolBazliYuzeyTemizlemePage />}
+      />
+      <Route
+        exact
+        path="/TemizlikAgirKirYagCozucu"
+        element={<TemizlikAgirKirYagCozucuPage />}
+      />
+      <Route
+        exact
+        path="/TemizlikEndustriyelBulasikMakinesKirecTemzileme"
+        element={<TemizlikEndustriyelBulasikMakinesKirecTemzilemePage />}
       />
       <Route
         exact

@@ -20,29 +20,32 @@ function About() {
 
   return (
     <section className="about-one">
+      {/* <head>
+        <link rel="canonical" href="https://yenidunyaendustriyel.com/aboutus" />
+      </head> */}
       <div className="container">
         <div className="row">
+          <div className="section-title text-center">
+            <div className="section-title__triangle">
+              <img src="assets/images/favicons/icon.ico" alt="icon" />
+            </div>
+            <h5 className="section-title__tagline">
+              {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
+            </h5>
+            <h2 className="section-title__title">{t("HAKKIMIZDA")}</h2>
+          </div>
           <div className="col-lg-6">
             <div className="about-four__thumb">
               <div
                 className="about-four__thumb__item wow fadeInUp"
                 data-wow-delay="200ms"
               >
-                <img src="assets/images/Hakkımızda.webp" alt="Hakkımızda" />
+                <img src="assets/images/hakkimizda.webp" alt="Hakkımızda" />
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="about-one__content">
-              <div className="section-title">
-                <div className="section-title__triangle">
-                  <img src="assets/images/favicons/icon.ico" alt="icon" />
-                </div>
-                <h5 className="section-title__tagline">
-                  {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
-                </h5>
-                <h2 className="section-title__title">{t("HAKKIMIZDA")}</h2>
-              </div>
+            <div className="about-one__content"><br />
               <p className="about-one__content__text">
                 {t(
                   "Yenidünya Endüstriyel Tedarik Firması, yüksek kaliteli endüstriyel malzemelerin güvenilir tedarikçisidir. Yenidünya Endüstriyel Tedarik Firması 2018 yılında kurulmuş ve başından itibaren endüstriyel sektörde müşterilerimize mükemmel hizmet sunma misyonunu benimsemiştir. Firma merkezimiz Bursa Türkiye konumundadır ve ulusal ve uluslararası müşterilere hizmet vermektedir."
@@ -76,22 +79,30 @@ function About() {
                 </div>
               </div>
               <div className="about-one__progress">
-                <h4 className="about-one__progress--title"></h4>
+                <h4 className="about-one__progress--title">
+                  <Link
+                    as={Link}
+                    to="/aboutus"
+                    className="nisoz-btn"
+                    onClick={handleClick}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      textAlign: "center",
+                    }}
+                  >
+                    {/* İstediğiniz kadar padding ekleyebilirsiniz */}
+                    <span className="nisoz-btn__shape"></span>
+                    <span className="nisoz-btn__shape"></span>
+                    <span className="nisoz-btn__shape"></span>
+                    <span className="nisoz-btn__shape"></span>
+                    <span className="nisoz-btn__text"></span>
+                    <span className="nisoz-btn__text">
+                      {t("Daha fazlasını Keşfet")}
+                    </span>
+                  </Link>
+                </h4>
               </div>
-              <Link
-                as={Link}
-                to="/aboutus"
-                className="nisoz-btn"
-                onClick={handleClick}
-              >
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__text">
-                  {t("Daha fazlasını Keşfet")}
-                </span>
-              </Link>
             </div>
           </div>
         </div>

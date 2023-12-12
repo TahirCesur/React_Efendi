@@ -38,7 +38,9 @@ function Footer() {
                 width="326"
                 height=""
               /> */}
-              <h1 className="text-white">{t("Yenidünya Endüstriyel Tedarik")}</h1>
+              <h1 className="text-white">
+                {t("Yenidünya Endüstriyel Tedarik")}
+              </h1>
             </Link>
             <div className="main-footer__social">
               <a href="https://www.facebook.com/" target="_blank">
@@ -76,7 +78,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="/aboutus" onClick={handleClick}>
+                    <Link as={Link} to="/Aboutus" onClick={handleClick}>
                       <i
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
@@ -85,7 +87,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="/product" onClick={handleClick}>
+                    <Link as={Link} to="/Product" onClick={handleClick}>
                       <i
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
@@ -94,7 +96,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="/question" onClick={handleClick}>
+                    <Link as={Link} to="/Question" onClick={handleClick}>
                       <i
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
@@ -103,7 +105,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="/contactus" onClick={handleClick}>
+                    <Link as={Link} to="/Contactus" onClick={handleClick}>
                       <i
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
@@ -122,7 +124,11 @@ function Footer() {
                 <h3 className="text-white">{t("Ürünlerimiz")}</h3>
                 <ul>
                   <li>
-                    <Link as={Link} to="/EndustriyelTemizlik" onClick={handleClick}>
+                    <Link
+                      as={Link}
+                      to="/EndustriyelTemizlik"
+                      onClick={handleClick}
+                    >
                       <i
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
@@ -131,7 +137,24 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="/EndustriyelKagit" onClick={handleClick}>
+                    <Link
+                      as={Link}
+                      to="/EndustriyelMutfak"
+                      onClick={handleClick}
+                    >
+                      <i
+                        className="fa fa-chevron-right"
+                        style={{ fontSize: "13px" }}
+                      ></i>
+                      &nbsp; {t("Endüstriyel Mutfak")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      as={Link}
+                      to="/EndustriyelKagit"
+                      onClick={handleClick}
+                    >
                       <i
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
@@ -140,7 +163,11 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link as={Link} to="/KozmetikUrunleri" onClick={handleClick}>
+                    <Link
+                      as={Link}
+                      to="/KozmetikUrunleri"
+                      onClick={handleClick}
+                    >
                       <i
                         className="fa fa-chevron-right"
                         style={{ fontSize: "13px" }}
@@ -212,7 +239,7 @@ function Footer() {
       <section className="copyright text-center">
         <div className="container wow fadeInUp" data-wow-delay="500ms">
           <p className="copyright__text">
-            <Link as={Link} to="/">
+            <Link as={Link} to="/" onClick={handleClick}>
               {t("Yenidünya Endüstriyel Tedarik")} © 2023
             </Link>
           </p>

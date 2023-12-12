@@ -23,10 +23,10 @@ function Contactus() {
 
     emailjs
       .sendForm(
-        "service_lp35s39",
-        "template_giqb4o4",
+        "service_vzhem5v",
+        "template_q6tt0ps",
         e.target,
-        "7LseggvnGoIcgGHia"
+        "vHITrMwYs-OEE439x"
       )
       .then(
         (result) => {
@@ -75,7 +75,9 @@ function Contactus() {
                     <div className="service-one__item__icon">
                       <span className="icon-phone-call-1"></span>
                     </div>
-                    <h3 className="service-one__item__title text-white">{t("GSM")}</h3>
+                    <h3 className="service-one__item__title text-white">
+                      {t("GSM")}
+                    </h3>
                     <p className="service-one__item__title1 text-white">
                       0224 223 4234
                       <br />
@@ -103,7 +105,7 @@ function Contactus() {
                       <span className="icon-mailbox"></span>
                     </div>
                     <h3 className="service-one__item__title text-white">
-                    {t("E-MAİL")}
+                      {t("E-MAİL")}
                     </h3>
                     <p className="service-one__item__title1 text-white">
                       info@yenidunyaendustriyel.com

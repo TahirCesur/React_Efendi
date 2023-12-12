@@ -58,7 +58,7 @@ function TemizliklavaboGiderAcici() {
                   <div className="product-details__top">
                     <h3 className="product-details__title">
                       {t("LAVABO GİDER AÇICI")}
-                      <span className="product-details__price">{t()}</span>
+                      <span className="product-details__price">{t("G-211")}</span>
                     </h3>
                   </div>
                   <div className="product-details__review">

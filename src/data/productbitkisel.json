@@ -1,23 +1,37 @@
 [
   {
     "id": "1",
-    "picture": "assets/images/bitkisel/bitkisel-camasir-deterjani-levander-1.webp",
-    "price": "detaylar",
-    "nav": "/BitkiselUrunlerBaproyLavanderCamasirDeterjani",
-    "title": "BAPROY LAVANDER BİTKİSEL ÇAMAŞIR DETERJANI"
-  },
-  {
-    "id": "2",
     "picture": "assets/images/bitkisel/bitkisel-camasir-deterjani-baby.webp",
     "price": "detaylar",
     "nav": "/BitkiselUrunlerBaproyBabyCamasirDeterjani",
     "title": "BAPROY BABY BİTKİSEL ÇAMAŞIR DETERJANI"
   },
   {
-    "id": "3",
+    "id": "2",
     "picture": "assets/images/bitkisel/bitkisel-camasir-deterjani-sensitive-1.webp",
     "price": "detaylar",
     "nav": "/BitkiselUrunlerBaproySensitiveCamasirDeterjani",
     "title": "BAPROY SENSİTİVE BİTKİSEL ÇAMAŞIR DETERJANI"
+  },
+  {
+    "id": "3",
+    "picture": "assets/images/bitkisel/bitkisel-camasir-yumusatici.webp",
+    "price": "detaylar",
+    "nav": "/BitkiselUrunlerBaproyBitkiselCamasirYumusatici",
+    "title": "BAPROY BİTKİSEL ÇAMAŞIR YUMUŞATICI"
+  },
+  {
+    "id": "4",
+    "picture": "assets/images/bitkisel/baby-bitkisel-camasir-yumusatici.webp",
+    "price": "detaylar",
+    "nav": "/BitkiselUrunlerBaproyBabyBitkiselCamasirYumusatici",
+    "title": "BAPROY BABY BİTKİSEL ÇAMAŞIR YUMUŞATICI"
+  },
+  {
+    "id": "5",
+    "picture": "assets/images/bitkisel/bitkisel-biberon-emzik-temizleyici.webp",
+    "price": "detaylar",
+    "nav": "/BitkiselUrunlerBaproyBitkiselBiberonEmzikTemzileyici",
+    "title": "BAPROY BİTKİSEL BİBERON VE EMZİK TEMİZLEYİCİ"
   }
 ]

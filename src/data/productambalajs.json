@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "picture": "assets/images/ambalaj/endustriyel-jumbo-cop-torbasi.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajJumboCopTorbasi",
+    "title": "ENDÜSTRİYEL JUMBO ÇÖP TORBASI 80*110"
+  },
+  {
+    "id": "2",
+    "picture": "assets/images/ambalaj/endustriyel-buyuk-cop-torbasi.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajBuyukCopTorbasi",
+    "title": "ENDÜSTRİYEL BÜYÜK ÇÖP TORBASI 65*80"
+  },
+  {
+    "id": "3",
+    "picture": "assets/images/ambalaj/orta-boy-cop-torbasi.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajOrtaCopTorbasi",
+    "title": "BAPROY ORTA BOY ÇÖP TORBASI 55*60"
+  },
+  {
+    "id": "4",
+    "picture": "assets/images/ambalaj/aluminyum-folyo-30-100.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajAluminyumFolyoKisa",
+    "title": "ALÜMİNYUM FOLYO 30 CM 100 M KISA"
+  },
+  {
+    "id": "5",
+    "picture": "assets/images/ambalaj/aluminyum-folyo.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajAluminyumFolyoUzun",
+    "title": "ALÜMİNYUM FOLYO 45 CM 2,5 KG"
+  },
+  {
+    "id": "6",
+    "picture": "assets/images/ambalaj/strec-film.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajStrecFilmKisa",
+    "title": "STREÇ FİLM 30*300M 8 MİC"
+  },
+  {
+    "id": "7",
+    "picture": "assets/images/ambalaj/strec-film.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajStrecFilmUzun",
+    "title": "STREÇ FİLM 45*300M 8 MİC"
+  },
+  {
+    "id": "8",
+    "picture": "assets/images/ambalaj/sizdirmaz-kap.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajSizdirmazKapBuyuk",
+    "title": "SIZDIRMAZ KAP 1000 ML"
+  },
+  {
+    "id": "9",
+    "picture": "assets/images/ambalaj/sizdirmaz-kap.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajSizdirmazKapOrta",
+    "title": "SIZDIRMAZ KAP 750 ML"
+  },
+  {
+    "id": "10",
+    "picture": "assets/images/ambalaj/sizdirmaz-kap.webp",
+    "price": "detaylar",
+    "nav": "/AmbalajSizdirmazKapKucuk",
+    "title": "SIZDIRMAZ KAP 500 ML"
+  }
+]

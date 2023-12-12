@@ -39,6 +39,17 @@ function KozmetikUrunleri() {
                     <h2 className="section-title__title">
                       {t("KOZMETİK ÜRÜNLERİ")}
                     </h2>
+                    <br />
+                    <h6>
+                      <a
+                        href="assets/pdf/Lopren-Kozmetik-Katalog.pdf"
+                        download
+                        className="sidebar__singles sidebar__download text-center"
+                      >
+                        <i class="fa fa-download"></i>&nbsp;
+                        {t("Lopren Kozmetik PDF İndir")}
+                      </a>
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -52,6 +63,14 @@ function KozmetikUrunleri() {
                     <div className="sidebar__single sidebar__category">
                       <h3 className="sidebar__title">{t("KATEGORİLER")}</h3>
                       <ul className="sidebar__category-list list-unstyled">
+                        {/* <div className="sidebar__singles sidebar__download">
+                          <h6>
+                            <a href="assets/pdf/Yenidünya-Katalog.pdf" download>
+                              <i class="fa fa-download"></i>&nbsp;
+                              {t("Katalog PDF İndir")}
+                            </a>
+                          </h6>
+                        </div> */}
                         <li>
                           <Link
                             as={Link}
@@ -59,6 +78,15 @@ function KozmetikUrunleri() {
                             onClick={handleClick}
                           >
                             {t("Endüstriyel Temizlik")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            as={Link}
+                            to="/EndustriyelMutfak"
+                            onClick={handleClick}
+                          >
+                            {t("Endüstriyel Mutfak")}
                           </Link>
                         </li>
                         <li>
