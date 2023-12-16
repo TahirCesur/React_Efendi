@@ -42,7 +42,7 @@ function Header() {
       <header className="main-header sticky-top fixed-top">
         <div
           className="topbar fixed-top sticky-top mb-1"
-          style={{ backgroundColor: "#1c3844", padding: "7px" }}
+          style={{padding: "7px" }}
         >
           <Container>
             <div className="d-flex justify-content-between align-items-center">
@@ -203,22 +203,26 @@ function Header() {
                 </Nav.Link> */}
               </Nav>
               <div class="main-menu__right">
-                <a href="tel:+02242234234" class="main-menu__phone">
-                  <i class="icon-telephone"></i>
+                <a href="tel:+02242234234" className="main-menu__phone" alt="Telefon" aria-label="Telefon">
+                  <i className="icon-telephone"></i>
                 </a>
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="main-menu__phone"
+                  className="main-menu__phone"
+                  alt="Facebook"
+                  aria-label="Whatsapp"
                 >
-                  <i class="fab fa-facebook"></i>
+                  <i className="fab fa-Facebook"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/yenidunyaendustriyel/"
                   target="_blank"
-                  class="main-menu__phone"
+                  className="main-menu__phone"
+                  alt="Yenidünya"
+                  aria-label="Yenidünya"
                 >
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
               </div>
             </Navbar.Collapse>

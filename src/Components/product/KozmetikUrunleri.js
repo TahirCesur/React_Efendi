@@ -31,7 +31,7 @@ function KozmetikUrunleri() {
                 <div className="col-md-12 wow fadeInUp" data-wow-delay="100ms">
                   <div className="section-title text-center">
                     <div className="section-title__triangle">
-                      <img src="assets/images/favicons/icon.ico" alt="icon" />
+                      <img src="assets/images/favicons/icon.ico" alt="icon" aria-label="icon" />
                     </div>
                     <h5 className="section-title__tagline">
                       {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
@@ -40,7 +40,7 @@ function KozmetikUrunleri() {
                       {t("KOZMETİK ÜRÜNLERİ")}
                     </h2>
                     <br />
-                    <h6>
+                    <p>
                       <a
                         href="assets/pdf/Lopren-Kozmetik-Katalog.pdf"
                         download
@@ -49,7 +49,7 @@ function KozmetikUrunleri() {
                         <i class="fa fa-download"></i>&nbsp;
                         {t("Lopren Kozmetik PDF İndir")}
                       </a>
-                    </h6>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -64,12 +64,12 @@ function KozmetikUrunleri() {
                       <h3 className="sidebar__title">{t("KATEGORİLER")}</h3>
                       <ul className="sidebar__category-list list-unstyled">
                         {/* <div className="sidebar__singles sidebar__download">
-                          <h6>
+                          <p>
                             <a href="assets/pdf/Yenidünya-Katalog.pdf" download>
                               <i class="fa fa-download"></i>&nbsp;
                               {t("Katalog PDF İndir")}
                             </a>
-                          </h6>
+                          </p>
                         </div> */}
                         <li>
                           <Link

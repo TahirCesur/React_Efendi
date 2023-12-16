@@ -27,7 +27,7 @@ function About() {
         <div className="row">
           <div className="section-title text-center">
             <div className="section-title__triangle">
-              <img src="assets/images/favicons/icon.ico" alt="icon" />
+              <img src="assets/images/favicons/icon.ico" alt="icon" aria-label="icon" width={"32px"} height={"32px"}/>
             </div>
             <h5 className="section-title__tagline">
               {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
@@ -40,7 +40,7 @@ function About() {
                 className="about-four__thumb__item wow fadeInUp"
                 data-wow-delay="200ms"
               >
-                <img src="assets/images/hakkimizda.webp" alt="Hakkımızda" />
+                <img src="assets/images/hakkimizda.webp" alt="Hakkımızda" width={"100%"} height={"500px"}/>
               </div>
             </div>
           </div>

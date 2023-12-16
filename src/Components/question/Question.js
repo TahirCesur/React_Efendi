@@ -11,7 +11,7 @@ function Question() {
           <div className="col-xl-6 wow fadeInLeft" data-wow-delay="200ms">
             <div className="section-title">
               <div className="section-title__triangle">
-                <img src="assets/images/favicons/icon.ico" alt="icon" />
+                <img src="assets/images/favicons/icon.ico" alt="icon" aria-label="icon" />
               </div>
               <h5 className="section-title__tagline">
                 {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
@@ -24,7 +24,7 @@ function Question() {
                   className="accrodion-one__thumb nisoz-tilt"
                   data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 15, "speed": 700, "scale": 1 }'
                 >
-                  <img src="assets/images/soru1.webp" alt="nisoz" />
+                  <img src="assets/images/soru1.webp" alt="soru" aria-label="soru" width={"100%"} height={"auto"}/>
                 </div>
               </div>
               <div className="col-md-7">

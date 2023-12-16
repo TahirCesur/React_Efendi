@@ -30,7 +30,7 @@ function BitkiselUrunler() {
                 <div className="col-md-12 wow fadeInUp" data-wow-delay="100ms">
                   <div className="section-title text-center">
                     <div className="section-title__triangle">
-                      <img src="assets/images/favicons/icon.ico" alt="icon" />
+                      <img src="assets/images/favicons/icon.ico" alt="icon" aria-label="icon" />
                     </div>
                     <h5 className="section-title__tagline">
                       {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
@@ -39,7 +39,7 @@ function BitkiselUrunler() {
                       {t("BİTKİSEL ÜRÜNLER")}
                     </h2>
                     <br />
-                    <h6>
+                    <p>
                       <a
                         href="assets/pdf/Baproy-Bitkisel-Katalog.pdf"
                         download
@@ -48,7 +48,7 @@ function BitkiselUrunler() {
                         <i class="fa fa-download"></i>&nbsp;
                         {t("Baproy Bitkisel PDF İndir")}
                       </a>
-                    </h6>
+                    </p>
                   </div>
                 </div>
               </div>

@@ -9,11 +9,11 @@ function ProductSimilarAmbalaj() {
 
   return (
     <>
-      <section class="product mt--120">
+      <section class="product mt--100">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title text-center">
             <div class="section-title__triangle">
-              <img src="assets/images/favicons/icon.ico" alt="icon" />
+              <img src="assets/images/favicons/icon.ico" alt="icon" aria-label="icon" />
             </div>
             <h5 className="section-title__tagline">
               {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}

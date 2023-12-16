@@ -11,7 +11,9 @@
     "picture": "assets/images/endustriyelmutfak/inoksan-bulasik-makinesi-500-tabak.webp",
     "price": "detaylar",
     "nav": "/EndustriyelMutfak",
-    "title": "Endüstrİyel Mutfak"
+    "title": "Endüstrİyel Mutfak",
+    "width":"100%",
+    "height":"auto"
   },
   {
     "id": "3",

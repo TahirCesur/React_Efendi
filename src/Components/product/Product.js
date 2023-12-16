@@ -35,7 +35,7 @@ function Product() {
                   >
                     <div className="section-title text-center">
                       <div className="section-title__triangle">
-                        <img src="assets/images/favicons/icon.ico" alt="icon" />
+                        <img src="assets/images/favicons/icon.ico" alt="icon" aria-label="icon" />
                       </div>
                       <h5 className="section-title__tagline">
                         {t("YENİDÜNYA ENDÜSTRİYEL TEDARİK")}
@@ -46,7 +46,7 @@ function Product() {
                       <br />
                       <div className="row">
                         <span className="col-lg-6">
-                          <h6>
+                          <p>
                             <a
                               href="assets/pdf/Yenidünya-Katalog.pdf"
                               download
@@ -55,10 +55,10 @@ function Product() {
                               <i class="fa fa-download"></i>&nbsp;
                               {t("Yenidünya Endüstriyel PDF İndir")}
                             </a>
-                          </h6>
+                          </p>
                         </span>
                         <span className="col-lg-6">
-                          <h6>
+                          <p>
                             <a
                               href="assets/pdf/Baproy-Bitkisel-Katalog.pdf"
                               download
@@ -67,7 +67,7 @@ function Product() {
                               <i class="fa fa-download"></i>&nbsp;
                               {t("Baproy Bitkisel PDF İndir")}
                             </a>
-                          </h6>
+                          </p>
                         </span>
                       </div>
                     </div>
@@ -86,6 +86,8 @@ function Product() {
                           title={title}
                           price={price}
                           nav={nav}
+                          width={"100%"}
+                          height={"auto"}
                         />
                       </Col>
                     );

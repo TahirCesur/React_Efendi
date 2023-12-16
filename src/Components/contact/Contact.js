@@ -69,6 +69,8 @@ function Contact() {
               as={Link}
               to="/contactus"
               className="cta-two__icon"
+              alt="contact-arrow"
+              aria-label="contact-arrow"
               onClick={handleClick}
             >
               <span className="icon-long-arrow"></span>

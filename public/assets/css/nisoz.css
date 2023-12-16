@@ -14593,3 +14593,10 @@ body.boxed-wrapper .main-menu__phone {
   visibility: visible;
   transform: scaleY(1) translateZ(0px);
 }
+
+.footer-h3{
+  font-family: var(--heading-font)!important;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
+  line-height: 1.2;
+}

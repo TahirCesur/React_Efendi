@@ -43,12 +43,12 @@ function Footer() {
               </h1>
             </Link>
             <div className="main-footer__social">
-              <a href="https://www.facebook.com/" target="_blank">
+              <a href="https://www.facebook.com/" target="_blank" alt="Facebook" aria-label="Facebook" >
                 <i className="fab fa-facebook"></i>
               </a>
               <a
                 href="https://www.instagram.com/yenidunyaendustriyel/"
-                target="_blank"
+                target="_blank" alt="Yenidünya" aria-label="Yenidünya"
               >
                 <i className="fab fa-instagram"></i>
               </a>
@@ -56,6 +56,8 @@ function Footer() {
                 href="https://wa.me/905465341963"
                 className="fab fa-whatsapp"
                 target="_blank"
+                alt="Whatsapp"
+                aria-label="Whatsapp"
                 rel="noopener noreferrer"
               ></a>
             </div>
@@ -66,7 +68,7 @@ function Footer() {
               data-wow-delay="200ms"
             >
               <div className="main-footer__navmenu">
-                <h3 className="text-white">{t("Kurumsal")}</h3>
+                <p className="footer-h3 text-white">{t("Kurumsal")}</p>
                 <ul>
                   <li>
                     <Link as={Link} to="/" onClick={handleClick}>
@@ -121,7 +123,7 @@ function Footer() {
               data-wow-delay="300ms"
             >
               <div className="main-footer__navmenu">
-                <h3 className="text-white">{t("Ürünlerimiz")}</h3>
+              <p className="footer-h3 text-white">{t("Ürünlerimiz")}</p>
                 <ul>
                   <li>
                     <Link
@@ -210,7 +212,7 @@ function Footer() {
               data-wow-delay="400ms"
             >
               <div className="main-footer__about">
-                <h3 className="text-white">{t("İletişim")}</h3>
+              <p className="footer-h3 text-white">{t("İletişim")}</p>
                 <p className="main-footer__about__text">
                   Üçevler Mahallesi <br />
                   Denizciler Caddesi <br />
@@ -250,6 +252,7 @@ function Footer() {
       <a
         href="#"
         className="back d-flex align-items-center justify-content-center active"
+        alt="Up-down" aria-label="Up-down"
       >
         <i className="fas fa-arrow-up"></i>
         <svg
@@ -267,6 +270,8 @@ function Footer() {
         className="whatsapp-button"
         target="_blank"
         rel="noopener noreferrer"
+        alt="Whatsapp"
+        aria-label="Whatsapp"
       >
         <i className="fab fa-whatsapp"></i>
         <svg

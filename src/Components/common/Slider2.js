@@ -75,6 +75,8 @@ function Slider2() {
           href="#carouselExampleIndicators"
           role="button"
           data-slide="prev"
+          alt="prev"
+          aria-label="prev"
           onClick={() => handleSelect(activeIndex === 0 ? 3 : activeIndex - 1)}
         >
 {/*           <span
@@ -88,6 +90,8 @@ function Slider2() {
           href="#carouselExampleIndicators"
           role="button"
           data-slide="next"
+          alt="next"
+          aria-label="next"
           onClick={() => handleSelect(activeIndex === 3 ? 0 : activeIndex + 1)}
         >
           {/* <span
