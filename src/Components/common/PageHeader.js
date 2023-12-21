@@ -9,31 +9,19 @@ function PageHeader(props) {
 
   return (
     <>
-      <section className="page-header">
-        <div
-          className="cta-two__bg"
-          style={{
-            backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
-          }}
-        ></div>
-        <div className="page-header__shape1"></div>
-        <div className="page-header__shape2"></div>
-        <div
-          className="page-header__shape3 wow slideInRight"
-          data-wow-delay="300ms"
-        ></div>
-        <div className="container">
-          <ul className="page-header__breadcrumb list-unstyled">
-            <li>
-              <Link to="/">{t("Anasayfa")}</Link>
-            </li>
-            <li>
-              <span>{t(props.title)}</span>
-            </li>
-          </ul>
-          <h2 className="page-header__title">{t(props.title)}</h2>
+      <div class="breadcrumbs text-center">
+          <div class="container">
+            <h1>{props.title}</h1>
+            <ul
+              class="breadcrumb bg-transparent m-0 p-0 justify-content-center"
+            >
+              <li class="breadcrumb-item">
+                <a href="index.html" title="Home">Anasayfa</a>
+              </li>
+              <li class="breadcrumb-item active">{props.title}</li>
+            </ul>
+          </div>
         </div>
-      </section>
     </>
   );
 }

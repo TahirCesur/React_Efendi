@@ -1,12 +1,12 @@
 import React from "react";
 import Contact from "../Components/contact/Contact";
-import Spacer2 from "../Components/common/Spacer2";
+import PageHeader from "../Components/common/PageHeader";
 
 function ContactPage() {
   return (
     <>
-      <Spacer2/>
-      <Contact />  
+      <PageHeader title={"İletişim"} />
+      <Contact />
     </>
   );
 }

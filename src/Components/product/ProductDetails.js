@@ -1,145 +1,1398 @@
-import React from "react";
+/* eslint-disable jsx-a11y/heading-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import ReactOwlCarousel from "react-owl-carousel";
+import { Link } from "react-router-dom";
 
 function ProductDetails() {
+
+  const { t } = useTranslation();
+
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleNav = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+    setExpanded(false);
+  };
+
+  const responsiveOptions = {
+    0: {
+      items: 1, // 0-600px ekran genişliği için 1 öğe göster
+    },
+    380: {
+      items: 2, // 601-768px ekran genişliği için 2 öğe göster
+    },
+    575: {
+      items: 2, // 601-768px ekran genişliği için 2 öğe göster
+    },
+    721: {
+      items: 3, // 769-992px ekran genişliği için 3 öğe göster
+    },
+    993: {
+      items: 4, // 993px ve üzeri ekran genişliği için 4 öğe göster
+    },
+  };
+
   return (
     <>
-      <section className="page-header">
-        <div
-          className="cta-two__bg"
-          style={{
-            backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
-          }}
-        ></div>
-        <div className="page-header__shape1"></div>
-        <div className="page-header__shape2"></div>
-        <div
-          className="page-header__shape3 wow slideInRight"
-          data-wow-delay="300ms"
-        ></div>
-        <div className="container">
-          <ul className="page-header__breadcrumb list-unstyled">
-            <li>
-              <a href="index.html">Anasayfa</a>
-            </li>
-            <li>
-              <span>ÜRÜNLERİMİZ</span>
-            </li>
-          </ul>
-          <h2 className="page-header__title">ÜRÜNLERİMİZ</h2>
-        </div>
-      </section>
-      <section className="product">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-lg-6 col-xl-6 wow fadeInLeft"
-              data-wow-delay="200ms"
-            >
-              <div className="product-details__img">
-                <img src="assets/images/blog/1-1.webp" alt="" />
-                <div className="product-details__img-search">
-                  <a className="img-popup" href="assets/images/blog/1-1.webp">
-                    <span className="icon-magnifying-glass"></span>
-                  </a>
+    <ReactOwlCarousel
+            className="owl-carousel dots-rounded dots-outside nav-rounded nav-outside margin-top-30 margin-bottom-30"
+            items={4}
+            margin={20}
+            nav
+            dots={false}
+            responsive={responsiveOptions} // responsive seçeneklerini ekleyin
+          >
+      <div class="tab-content responsiveTabs">
+        <div id="tab1" class="drawertab-content">
+          <div class="row row-sp row-eq-height prcarousel">
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/armür-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/armür-1.jpg"
+                        data-src="assets/images/products/armür-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="/Armur">Armür</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              className="col-lg-6 col-xl-6 wow fadeInRight"
-              data-wow-delay="300ms"
-            >
-              <div className="product-details__content">
-                <div className="product-details__top">
-                  <h3 className="product-details__title">
-                    El Temİzleme Losyonu
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/fon-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/fon-1.jpg"
+                        data-src="assets/images/products/fon-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="/Fonluk">Fonluk</a>
                   </h3>
-                  <div className="product-details__price">$5</div>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
                 </div>
-                <div className="product-details__review">
-                  <span className="fa fa-star"></span>
-                  <span className="fa fa-star"></span>
-                  <span className="fa fa-star"></span>
-                  <span className="fa fa-star"></span>
-                  <span className="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/brode-2.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/brode-2.jpg"
+                        data-src="assets/images/products/brode-2.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
                 </div>
-                <div className="product-details__divider"></div>
-                <div className="product-details__excerpt">
-                  <p className="list-unstyled product-details__description__lists">
-                    <ul className="list-unstyled product-details__description__lists">
-                      <li>
-                        <span className="icon-right-arrow"></span>Temizlik ve
-                        Hijyen:
-                      </li>
-                      El temizleme losyonları, elleri temizlemek ve hijyen
-                      sağlamak için kullanılır. Özellikle ellerin mikroplardan
-                      arındırılması gereken durumlarda tercih edilir.
-                      <li>
-                        <span className="icon-right-arrow"></span>Cilt Koruma:
-                      </li>
-                      Birçok el temizleme losyonu, aynı zamanda cildin nemini
-                      korumaya yardımcı olan özel bileşenler içerebilir. Bu, sık
-                      sık el temizlemeye bağlı cilt kuruluğunu önlemeye yardımcı
-                      olabilir.
-                      <li>
-                        <span className="icon-right-arrow"></span>Alkol Bazlı ve
-                        Alkol İçermeyen Seçenekler:
-                      </li>
-                      El temizleme losyonları genellikle alkol bazlı veya alkol
-                      içermeyen versiyonlarda bulunur. Alkol bazlı ürünler,
-                      mikropları etkili bir şekilde öldürme yeteneğine sahiptir,
-                      ancak alkol içermeyen ürünler daha hassas ciltlere daha
-                      uygun olabilir.
-                      <li>
-                        <span className="icon-right-arrow"></span>Kullanım
-                        Alanları:
-                      </li>
-                      El temizleme losyonları, hastaneler, restoranlar, ofisler,
-                      evler ve genel halka açık yerlerde yaygın olarak
-                      kullanılır. Mikropların yayılmasını önlemeye yardımcı
-                      olurlar.
-                      <li>
-                        <span className="icon-right-arrow"></span> Etkili
-                        Temizlik İçin Nasıl Kullanılır:
-                      </li>
-                      El temizleme losyonlarını kullanırken, bir miktar losyonu
-                      avuç içine alarak ellerinizi iyice ovup kuruyana kadar
-                      ovarak uygularsınız. Bu, mikropları ve kirleri etkili bir
-                      şekilde temizler. El temizleme losyonları, günlük hayatta
-                      ve özellikle sağlık sektöründe önemli bir rol oynar. El
-                      hijyeni konusunda dikkatli olmak, hastalıkların
-                      yayılmasını önlemek için kritik bir adımdır.
-                      <br />
-                      <li>
-                        <span className="fa fa-star"></span> Lütfen Dikkat :
-                        Kullanım Talimatını Okuyunuz!..
-                        <br />
-                      </li>
-                    </ul>
-                  </p>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="/Brode">Brode</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
                 </div>
-
-                <div className="product-details__socials">
-                  <h4 className="product-details__socials__title">
-                    ARKADAŞLARINLA PAYLAŞ
-                  </h4>
-                  <a href="https://twitter.com/X">
-                    <span className="fab fa-twitter"></span>
-                  </a>
-                  <a href="https://www.facebook.com/">
-                    <span className="fab fa-facebook"></span>
-                  </a>
-                  <a href="https://www.pinterest.com/">
-                    <span className="fab fa-pinterest-p"></span>
-                  </a>
-                  <a href="https://www.instagram.com/">
-                    <span className="fab fa-instagram"></span>
-                  </a>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/nakış-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/nakış-1.jpg"
+                        data-src="assets/images/products/nakış-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="/Nakis">Nakış</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/örme-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/örme-1.jpg"
+                        data-src="assets/images/products/örme-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="/Orme">Örme</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/baski-4.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/baski-4.jpg"
+                        data-src="assets/images/products/baski-4.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="/Baskili">Baskılı</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        
+
+        {/* <h3 class="tab-drawer-heading" data-tab="tab2">
+          <a>Fonluk</a>
+        </h3>
+        <div id="tab2" class="drawertab-content">
+          <div class="row row-sp row-eq-height prcarousel">
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/armür-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/armür-1.jpg"
+                        data-src="assets/images/products/armür-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="armür.html">Armür</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/fon-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/fon-1.jpg"
+                        data-src="assets/images/products/fon-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="fonluk.html">Fonluk</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/brode-2.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/brode-2.jpg"
+                        data-src="assets/images/products/brode-2.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="brode.html">Brode</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/nakış-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/nakış-1.jpg"
+                        data-src="assets/images/products/nakış-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="nakis.html">Nakış</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/örme-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/örme-1.jpg"
+                        data-src="assets/images/products/örme-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="orme.html">Örme</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/baski-4.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/baski-4.jpg"
+                        data-src="assets/images/products/baski-4.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="baskili.html">Baskılı</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="tab-drawer-heading" data-tab="tab3">
+          <a>Brode</a>
+        </h3>
+        <div id="tab3" class="drawertab-content">
+          <div class="row row-sp row-eq-height prcarousel">
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/armür-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/armür-1.jpg"
+                        data-src="assets/images/products/armür-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="armür.html">Armür</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/fon-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/fon-1.jpg"
+                        data-src="assets/images/products/fon-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="fonluk.html">Fonluk</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/brode-2.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/brode-2.jpg"
+                        data-src="assets/images/products/brode-2.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="brode.html">Brode</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/nakış-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/nakış-1.jpg"
+                        data-src="assets/images/products/nakış-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="nakis.html">Nakış</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/örme-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/örme-1.jpg"
+                        data-src="assets/images/products/örme-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="orme.html">Örme</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/baski-4.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/baski-4.jpg"
+                        data-src="assets/images/products/baski-4.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="baskili.html">Baskılı</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="tab-drawer-heading" data-tab="tab4">
+          <a>Nakış</a>
+        </h3>
+        <div id="tab4" class="drawertab-content">
+          <div class="row row-sp row-eq-height prcarousel">
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/armür-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/armür-1.jpg"
+                        data-src="assets/images/products/armür-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="armür.html">Armür</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/fon-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/fon-1.jpg"
+                        data-src="assets/images/products/fon-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="fonluk.html">Fonluk</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/brode-2.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/brode-2.jpg"
+                        data-src="assets/images/products/brode-2.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="brode.html">Brode</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/nakış-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/nakış-1.jpg"
+                        data-src="assets/images/products/nakış-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="nakis.html">Nakış</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/örme-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/örme-1.jpg"
+                        data-src="assets/images/products/örme-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="orme.html">Örme</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/baski-4.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/baski-4.jpg"
+                        data-src="assets/images/products/baski-4.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="baskili.html">Baskılı</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="tab-drawer-heading" data-tab="tab5">
+          <a>Örme</a>
+        </h3>
+        <div id="tab5" class="drawertab-content">
+          <div class="row row-sp row-eq-height prcarousel">
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/armür-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/armür-1.jpg"
+                        data-src="assets/images/products/armür-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="armür.html">Armür</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/fon-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/fon-1.jpg"
+                        data-src="assets/images/products/fon-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="fonluk.html">Fonluk</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/brode-2.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/brode-2.jpg"
+                        data-src="assets/images/products/brode-2.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="brode.html">Brode</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/nakış-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/nakış-1.jpg"
+                        data-src="assets/images/products/nakış-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="nakis.html">Nakış</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/örme-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/örme-1.jpg"
+                        data-src="assets/images/products/örme-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="orme.html">Örme</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/baski-4.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/baski-4.jpg"
+                        data-src="assets/images/products/baski-4.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="baskili.html">Baskılı</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="tab-drawer-heading" data-tab="tab6">
+          <a>Baskılı Ürünler</a>
+        </h3>
+        <div id="tab6" class="drawertab-content">
+          <div class="row row-sp row-eq-height prcarousel">
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/armür-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/armür-1.jpg"
+                        data-src="assets/images/products/armür-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="armür.html">Armür</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/fon-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/fon-1.jpg"
+                        data-src="assets/images/products/fon-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="fonluk.html">Fonluk</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/brode-2.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/brode-2.jpg"
+                        data-src="assets/images/products/brode-2.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="brode.html">Brode</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/nakış-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/nakış-1.jpg"
+                        data-src="assets/images/products/nakış-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="nakis.html">Nakış</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/örme-1.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/örme-1.jpg"
+                        data-src="assets/images/products/örme-1.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="orme.html">Örme</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="product-item">
+                <div class="product-image-action">
+                  <div class="product-image">
+                    <a
+                      href="assets/images/products/baski-4.jpg"
+                      data-lightbox="product-images"
+                    >
+                      <img
+                        class="img-fluid blur-up lazyload"
+                        src="assets/images/products/baski-4.jpg"
+                        data-src="assets/images/products/baski-4.jpg"
+                        alt="image"
+                        title="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title">
+                    <a href="baskili.html">Baskılı</a>
+                  </h3>
+                  <h4 class="product-vendor"></h4>
+                  <div class="product-starrating">
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                    <i class="spr-icon fa fa-star"></i>
+                  </div>
+                  <div class="product-price">
+                    <span class="sale-price">$113.88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </div>
+      </ReactOwlCarousel>
     </>
   );
 }

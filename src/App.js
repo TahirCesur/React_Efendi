@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { HashRouter as Router } from "react-router-dom";
 import React, { useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
 import Footer from "./Components/common/Footer";
 import Header from "./Components/common/Header";
 import CustomRoutes from "./router/CustomRoutes";
@@ -20,15 +20,12 @@ function App() {
     i18n.changeLanguage(lng);
   };
 
-
   return (
-    <>
-        <BrowserRouter>
-          <Header changeLanguage={changeLanguage} />
-          <CustomRoutes changeLanguage={changeLanguage} />
-          <Footer changeLanguage={changeLanguage} />
-        </BrowserRouter>
-    </>
+    <Router>
+      <Header changeLanguage={changeLanguage} />
+      <CustomRoutes changeLanguage={changeLanguage} />
+      <Footer changeLanguage={changeLanguage} />
+    </Router>
   );
 }
 

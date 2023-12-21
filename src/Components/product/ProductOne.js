@@ -1,75 +1,199 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable react/style-prop-object */
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import ReactOwlCarousel from "react-owl-carousel";
 import { Link } from "react-router-dom";
-import { SRLWrapper } from "simple-react-lightbox";
 
-function ProductOne(props) {
+const ProductOne = () => {
+
   const { t } = useTranslation();
-  const { picture, title, price, nav } = props;
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleNav = () => {
+    setExpanded(!expanded);
   };
 
-  const options = {
-    settings: {
-      overlayColor: "rgba(0, 0, 0, 0.9)",
-      autoplaySpeed: 3000,
-      transitionSpeed: 1000,
-      disablePanzoom: false,
-      closeButton: true, // Kapatma düğmesini göster
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+    setExpanded(false);
+  };
+
+  const responsiveOptions = {
+    0: {
+      items: 1, // 0-600px ekran genişliği için 1 öğe göster
     },
-    buttons: {
-      showDownloadButton: false,
-      showThumbnailsButton: false,
+    380: {
+      items: 2, // 601-768px ekran genişliği için 2 öğe göster
+    },
+    575: {
+      items: 2, // 601-768px ekran genişliği için 2 öğe göster
+    },
+    721: {
+      items: 3, // 769-992px ekran genişliği için 3 öğe göster
+    },
+    993: {
+      items: 4, // 993px ve üzeri ekran genişliği için 4 öğe göster
+    },
+    1200: {
+      items: 5, // 993px ve üzeri ekran genişliği için 4 öğe göster
     },
   };
 
   return (
     <>
-      <SRLWrapper options={options}>
-        <div className="product__item">
-          <div className="product__item__img">
-            <img src={picture} alt={title} />
-            <div className="product__item__btn">
-              {/* İleride kullanılabilir */}
-              {/* İleride kullanılabilir */}
-            </div>
-            <div className="product__item__content">
-              <div className="product__item__ratings">
-                <span className="fa fa-star"></span>
-                <span className="fa fa-star"></span>
-                <span className="fa fa-star"></span>
-                <span className="fa fa-star"></span>
-                <span className="fa fa-star"></span>
-              </div>
-              <h4 className="product__item__title">
-                <Link as={Link} to={nav} onClick={scrollToTop}>
-                  {t(title)}
-                </Link>
-              </h4>
-              <Link
-                as={Link}
-                to={nav}
-                className="nisoz-btn"
-                onClick={scrollToTop}
-              >
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__shape"></span>
-                <span className="nisoz-btn__text">{t(price)}</span>
+      <section id="" className="album-list-carousel mb-0">
+        <div id="111" className="content-wrap caption-gradient ali-style-2">
+          <div class="section-header">
+            <h2>Ürünlerimiz</h2>
+            <p>En yeni trend perde modellerimiz sizleri bekliyor..</p>
+          </div>
+          <ReactOwlCarousel
+            className="owl-carousel dots-rounded dots-outside nav-rounded nav-outside margin-top-30 margin-bottom-30"
+            items={4}
+            margin={20}
+            nav
+            dots={false}
+            responsive={responsiveOptions} // responsive seçeneklerini ekleyin
+          >
+            <div className="album-list-item">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/Armur">
+                <div className="ali-img-wrap">
+                  <div>
+                    <img
+                      className="img-fluid blur-up lazyload"
+                      src="assets/images/products/armür-1.jpg"
+                      alt="image"
+                      title="image"
+                    />
+                  </div>
+                </div>
+                <div className="ali-caption">
+                  <p className="ali-title">Armür</p>
+                  <div className="ali-meta"></div>
+                </div>
+              </Link>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Armur">
+                <p>ARMÜR</p>
               </Link>
             </div>
-          </div>
+
+            <div className="">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/Fonluk">
+                <div className="ali-img-wrap">
+                <div>
+                    <img
+                      className="img-fluid blur-up lazyload"
+                      src="assets/images/products/fon-1.jpg"
+                      alt="image"
+                      title="image"
+                    />
+                  </div>
+                </div>
+                <div className="ali-caption">
+                  <p className="ali-title">Fonluk</p>
+                  <div className="ali-meta"></div>
+                </div>
+              </Link>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Fonluk">
+                <p>FONLUK</p>
+              </Link>
+            </div>
+
+            <div className="album-list-item">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/Brode">
+                <div className="ali-img-wrap">
+                <div>
+                    <img
+                      className="img-fluid blur-up lazyload"
+                      src="assets/images/products/brode-2.jpg"
+                      alt="image"
+                      title="image"
+                    />
+                  </div>
+                </div>
+                <div className="ali-caption">
+                  <p className="ali-title">Brode</p>
+                  <div className="ali-meta"></div>
+                </div>
+              </Link>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Brode">
+                <p>BRODE</p>
+              </Link>
+            </div>
+
+            <div className="album-list-item">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/Nakis">
+                <div className="ali-img-wrap">
+                <div>
+                    <img
+                      className="img-fluid blur-up lazyload"
+                      src="assets/images/products/nakış-1.jpg"
+                      alt="image"
+                      title="image"
+                    />
+                  </div>
+                </div>
+                <div className="ali-caption">
+                  <p className="ali-title">Nakış</p>
+                  <div className="ali-meta"></div>
+                </div>
+              </Link>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Nakis">
+                <p>NAKIŞ</p>
+              </Link>
+            </div>
+
+            <div className="album-list-item">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/Orme">
+                <div className="ali-img-wrap">
+                <div>
+                    <img
+                      className="img-fluid blur-up lazyload"
+                      src="assets/images/products/örme-1.jpg"
+                      alt="image"
+                      title="image"
+                    />
+                  </div>
+                </div>
+                <div className="ali-caption">
+                  <p className="ali-title">Örme</p>
+                  <div className="ali-meta"></div>
+                </div>
+              </Link>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Orme">
+                <p>ÖRME</p>
+              </Link>
+            </div>
+
+            <div className="album-list-item">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/Baskili">
+                <div className="ali-img-wrap">
+                <div>
+                    <img
+                      className="img-fluid blur-up lazyload"
+                      src="assets/images/products/baski-4.jpg"
+                      alt="image"
+                      title="image"
+                    />
+                  </div>
+                </div>
+                <div className="ali-caption">
+                  <p className="ali-title">Baskılı</p>
+                  <div className="ali-meta"></div>
+                </div>
+              </Link>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Baskili">
+                <p>BASKILI</p>
+              </Link>
+            </div>
+          </ReactOwlCarousel>
         </div>
-      </SRLWrapper>
+      </section>
     </>
   );
-}
+};
 
 export default ProductOne;

@@ -1,235 +1,317 @@
+/* eslint-disable no-dupe-keys */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from "react";
-import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function Header() {
   const { t, i18n } = useTranslation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
   const [expanded, setExpanded] = useState(false);
+  const [showSubMenu, setShowSubMenu] = useState(false);
 
-  const toggleNav = () => {
-    setExpanded(!expanded);
-  };
+  const handleClick = (event) => {
+    // Eğer tıklanan element bir alt menü öğesi ise menüyü kapatma
+    if (event.target.closest(".dropdown-submenu")) {
+      return;
+    }
 
-  const handleClick = () => {
     window.scrollTo(0, 0);
     setExpanded(false);
+    setShowSubMenu(false);
   };
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
-  const [showSubMenu, setShowSubMenu] = useState(false); // Alt menünün görünürlüğünü saklar
-
   const handleMouseEnter = () => {
-    setShowSubMenu(true); // Mouse üstüne geldiğinde alt menüyü göster
+    setShowSubMenu(true);
   };
 
   const handleMouseLeave = () => {
-    setShowSubMenu(false); // Mouse menünün üstünden çıktığında alt menüyü gizle
+    setShowSubMenu(false);
   };
 
   return (
     <>
-      <header className="main-header sticky-top fixed-top">
-        <div
-          className="topbar fixed-top sticky-top mb-1"
-          style={{padding: "7px" }}
-        >
-          <Container>
-            <div className="d-flex justify-content-between align-items-center">
-              <div className="d-flex align-items-center">
-                <span className="topbar__wrapper">
-                  <ul className="list-unstyled topbar__list">
-                    <li>
-                      <span className="fas fa-envelope"></span>
-                      <a href="mailto:info@yenidunyaendustriyel.com">
-                        info@yenidunyaendustriyel.com
-                      </a>
-                    </li>
-                  </ul>
-                </span>
-              </div>
-              <div className="d-flex">
-                <Button
+      <header className="header">
+        <div className="container-fluid full-header top-header">
+          <div className="topbar-Header justify-content-between align-items-center">
+            <div className="row">
+              <div className="col-2 col-sm-3 col-md-4">
+                <p
+                  className="m-0"
                   style={{
-                    backgroundColor: "#369159",
-                    padding: "3px 7px 3px 7px",
-                    fontSize: "13px",
+                    textTransform: "lowercase",
+                    color: "#000",
+                    paddingLeft: "20px",
+                    marginTop: "10px",
                   }}
-                  onClick={() => changeLanguage("tr")}
-                >
-                  {t("TR")}
-                </Button>
-                &nbsp;
-                <Button
-                  style={{
-                    backgroundColor: "#369159",
-                    padding: "3px 7px 3px 7px",
-                    fontSize: "13px",
-                  }}
-                  onClick={() => changeLanguage("en")}
-                >
-                  {t("EN")}
-                </Button>
-              </div>
-            </div>
-          </Container>
-        </div>
-        <Navbar
-          collapseOnSelect
-          expand="lg"
-          className="main-menu"
-          expanded={expanded}
-        >
-          <Container fluid>
-            <Navbar.Brand>
-              <Link to="/" className="main-menu__logo" onClick={handleClick}>
-                <img
-                  src="assets/images/logo.webp"
-                  alt="Yenidünya Endüstriyel Tedarik Logo"
-                />
-              </Link>
-            </Navbar.Brand>
-
-            <Navbar.Toggle
-              onClick={toggleNav}
-              aria-controls="basic-navbar-nav"
-            />
-            <Navbar.Collapse
-              expanded={expanded}
-              className="justify-content-center"
-              id="basic-navbar-nav"
-            >
-              <Nav className="ms-auto">
-                <Nav.Link
-                  as={Link}
-                  to="/"
-                  onClick={handleClick}
-                  className="nav-link scrollto active"
-                >
-                  {t("ANASAYFA")}
-                </Nav.Link>
-                <Nav.Link
-                  as={Link}
-                  to="/Aboutus"
-                  className="nav-link scrollto"
-                  onClick={handleClick}
-                >
-                  {t("HAKKIMIZDA")}
-                </Nav.Link>
-
-                <NavDropdown
-                  title={t("ÜRÜNLERİMİZ")}
-                  id="collasible-nav-dropdown"
-                  className="nav-link scroolto"
-                  onMouseEnter={handleMouseEnter} // Mouse üstüne gelince alt menüyü göster
-                  onMouseLeave={handleMouseLeave} // Mouse menünün üstünden çıkınca alt menüyü gizle
-                  show={showSubMenu} //
-                >
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/EndustriyelTemizlik"
-                    onClick={handleClick}
-                  >
-                    {t("Endüstrİyel TemİZLİk")}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/EndustriyelMutfak"
-                    onClick={handleClick}
-                  >
-                    {t("Endüstrİyel Mutfak")}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/EndustriyelKagit"
-                    onClick={handleClick}
-                  >
-                    {t("Endüstrİyel Kağıt")}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/KozmetikUrunleri"
-                    onClick={handleClick}
-                  >
-                    {t("Kozmetİk Ürünlerİ")}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/BitkiselUrunler"
-                    onClick={handleClick}
-                  >
-                    {t("BİTKİSEL Ürünler")}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/Ambalaj"
-                    onClick={handleClick}
-                  >
-                    {t("AMBALAJ")}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/Gida" onClick={handleClick}>
-                    {t("Gıda")}
-                  </NavDropdown.Item>
-                </NavDropdown>
-
-                <Nav.Link
-                  as={Link}
-                  to="/Contactus"
-                  className="nav-link scrollto"
-                  onClick={handleClick}
-                >
-                  {t("İLETİŞİM")}
-                </Nav.Link>
-                {/* <Nav.Link
-                  href="https://wa.me/905321621647"
-                  title={t("Bize Whatsapptan Ulaşın")}
-                  target={"_blank"}
-                  className="social-links"
                 >
                   <i
-                    className="fab fa-whatsapp"
-                    style={{ fontSize: "24px" }}
-                  ></i>
-                </Nav.Link> */}
-              </Nav>
-              <div class="main-menu__right">
-                <a href="tel:+02242234234" className="main-menu__phone" alt="Telefon" aria-label="Telefon">
-                  <i className="icon-telephone"></i>
-                </a>
+                    className="fas fa-envelope"
+                    style={{
+                      textTransform: "lowercase",
+                      color: "#000",
+                      paddingLeft: "20px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    &nbsp;
+                    <span
+                      style={{
+                        color: "#161617",
+                        fontFamily: "Poppins",
+                        fontSize: "12px",
+                      }}
+                    >
+                      info@efendioglutekstil.com
+                    </span>
+                  </i>
+                </p>
+              </div>
+              <div className="col col-md-4 text-center d-none d-md-block">
+                <p className="m-0" style={{ textTransform: "lowercase" }}></p>
+              </div>
+              <div className="col-10 col-sm-9 col-md-4 pl-0 text-right">
+                <div className="search-box float-right pr-lg-4">
+                  <div className="d-flex">
+                    <Button
+                      style={{
+                        backgroundColor: "#000",
+                        color: "#bfa867",
+                        padding: "3px 7px 3px 7px",
+                        fontSize: "13px",
+                      }}
+                      onClick={() => changeLanguage("tr")}
+                    >
+                      {t("TR")}
+                    </Button>
+                    &nbsp;
+                    <Button
+                      style={{
+                        backgroundColor: "#000",
+                        color: "#bfa867",
+                        padding: "3px 7px 3px 7px",
+                        fontSize: "13px",
+                      }}
+                      onClick={() => changeLanguage("en")}
+                    >
+                      {t("EN")}
+                    </Button>
+                    &nbsp;
+                    <Button
+                      style={{
+                        backgroundColor: "#000",
+                        color: "#bfa867",
+                        padding: "3px 7px 3px 7px",
+                        fontSize: "13px",
+                      }}
+                      onClick={() => changeLanguage("ar")}
+                    >
+                      {t("AR")}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid full-header main-header">
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="col-6 col-md-6 col-lg-2 navbar-brand logo p-0 m-0">
+              <Link as={Link} to="/" className="logo-img">
+                <img
+                  className="img-fluid justify-content-center mb-2"
+                  src="assets/images/logo/prusa-logo.png"
+                  alt="logo"
+                  title="Prusa"
+                />
+              </Link>
+            </div>
+
+            <nav className="navigation navbar  navbar-expand-lg p-0 col-lg-8">
+              <button
+                className="navbar-toggler"
+                type="button"
+                onClick={() => setExpanded(!expanded)}
+              >
+                <span className="icon ti-menu"></span>
+              </button>
+              <div
+                className={`navbar-collapse collapse dual-nav ${
+                  expanded ? "show" : ""
+                }`}
+              >
                 <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  className="main-menu__phone"
-                  alt="Facebook"
-                  aria-label="Whatsapp"
+                  href="#"
+                  className="closeNav-btn d-lg-none clearfix"
+                  id="closeNav"
+                  title="Close"
+                  onClick={handleClick}
                 >
-                  <i className="fab fa-Facebook"></i>
+                  <span className="menu-close mr-2">Kapat</span>
+                  <i className="ti-close" aria-hidden="true"></i>
                 </a>
+                <ul className="navbar-nav mx-auto">
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link"
+                      as={Link}
+                      to="/"
+                      onClick={handleClick}
+                    >
+                      Anasayfa
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      as={Link}
+                      to="/Aboutus"
+                      onClick={handleClick}
+                    >
+                      Hakkımızda
+                    </Link>
+                  </li>
+                  <NavDropdown
+                    title="Ürünlerimiz"
+                    id="basic-nav-dropdown"
+                    show={showSubMenu}
+                    onToggle={(isOpen) => setShowSubMenu(isOpen)}
+                  >
+                    <li
+                      className={`nav-item dropdown ${
+                        showSubMenu ? "show" : ""
+                      }`}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <li>
+                        <Link
+                          className="nav-link"
+                          as={Link}
+                          to="/Armur"
+                          onClick={(event) => handleClick(event)}
+                        >
+                          Armür Perde
+                        </Link>
+                      </li>
+                      <Link
+                        className="nav-link"
+                        as={Link}
+                        to="/Fonluk"
+                        onClick={(event) => handleClick(event)}
+                      >
+                        Fonluk
+                      </Link>
+
+                      <Link
+                        className="nav-link"
+                        as={Link}
+                        to="/Brode"
+                        onClick={(event) => handleClick(event)}
+                      >
+                        Brode Perde
+                      </Link>
+
+                      <Link
+                        className="nav-link"
+                        as={Link}
+                        to="/Nakis"
+                        onClick={handleClick}
+                      >
+                        Nakış Perde
+                      </Link>
+
+                      <Link
+                        className="nav-link"
+                        as={Link}
+                        to="/Orme"
+                        onClick={(event) => handleClick(event)}
+                      >
+                        Örme Perde
+                      </Link>
+
+                      <Link
+                        className="nav-link"
+                        as={Link}
+                        to="/Baskili"
+                        onClick={(event) => handleClick(event)}
+                      >
+                        Baskılı Ürünler
+                      </Link>
+                    </li>
+                  </NavDropdown>
+
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      as={Link}
+                      to="/Galeri"
+                      onClick={handleClick}
+                    >
+                      Galeri
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      as={Link}
+                      to="/Contact"
+                      onClick={handleClick}
+                    >
+                      İletişim
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <div className="col-6 col-md-6 col-lg-2 p-4 right-side">
+              <div className="search-box float-right">
                 <a
-                  href="https://www.instagram.com/yenidunyaendustriyel/"
-                  target="_blank"
-                  className="main-menu__phone"
-                  alt="Yenidünya"
-                  aria-label="Yenidünya"
+                  href="#"
+                  title="Search"
+                  className="search-open search-toggle"
+                  data-toggle="modal"
+                  data-target="#instagram"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <i className="icon ti-instagram"></i>
                 </a>
               </div>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        {/* <hr style={{ marginTop: "121px", border:"2px solid #1c3844" }} />
-        <hr style={{ marginTop: "-18px", border:"2px solid #369159" }} /> */}
+
+              <div className="search-box float-right">
+                <a
+                  href="#"
+                  title="Search"
+                  className="search-open search-toggle"
+                  data-toggle="modal"
+                  data-target="#facebook"
+                >
+                  <i className="icon ti-facebook"></i>
+                </a>
+              </div>
+
+              <div className="search-box float-right">
+                <a
+                  href="tel:+902242115726"
+                  title="Search"
+                  className="search-open search-toggle"
+                >
+                  <i
+                    className="icon fa fa-phone justify-content-center"
+                    style={{ fontSize: "26px" }}
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
     </>
   );

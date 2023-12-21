@@ -22,266 +22,181 @@ function Footer() {
 
   return (
     <>
-      <footer className="main-footer mt-40">
-        <div
-          className="main-footer__bg"
-          style={{
-            backgroundImage: "url(assets/images/shapes/footer-bg-1.webp)",
-          }}
-        ></div>
-        <div className="container">
-          <div className="main-footer__top wow fadeInUp" data-wow-delay="100ms">
-            <Link as={Link} to="/" className="main-footer__logo">
-              {/* <img
-                src="assets/images/yenidunya_logo.webp"
-                alt="nisoz"
-                width="326"
-                height=""
-              /> */}
-              <h1 className="text-white">
-                {t("Yenidünya Endüstriyel Tedarik")}
-              </h1>
-            </Link>
-            <div className="main-footer__social">
-              <a href="https://www.facebook.com/" target="_blank" alt="Facebook" aria-label="Facebook" >
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/yenidunyaendustriyel/"
-                target="_blank" alt="Yenidünya" aria-label="Yenidünya"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://wa.me/905465341963"
-                className="fab fa-whatsapp"
-                target="_blank"
-                alt="Whatsapp"
-                aria-label="Whatsapp"
-                rel="noopener noreferrer"
-              ></a>
+      <footer className="footer">
+        <div className="footer-top clearfix">
+          <div className="container-fluid">
+            <div className="row no-gutters">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-4 footer-logos">
+                <div className="ftr-logo">
+                  <a href="index.html">
+                    <img
+                      className="img-fluid"
+                      src="assets/images/logo/prusa-logo.png"
+                      alt="Prusa Logo"
+                      title="Prusa Logo"
+                    />
+                  </a>
+                </div>
+
+                <div className="social-icons align-items-center text-center justify-content-center">
+                  <ul className="d-flex flex-row align-items-center text-center justify-content-center">
+                    <li>
+                      <a href="#" title="Facebook">
+                        <i className="icon ti-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="Twitter">
+                        <i className="icon ti-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="Instagram">
+                        <i className="icon ti-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="Google Plus">
+                        <i className="icon ti-google"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="Youtube">
+                        <i className="icon ti-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="col-12 col-sm-12 col-md-12 col-lg-8 newsletter-menulinks align-items-center text-center justify-content-center">
+                <div className="row no-gutters footer-links">
+                  <div className="col-12 col-sm-12 col-md-4 col-lg-4 contact ">
+                    <h4>Kurumsal</h4>
+                    <ul className="linklist contact-info d-flex flex-column mb-3">
+                      <li>
+                        <Link as={Link} to="/" onClick={handleClick}>
+                          Anasayfa
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Aboutus" onClick={handleClick}>
+                          Hakkımızda
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Product" onClick={handleClick}>
+                          Ürünlerimiz
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Galeri" onClick={handleClick}>
+                          Galeri
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Contact" onClick={handleClick}>
+                          iletişim
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-12 col-sm-12 col-md-4 col-lg-4 contact">
+                    <h4>ürünlerimiz</h4>
+                    <ul className="linklist contact-info d-flex flex-column mb-3">
+                      <li>
+                        <Link as={Link} to="/Armur" onClick={handleClick}>
+                          Armür Perde
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Fonluk" onClick={handleClick}>
+                          Fonluk
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Brode" onClick={handleClick}>
+                          Brode Perde
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Nakis" onClick={handleClick}>
+                          Nakış Perde
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Orme" onClick={handleClick}>
+                          Örme Perde
+                        </Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/Baskili" onClick={handleClick}>
+                          Baskılı Ürünler
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-12 col-sm-12 col-md-4 col-lg-4 contact">
+                    <h4>İletişim Bilgileri</h4>
+                    <ul className="linklist contact-info d-flex flex-column">
+                      <li>
+                        {/* <i className="icon ti-location-pin"></i> */}
+                        <Link >
+                          Yeni Yalova Yolu Cad. <br />
+                          Buttim İş Merkezi <br />
+                          D Blok Kat: 1 No: 246 <br />
+                          Osmangazi BURSA / TÜRKİYE
+                        </Link>
+                      </li>
+                      <br />
+                      <li>
+                        {/* <i className="icon fa fa-phone"></i> */}
+                        <a href="tel:+902242115726">+90 (224) 211 57 26</a>
+                      </li>
+                      <li>
+                        {/* <i className="icon ti-email"></i> */}
+                        <a href="mailto:info@efendioglutekstil.com">
+                          info@efendioglutekstil.com
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="row foot">
-            <div
-              className="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="200ms"
-            >
-              <div className="main-footer__navmenu">
-                <p className="footer-h3 text-white">{t("Kurumsal")}</p>
-                <ul>
-                  <li>
-                    <Link as={Link} to="/" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Anasayfa")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link as={Link} to="/Aboutus" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Hakkımızda")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link as={Link} to="/Product" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Ürünlerimiz")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link as={Link} to="/Question" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Sıkça Sorulan Sorular")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link as={Link} to="/Contactus" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("İletişim")}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              className="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="300ms"
-            >
-              <div className="main-footer__navmenu">
-              <p className="footer-h3 text-white">{t("Ürünlerimiz")}</p>
-                <ul>
-                  <li>
-                    <Link
-                      as={Link}
-                      to="/EndustriyelTemizlik"
-                      onClick={handleClick}
-                    >
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Endüstriyel Temizlik")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      as={Link}
-                      to="/EndustriyelMutfak"
-                      onClick={handleClick}
-                    >
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Endüstriyel Mutfak")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      as={Link}
-                      to="/EndustriyelKagit"
-                      onClick={handleClick}
-                    >
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Endüstriyel Kağıt")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      as={Link}
-                      to="/KozmetikUrunleri"
-                      onClick={handleClick}
-                    >
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Kozmetik Ürünleri")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link as={Link} to="/BitkiselUrunler" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Bitkisel Ürünler")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link as={Link} to="/Ambalaj" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Ambalaj")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link as={Link} to="/Gida" onClick={handleClick}>
-                      <i
-                        className="fa fa-chevron-right"
-                        style={{ fontSize: "13px" }}
-                      ></i>
-                      &nbsp; {t("Gıda")}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              className="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="400ms"
-            >
-              <div className="main-footer__about">
-              <p className="footer-h3 text-white">{t("İletişim")}</p>
-                <p className="main-footer__about__text">
-                  Üçevler Mahallesi <br />
-                  Denizciler Caddesi <br />
-                  96B / B, 16130
-                  <br />
-                  Nilüfer / BURSA
-                </p>
-                <ul className="main-footer__about__info">
-                  <li>
-                    <span className="fas fa-phone-square"></span>
-                    <a href="tel:+2242234234">(0224) 223 4234</a>
-                  </li>
-                  <li>
-                    <span className="fas fa-envelope"></span>
-                    <a href="mailto:info@yenidunyaendustriyel.com">
-                      info@yenidunyaendustriyel.com
-                    </a>
-                  </li>
-                </ul>
-              </div>
+        </div>
+
+        <div className="footer-bottom clearfix">
+          <div className="container">
+            <div className="copyright-content text-center">
+              <span className="content text-center">
+                Copyright &copy; 2023 Efendioğlu Tekstil <br />
+                Tüm hakları Saklıdır.
+              </span>
             </div>
           </div>
         </div>
       </footer>
 
-      <section className="copyright text-center">
-        <div className="container wow fadeInUp" data-wow-delay="500ms">
-          <p className="copyright__text">
-            <Link as={Link} to="/" onClick={handleClick}>
-              {t("Yenidünya Endüstriyel Tedarik")} © 2023
-            </Link>
-          </p>
-          <p className="copyright__text">{t("Tüm Hakları Saklıdır")}</p>
-        </div>
-      </section>
+      <a
+        href="https://wa.me/905558187775"
+        className="back-to-tops d-flex align-items-center justify-content-center"
+        target="_blank"
+        onClick={handleClick}
+      >
+        <i className="fa fa-whatsapp"></i>
+      </a>
 
       <a
         href="#"
         className="back d-flex align-items-center justify-content-center active"
-        alt="Up-down" aria-label="Up-down"
+        id="scrollTop"
+        alt="Up-down"
+        aria-label="Up-down"
+        onClick={handleClick}
       >
         <i className="fas fa-arrow-up"></i>
-        <svg
-          className="whatsapp-button__circle"
-          width="100%"
-          height="100%"
-          viewBox="-1 -1 102 102"
-        >
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-        </svg>
-      </a>
-
-      <a
-        href="https://wa.me/905465341963"
-        className="whatsapp-button"
-        target="_blank"
-        rel="noopener noreferrer"
-        alt="Whatsapp"
-        aria-label="Whatsapp"
-      >
-        <i className="fab fa-whatsapp"></i>
-        <svg
-          className="whatsapp-button__circle"
-          width="100%"
-          height="100%"
-          viewBox="-1 -1 102 102"
-        >
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-        </svg>
       </a>
     </>
   );
