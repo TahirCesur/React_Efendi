@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Spacer3 from "./Spacer3";
+
 
 function Slider2() {
   const [activeIndex, setActiveIndex] = useState(0);

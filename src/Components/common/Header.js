@@ -1,7 +1,11 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { Button, Container, NavDropdown } from "react-bootstrap";
+=======
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -63,22 +67,35 @@ function Header() {
       <header className="header">
         <div
           className="topbar fixed-top sticky-top mb-0"
+<<<<<<< HEAD
           style={{ padding: "7px", backgroundColor: "#e44514" }}
+=======
+          style={{ padding: "7px", backgroundColor: "#bfa87b" }}
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
         >
           <Container>
             <div className="d-flex justify-content-between align-items-center">
               <div
                 className="d-flex align-items-center"
+<<<<<<< HEAD
                 style={{ color: "#fff" }}
+=======
+                style={{ color: "#000" }}
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
               >
                 <span className="topbar__wrapper">
                   <ul
                     className="list-unstyled topbar__list"
+<<<<<<< HEAD
                     style={{ color: "#243f88" }}
+=======
+                    style={{ color: "#000" }}
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
                   >
                     <li>
                       <span className="fas fa-envelope"></span>
                       <a
+<<<<<<< HEAD
                         href="mailto:info@sekiryapi.com"
                         style={{
                           color: "#fff",
@@ -87,6 +104,16 @@ function Header() {
                         }}
                       >
                         &nbsp; info@sekiryapi.com
+=======
+                        href="mailto:info@efendioglutekstil.com"
+                        style={{
+                        color: "#000",
+                        fontFamily: "Poppins",
+                        fontSize: "12px",
+                      }}
+                      >
+                        &nbsp; info@efendioglutekstil.com
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
                       </a>
                     </li>
                   </ul>
@@ -95,8 +122,13 @@ function Header() {
               <div className="d-flex">
                 <Button
                   style={{
+<<<<<<< HEAD
                     backgroundColor: "#243f88",
                     color: "#fff",
+=======
+                    backgroundColor: "#000",
+                    color: "#bfa87b",
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
                     padding: "3px 7px 3px 7px",
                     fontSize: "13px",
                   }}
@@ -107,8 +139,13 @@ function Header() {
                 &nbsp;
                 <Button
                   style={{
+<<<<<<< HEAD
                     backgroundColor: "#243f88",
                     color: "#fff",
+=======
+                    backgroundColor: "#000",
+                    color: "#bfa87b",
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
                     padding: "3px 7px 3px 7px",
                     fontSize: "13px",
                   }}
@@ -116,14 +153,35 @@ function Header() {
                 >
                   {t("EN")}
                 </Button>
+<<<<<<< HEAD
+=======
+                &nbsp;
+                <Button
+                  style={{
+                    backgroundColor: "#000",
+                    color: "#bfa87b",
+                    padding: "3px 7px 3px 7px",
+                    fontSize: "13px",
+                  }}
+                  onClick={() => changeLanguage("ar")}
+                >
+                  {t("AR")}
+                </Button>
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
               </div>
             </div>
           </Container>
         </div>
 
+<<<<<<< HEAD
         <div className="container full-header main-header fixed-top sticky-top">
           <div className="d-flex justify-content-center align-items-center">
             <div className="col-6 col-md-6 col-lg-2 navbar-brand logo m-0">
+=======
+        <div className="container-fluid full-header main-header fixed-top sticky-top">
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="col-6 col-md-6 col-lg-2 navbar-brand logo p-0 m-0">
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
               <Link as={Link} to="/" className="logo-img">
                 <img
                   className="img-fluid justify-content-center mt-2"
@@ -256,6 +314,16 @@ function Header() {
                       {t("Uygulamalarımız")}
                     </Link>
                   </li>
+                  {/* <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      as={Link}
+                      to="/Sidebar"
+                      onClick={handleClick}
+                    >
+                      Sidebar
+                    </Link>
+                  </li> */}
                   <li className="nav-item">
                     <Link
                       className="nav-link"
@@ -282,6 +350,7 @@ function Header() {
               </div>
               <div className="search-box float-right">
                 <a
+<<<<<<< HEAD
                   href="https://wa.me/905512209291"
                   className="search-open search-toggle"
                   target="_blank"
@@ -293,6 +362,10 @@ function Header() {
               <div className="search-box float-right">
                 <a
                   href="https://www.facebook.com/sekiryapi/?locale=tr_TR"
+=======
+                  href="tel:+902242115726"
+                  title="Search"
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
                   className="search-open search-toggle"
                   target="_blank"
                   onClick={handleClick}

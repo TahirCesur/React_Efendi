@@ -1,4 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+<<<<<<< HEAD
+=======
+import { BrowserRouter } from "react-router-dom";
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
 import React, { useEffect } from "react";
 import {BrowserRouter} from "react-router-dom";
 import Footer from "./Components/common/Footer";
@@ -21,6 +25,7 @@ function App() {
   };
 
   return (
+<<<<<<< HEAD
     <>
       <BrowserRouter>
         <Header changeLanguage={changeLanguage} />
@@ -28,6 +33,13 @@ function App() {
         <Footer changeLanguage={changeLanguage} />
       </BrowserRouter>
     </>
+=======
+    <BrowserRouter>
+      <Header changeLanguage={changeLanguage} />
+      <CustomRoutes changeLanguage={changeLanguage} />
+      <Footer changeLanguage={changeLanguage} />
+    </BrowserRouter>
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
   );
 }
 

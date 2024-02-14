@@ -34,7 +34,16 @@ const ProductOne = () => {
     721: {
       items: 3, // 769-992px ekran genişliği için 3 öğe göster
     },
+<<<<<<< HEAD
 
+=======
+    993: {
+      items: 4, // 993px ve üzeri ekran genişliği için 4 öğe göster
+    },
+    1400: {
+      items: 5, // 993px ve üzeri ekran genişliği için 4 öğe göster
+    },
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
   };
 
   return (

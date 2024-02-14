@@ -58,12 +58,17 @@ import CamKorkulukSistemleriPage from "../pages/aluminyum/CamKorkulukSistemleriP
 import AluminyumDogramaVitrinPage from "../pages/aluminyum/AluminyumDogramaVitrinPage";
 import KatlanirCamSistemleriPage from "../pages/cambalkon/KatlanirCamSistemleriPage";
 import GaleriPage from "../pages/GaleriPage";
+<<<<<<< HEAD
 
+=======
+import SidebarPage from "../pages/SidebarPage";
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
 /* import TopBarPage from "../pages/TopBarPage"; */
 
 const CustomRoutes = () => {
   return (
     <Routes>
+<<<<<<< HEAD
     <Route
         exact
         path="/uygulamalarimiz"
@@ -232,6 +237,20 @@ const CustomRoutes = () => {
       <Route exact path="/contactus" element={<ContactusPage />} />
       <Route exact path="/product-similar" element={<ProductSimilarPage />} />
       <Route exact path="/product-details" element={<ProductDetailsPage />} />
+=======
+      <Route exact path="/Sidebar" element={<SidebarPage />} />
+      <Route exact path="/Galeri" element={<GaleriPage />} />
+      <Route exact path="/Brode" element={<BrodePage />} />
+      <Route exact path="/Nakis" element={<NakisPage />} />
+      <Route exact path="/Baskili" element={<BaskiliPage />} />
+      <Route exact path="/Orme" element={<OrmePage />} />
+      <Route exact path="/Fonluk" element={<FonlukPage />} />
+      <Route exact path="/Armur" element={<ArmurPage />} />
+      <Route exact path="/Urun" element={<UrunPage />} />
+      <Route path="/Contactus" element={<ContactusPage />} />
+      <Route exact path="/ProductSimilar" element={<ProductSimilarPage />} />
+      <Route exact path="/ProductDetails" element={<ProductDetailsPage />} />
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
       {/* <Route exact path="/TopBar" element={<TopBarPage />} /> */}
       <Route exact path="/product" element={<ProductPage />} />
       <Route exact path="/contact" element={<ContactPage />} />

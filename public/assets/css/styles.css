@@ -650,7 +650,11 @@ select {
  * 6. Header Section
  * ========================================================================== */
 .header-sticky {
+<<<<<<< HEAD
   position: fixed !important;
+=======
+  position: fixed!important;
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
   top: 0px;
   right: 0;
   left: 0;
@@ -3493,7 +3497,11 @@ html.drawer-cart-open {
 
 .breadcrumbs::before {
   content: "";
+<<<<<<< HEAD
   background: url(/assets/images/hakkimizda/hakkimizda-22.webp);
+=======
+  background: url(/assets/images/slider/slider-3.jpg);
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -8748,7 +8756,7 @@ html.drawer-cart-open {
 @media (max-width: 1600px) {
   .resimSlider {
     height: 600px;
-    background-color: #f2f2f2 !important;
+    background-color: #f2f2f2 !important
   }
 }
 
@@ -8797,6 +8805,7 @@ html.drawer-cart-open {
   .resimSlider {
     height: 240px;
     background-color: #f2f2f2 !important;
+    margin-top: -11px;
   }
 }
 @media (max-width: 360px) {
@@ -8849,3 +8858,200 @@ html.drawer-cart-open {
 .color-block.hovered .image-container img {
   transform: translateX(0);
 }
+<<<<<<< HEAD
+=======
+
+.main-footer__navmenu ul li a:hover {
+  color: #bfa867;
+  padding-left: 5px;
+}
+
+.main-footer__about {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .main-footer__about {
+    margin-top: 35px;
+  }
+}
+
+
+.nav-side-menu {
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  background-color: #2e353d;
+  position: relative;
+  top: 40px;
+  width: 250px;
+  height: 100%;
+  color: #e1ffff;
+  .brand {
+    background-color: #23282e;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    cursor: pointer;
+    .active {
+      border-left: 3px solid #d19b3d;
+      background-color: #4f5b69;
+    }
+    .sub-menu {
+      li.active {
+        color: #d19b3d;
+        a {
+          color: #d19b3d;
+        }
+      }
+      li {
+        background-color: #181c20;
+        border: none;
+        line-height: 28px;
+        border-bottom: 1px solid #23282e;
+        margin-left: 0;
+        &:hover {
+          background-color: #020203;
+          transition: none;
+        }
+      }
+    }
+  }
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    cursor: pointer;
+    padding-left: 0;
+    border-left: 3px solid #2e353d;
+    border-bottom: 1px solid #23282e;
+    transition: all 0.2s ease;
+    .active {
+      border-left: 3px solid #d19b3d;
+      background-color: #4f5b69;
+    }
+    .sub-menu {
+      li.active {
+        color: #d19b3d;
+        a {
+          color: #d19b3d;
+        }
+      }
+      li {
+        background-color: #181c20;
+        border: none;
+        line-height: 28px;
+        border-bottom: 1px solid #23282e;
+        margin-left: 0;
+        &:hover {
+          background-color: #020203;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #e1ffff;
+      i {
+        margin: 10px 15px;
+      }
+    }
+    &:hover {
+      border-left: 3px solid red;
+      background-color: #bfa867;
+      color: #000 !important;;
+      transition: none;
+    }
+  }
+}
+
+.sub-menu {
+  li {
+    padding-left: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li .fa-chevron-down {
+  margin: 10px;
+  vertical-align: middle;
+  float: right;
+  transition: transform 0.4s;
+  
+}
+
+li.active .fa-chevron-down {
+  transform: rotateX(180deg);
+}
+
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    .toggle-btn {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 10 !important;
+      padding: 3px;
+      background-color: #fff;
+      color: #000;
+      width: 40px;
+      text-align: center;
+      border-radius: 4px;
+    }
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+
+@media (min-width: 767px) {
+  .nav-side-menu {
+    .menu-list {
+      .menu-content {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .content {
+    /* margin-left: 250px; */
+  }
+}
+
+.content {
+  /* padding: 20px; */
+  p {
+    color: #eee;
+  }
+}
+
+table {
+  color: #eee;
+}
+>>>>>>> 4babdcf2736bde5572026c59c009f171f55647ef
