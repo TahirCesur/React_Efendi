@@ -8,7 +8,7 @@ function GaleriPage() {
   const { t } = useTranslation();
   return (
     <>
-      <PageHeader title={t("Galeri")} />
+      <PageHeader title={t("Uygulamalarımız")} />
       <Galeri />
     </>
   );

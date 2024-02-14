@@ -25,8 +25,8 @@ const ProductOne = () => {
     0: {
       items: 1, // 0-600px ekran genişliği için 1 öğe göster
     },
-    380: {
-      items: 2, // 601-768px ekran genişliği için 2 öğe göster
+    400: {
+      items: 1, // 601-768px ekran genişliği için 2 öğe göster
     },
     575: {
       items: 2, // 601-768px ekran genişliği için 2 öğe göster
@@ -34,12 +34,7 @@ const ProductOne = () => {
     721: {
       items: 3, // 769-992px ekran genişliği için 3 öğe göster
     },
-    993: {
-      items: 4, // 993px ve üzeri ekran genişliği için 4 öğe göster
-    },
-    1200: {
-      items: 5, // 993px ve üzeri ekran genişliği için 4 öğe göster
-    },
+
   };
 
   return (
@@ -47,146 +42,80 @@ const ProductOne = () => {
       <section id="" className="album-list-carousel mb-0">
         <div id="111" className="content-wrap caption-gradient ali-style-2">
           <div class="section-header">
-            <h2>Ürünlerimiz</h2>
-            <p>En yeni trend perde modellerimiz sizleri bekliyor..</p>
+            <h2>{t("Ürünlerimiz")}</h2>
+            <p>{t("En yeni trend perde modellerimiz sizleri bekliyor..")}</p>
           </div>
           <ReactOwlCarousel
             className="owl-carousel dots-rounded dots-outside nav-rounded nav-outside margin-top-30 margin-bottom-30"
-            items={4}
+            items={3}
             margin={20}
             nav
             dots={false}
             responsive={responsiveOptions} // responsive seçeneklerini ekleyin
           >
             <div className="album-list-item">
-              <Link className="ali-link" onClick={handleClick} as={Link} to="/Armur">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/winsa">
                 <div className="ali-img-wrap">
                   <div>
                     <img
                       className="img-fluid blur-up lazyload"
-                      src="assets/images/products/armür-1.jpg"
-                      alt="image"
-                      title="image"
+                      src="assets/images/products/11.webp"
+                      alt={t("PVC Pencere ve Kapı Sistemleri")}
+                      title={t("PVC Pencere ve Kapı Sistemleri")}
                     />
                   </div>
                 </div>
                 <div className="ali-caption">
-                  <p className="ali-title">Armür</p>
+                  <p className="ali-title">{t("PVC Pencere ve Kapı Sistemleri")}</p>
                   <div className="ali-meta"></div>
                 </div>
               </Link>
-              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Armur">
-                <p>ARMÜR</p>
-              </Link>
-            </div>
-
-            <div className="">
-              <Link className="ali-link" onClick={handleClick} as={Link} to="/Fonluk">
-                <div className="ali-img-wrap">
-                <div>
-                    <img
-                      className="img-fluid blur-up lazyload"
-                      src="assets/images/products/fon-1.jpg"
-                      alt="image"
-                      title="image"
-                    />
-                  </div>
-                </div>
-                <div className="ali-caption">
-                  <p className="ali-title">Fonluk</p>
-                  <div className="ali-meta"></div>
-                </div>
-              </Link>
-              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Fonluk">
-                <p>FONLUK</p>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/winsa">
+                <p>{t("PVC Pencere ve Kapı Sistemleri")}</p>
               </Link>
             </div>
 
             <div className="album-list-item">
-              <Link className="ali-link" onClick={handleClick} as={Link} to="/Brode">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/cam-balkon">
                 <div className="ali-img-wrap">
                 <div>
                     <img
                       className="img-fluid blur-up lazyload"
-                      src="assets/images/products/brode-2.jpg"
-                      alt="image"
-                      title="image"
+                      src="assets/images/products/22.webp"
+                      alt={t("Cam Balkon Sistemleri")}
+                      title={t("Cam Balkon Sistemleri")}
                     />
                   </div>
                 </div>
                 <div className="ali-caption">
-                  <p className="ali-title">Brode</p>
+                  <p className="ali-title">{t("Cam Balkon Sistemleri")}</p>
                   <div className="ali-meta"></div>
                 </div>
               </Link>
-              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Brode">
-                <p>BRODE</p>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/cam-balkon">
+                <p>{t("Cam Balkon Sistemleri")}</p>
               </Link>
             </div>
 
             <div className="album-list-item">
-              <Link className="ali-link" onClick={handleClick} as={Link} to="/Nakis">
+              <Link className="ali-link" onClick={handleClick} as={Link} to="/aluminyum">
                 <div className="ali-img-wrap">
                 <div>
                     <img
                       className="img-fluid blur-up lazyload"
-                      src="assets/images/products/nakış-1.jpg"
-                      alt="image"
-                      title="image"
+                      src="assets/images/aluminyum/122.webp"
+                      alt={t("Alüminyum Korkuluk Küpeşte")}
+                      title={t("Alüminyum Korkuluk Küpeşte")}
                     />
                   </div>
                 </div>
                 <div className="ali-caption">
-                  <p className="ali-title">Nakış</p>
+                  <p className="ali-title">{t("Alüminyum Korkuluk Küpeşte")}</p>
                   <div className="ali-meta"></div>
                 </div>
               </Link>
-              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Nakis">
-                <p>NAKIŞ</p>
-              </Link>
-            </div>
-
-            <div className="album-list-item">
-              <Link className="ali-link" onClick={handleClick} as={Link} to="/Orme">
-                <div className="ali-img-wrap">
-                <div>
-                    <img
-                      className="img-fluid blur-up lazyload"
-                      src="assets/images/products/örme-1.jpg"
-                      alt="image"
-                      title="image"
-                    />
-                  </div>
-                </div>
-                <div className="ali-caption">
-                  <p className="ali-title">Örme</p>
-                  <div className="ali-meta"></div>
-                </div>
-              </Link>
-              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Orme">
-                <p>ÖRME</p>
-              </Link>
-            </div>
-
-            <div className="album-list-item">
-              <Link className="ali-link" onClick={handleClick} as={Link} to="/Baskili">
-                <div className="ali-img-wrap">
-                <div>
-                    <img
-                      className="img-fluid blur-up lazyload"
-                      src="assets/images/products/baski-4.jpg"
-                      alt="image"
-                      title="image"
-                    />
-                  </div>
-                </div>
-                <div className="ali-caption">
-                  <p className="ali-title">Baskılı</p>
-                  <div className="ali-meta"></div>
-                </div>
-              </Link>
-              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/Baskili">
-                <p>BASKILI</p>
+              <Link className="ali-link-my" onClick={handleClick} as={Link} to="/aluminyum">
+                <p>{t("Alüminyum Korkuluk Küpeşte")}</p>
               </Link>
             </div>
           </ReactOwlCarousel>

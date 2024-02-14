@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Rewotech Gold",
+    "picture": "assets/images/winsa/winsa-pencere-renk/7-kul-siyahi.webp",
+    "price": "DETAYLAR",
+    "nav": "/rewotech-gold"
+  },
+  {
+    "id": 2,
+    "title": "Rewotech",
+    "picture": "assets/images/winsa/winsa-pencere-renk/1-altin-mese.webp",
+    "price": "DETAYLAR",
+    "nav": "/rewotech"
+  },
+  {
+    "id": 3,
+    "title": "Safir 76",
+    "picture": "assets/images/winsa/winsa-pencere-renk/6-krem.webp",
+    "price": "DETAYLAR",
+    "nav": "/safir76"
+  },
+  {
+    "id": 4,
+    "title": "Safir",
+    "picture": "assets/images/winsa/winsa-pencere-renk/13-winchester.webp",
+    "price": "DETAYLAR",
+    "nav": "/safir"
+  },
+  {
+    "id": 5,
+    "title": "Dorado 76",
+    "picture": "assets/images/winsa/winsa-pencere-renk/9-metalik-antrasit.webp",
+    "price": "DETAYLAR",
+    "nav": "/dorado76"
+  }
+]

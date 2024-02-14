@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Katlanır Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/katlanir-cam-balkon-sistemi/kcs/1.webp",
+    "price": "DETAYLAR",
+    "nav": "/katlanir-cam-balkon"
+  },
+  {
+    "id": 2,
+    "title": "Eşiksiz Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/katlanir-cam-balkon-sistemi/kcs/7.webp",
+    "price": "DETAYLAR",
+    "nav": "/esiksiz-cam-balkon"
+  },
+  {
+    "id": 3,
+    "title": "Kılavuzsuz Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/katlanir-cam-balkon-sistemi/kcs/13.webp",
+    "price": "DETAYLAR",
+    "nav": "/kilavuzsuz-cam-balkon"
+  },
+  {
+    "id": 4,
+    "title": "Kılavuzsuz Eşiksiz Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/katlanir-cam-balkon-sistemi/kcs/19.webp",
+    "price": "DETAYLAR",
+    "nav": "/kilavuzsuz-esiksiz-cam-balkon"
+  },
+  {
+    "id": 5,
+    "title": "Kılavuzsuz Küpeşteli Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/katlanir-cam-balkon-sistemi/kcs/24.webp",
+    "price": "DETAYLAR",
+    "nav": "/kilavuzsuz-kupesteli-cam-balkon"
+  },
+  {
+    "id": 6,
+    "title": "Küpeşteli Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/katlanir-cam-balkon-sistemi/kcs/24.webp",
+    "price": "DETAYLAR",
+    "nav": "/kupesteli-cam-balkon"
+  }
+]

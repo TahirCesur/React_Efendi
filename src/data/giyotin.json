@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Klasik Giyotin Cam Sistemi",
+    "picture": "assets/images/cam-balkon/giyotin/70.webp",
+    "price": "DETAYLAR",
+    "nav": "/klasik-giyotin-sistem"
+  },
+  {
+    "id": 2,
+    "title": "Silinebilir Giyotin Cam Sistemi",
+    "picture": "assets/images/cam-balkon/giyotin/74.webp",
+    "price": "DETAYLAR",
+    "nav": "/silinebilir-giyotin-sistem"
+  },
+  {
+    "id": 3,
+    "title": "IOT Silinebilir Giyotin Cam Sistemi",
+    "picture": "assets/images/cam-balkon/giyotin/64.webp",
+    "price": "DETAYLAR",
+    "nav": "/IOT-silinebilir-giyotin-sistem"
+  }
+]

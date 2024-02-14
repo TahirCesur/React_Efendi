@@ -26,7 +26,7 @@
     font-family: "themify";
     vertical-align: middle;
     font-size: 8px;
-    margin-left: 2px;
+    margin-left: 12px;
   }
   .navigation .navbar-nav .nav-item.active .nav-link .arw:before,
   .navigation .navbar-nav .nav-item .nav-link:hover .arw:before {
@@ -150,7 +150,7 @@
     padding: 15px 0;
   }
   .header .container-fluid {
-    padding: 15px 15px;
+    padding: 25px 25px;
   }
 
   .header .top-header {
@@ -207,7 +207,7 @@
     display: block !important;
     -webkit-overflow-scrolling: touch;
     transition: all 0.15s ease-in;
-    background-color: #000;
+    background-color: #e44514;
     text-align: left;
     overflow-x: hidden;
     width: 100%;
@@ -226,18 +226,18 @@
   .navigation .closeNav-btn {
     font-size: 14px;
     font-weight: 500;
-    text-transform: uppercase;
+
     display: block;
     width: auto;
     height: 30px;
     line-height: 33px;
     text-align: center;
-    color: #bfa87b;
+    color: #fff;
     float: right;
     margin: 10px;
   }
   .navigation .closeNav-btn:hover {
-    color: #fff;
+    color: #243f88;
   }
   .navigation .navbar-nav:before {
     content: "";
@@ -255,17 +255,19 @@
   .navigation .navbar-nav .megamenu .megamenu-lvl ul li a,
   .navigation .navbar-nav .nav-item .nav-link {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
-    height: 40px;
-    padding: 9px 35px 9px 15px;
+    height: 60;
+    padding: 15px 35px 15px 15px;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    border-top: 1px solid #bfa87b;
-    color: #bfa87b;
+    border-top: 1px solid #e44514;
+    color: #243f88;
   }
   .navigation .navbar-nav .megamenu .megamenu-lvl ul li a,
   .navigation .navbar-nav .megamenu.dropdown ul .droplink li a {
-    background-color: #bfa87b;
+    background-color: #e44514;
     color: #000;
     font-size: 13px;
     height: 35px;
@@ -311,7 +313,10 @@
     visibility: visible;
   }
   .navigation .navbar-toggler {
-    padding: 0;
+    padding: 10px;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
     outline: none;
     border: none;
   }
@@ -547,7 +552,7 @@
     background-color: #000;
     color: #bfa87b !important;
     font-size: 16px;
-    text-transform: uppercase;
+
     padding: 10px 20px;
   }
   .tab-drawer-heading a:after {
@@ -1215,7 +1220,7 @@
   .search-box,
   .setting-menu,
   .ymm-search-box-toggle {
-    margin-right: 15px;
+    margin-right: 20px;
   }
   .topbar-Header .currency-picker,
   .topbar-Header .phone-number {
@@ -1461,7 +1466,7 @@
   .cart-get-shipping h3,
   .apply-promocode h3 {
     font-size: 18px;
-    text-transform: uppercase;
+
     margin: 0 0 15px;
   }
   .cart-view-summary .cart-note .form-group {
@@ -2831,19 +2836,61 @@
   }
 }
 
-/*--------- Below Max 480px ---------*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 300px) {
+  .search-box {
+    font-size: 5px !important;
+    margin-right: 3px!important;
+  }
+  .header .icons {
+    font-size: 5px!important;
+    
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .search-box {
+    font-size: 10px;
+    margin-right: 10px!important;
+  }
+  .header .icons {
+    font-size: 10px!important;
+    
+  }
+}
+
+@media only screen and (max-width: 360px) {
   .header .icon {
-    font-size: 20px;
+    font-size: 30px;
+  }
+  .header .icons {
+    font-size: 20px!important;
   }
   .header .logo-img img {
     max-width: 100%;
-    height: 60px;
+    /* height: 60px; */
   }
   .search-box,
   .setting-menu,
   .ymm-search-box-toggle {
-    margin-right: 20px;
+    margin-right: 15px;
+  }
+}
+/*--------- Below Max 480px ---------*/
+@media only screen and (max-width: 480px) {
+  .header .icon {
+    font-size: 30px;
+  }
+  .header .icons {
+    font-size: 25px;
+  }
+  .header .logo-img img {
+    max-width: 100%;
+    /* height: 60px; */
+  }
+  .search-box,
+  .setting-menu,
+  .ymm-search-box-toggle {
+    margin-right: 15px;
   }
   .slick-prev {
     left: -3px;

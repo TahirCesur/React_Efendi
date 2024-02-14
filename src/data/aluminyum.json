@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Alüminyum Korkuluk Küpeşte",
+    "picture": "assets/images/aluminyum/117.webp",
+    "price": "DETAYLAR",
+    "nav": "/aluminyum-korkuluk-kupeste"
+  },
+  {
+    "id": 2,
+    "title": "Alüminyum Cam Korkuluk Sistemleri",
+    "picture": "assets/images/aluminyum/122.webp",
+    "price": "DETAYLAR",
+    "nav": "/cam-korkuluk-sistemleri"
+  },
+  {
+    "id": 3,
+    "title": "Alüminyum Doğrama Vitrin",
+    "picture": "assets/images/aluminyum/127.webp",
+    "price": "DETAYLAR",
+    "nav": "/aluminyum-dograma-vitrin"
+  }
+]

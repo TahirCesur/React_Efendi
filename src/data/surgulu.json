@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Eşikli Sürgülü Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/surgulu-cam/45.webp",
+    "price": "DETAYLAR",
+    "nav": "/esikli-surgulu-sistem"
+  },
+  {
+    "id": 2,
+    "title": "Eşiksiz Sürgülü Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/surgulu-cam/51.webp",
+    "price": "DETAYLAR",
+    "nav": "/esiksiz-surgulu-sistem"
+  },
+  {
+    "id": 3,
+    "title": "Lüx Sürgülü Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/surgulu-cam/54.webp",
+    "price": "DETAYLAR",
+    "nav": "/lux-surgulu-sistem"
+  }
+]

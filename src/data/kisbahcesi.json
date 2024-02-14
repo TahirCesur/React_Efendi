@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Bioclimatic Sistemleri Kış Bahçesi",
+    "picture": "assets/images/cam-balkon/kis-bahcesi/95.webp",
+    "price": "DETAYLAR",
+    "nav": "/bioclimatic"
+  },
+  {
+    "id": 2,
+    "title": "Pergole Sistemleri Kış Bahçesi",
+    "picture": "assets/images/cam-balkon/kis-bahcesi/103.webp",
+    "price": "DETAYLAR",
+    "nav": "/pergole"
+  },
+  {
+    "id": 3,
+    "title": "Rolling Roof Sistemleri Kış Bahçesi",
+    "picture": "assets/images/cam-balkon/kis-bahcesi/98.webp",
+    "price": "DETAYLAR",
+    "nav": "/rolling-roof"
+  },
+  {
+    "id": 4,
+    "title": "Sabit Cam Tavan Kış Bahçesi",
+    "picture": "assets/images/cam-balkon/kis-bahcesi/108.webp",
+    "price": "DETAYLAR",
+    "nav": "/sabit-cam-tavan"
+  },
+  {
+    "id": 5,
+    "title": "Veranda Sabit Cam Tavan Kış Bahçesi",
+    "picture": "assets/images/cam-balkon/kis-bahcesi/114.webp",
+    "price": "DETAYLAR",
+    "nav": "/veranda-sabit-cam-tavan"
+  }
+]

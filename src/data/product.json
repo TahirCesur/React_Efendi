@@ -1,44 +1,23 @@
 [
   {
     "id": 1,
-    "category": "Armür",
-    "image": "assets/images/products/armür-1.jpg",
-    "price": "$113.88"
+    "title": "PVC Pencere ve Kapı Sistemleri",
+    "picture": "assets/images/products/1.webp",
+    "price": "DETAYLAR",
+    "nav": "/pvc-pencere-kapi-sistemleri"
   },
   {
     "id": 2,
-    "category": "Fonluk",
-    "image": "assets/images/products/fon-1.jpg",
-    "price": "$113.88"
+    "title": "Cam Balkon Sistemleri",
+    "picture": "assets/images/products/2.webp",
+    "price": "DETAYLAR",
+    "nav": "/cam-balkon"
   },
   {
     "id": 3,
-    "category": "Fonluk",
-    "image": "assets/images/products/fon-1.jpg",
-    "price": "$113.88"
-  },
-  {
-    "id": 4,
-    "category": "Fonluk",
-    "image": "assets/images/products/fon-1.jpg",
-    "price": "$113.88"
-  },
-  {
-    "id": 5,
-    "category": "Fonluk",
-    "image": "assets/images/products/fon-1.jpg",
-    "price": "$113.88"
-  },
-  {
-    "id": 6,
-    "category": "Fonluk",
-    "image": "assets/images/products/fon-1.jpg",
-    "price": "$113.88"
-  },
-  {
-    "id": 2,
-    "category": "Fonluk",
-    "image": "assets/images/products/fon-1.jpg",
-    "price": "$113.88"
+    "title": "Alüminyum Korkuluk Küpeşte",
+    "picture": "assets/images/aluminyum/122.webp",
+    "price": "DETAYLAR",
+    "nav": "/aluminyum"
   }
 ]

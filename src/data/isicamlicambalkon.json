@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Eşiksiz Isı Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/isi-cam-sistem/25.webp",
+    "price": "DETAYLAR",
+    "nav": "/esiksiz-isi-cam"
+  },
+  {
+    "id": 2,
+    "title": "Isı Camlı Cam Balkon Sistemleri",
+    "picture": "assets/images/cam-balkon/isi-cam-sistem/33.webp",
+    "price": "DETAYLAR",
+    "nav": "/isi-camli-cam"
+  },
+  {
+    "id": 3,
+    "title": "Kılavuzsuz Eşiksiz Isı Camlı Cam Sistemleri",
+    "picture": "assets/images/cam-balkon/isi-cam-sistem/26.webp",
+    "price": "DETAYLAR",
+    "nav": "/kilavuzsuz-esiksiz-isi-cam"
+  },
+  {
+    "id": 4,
+    "title": "Kılavuzsuz Isı Cam Sistemleri",
+    "picture": "assets/images/cam-balkon/isi-cam-sistem/33.webp",
+    "price": "DETAYLAR",
+    "nav": "/kilavuzsuz-isi-cam"
+  },
+  {
+    "id": 5,
+    "title": "Küpeşteli Isı Cam Sistemleri",
+    "picture": "assets/images/cam-balkon/isi-cam-sistem/40.webp",
+    "price": "DETAYLAR",
+    "nav": "/kupesteli-isi-cam"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Winstor",
+    "picture": "assets/images/winsa/panjur-kepenk-sistemleri/4.webp",
+    "price": "DETAYLAR",
+    "nav": "/winstor"
+  },
+  {
+    "id": 2,
+    "title": "Winkepenk",
+    "picture": "assets/images/winsa/panjur-kepenk-sistemleri/5.webp",
+    "price": "DETAYLAR",
+    "nav": "/winkepenk"
+  }
+]

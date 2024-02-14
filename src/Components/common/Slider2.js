@@ -8,18 +8,18 @@ function Slider2() {
   };
 
   const handlePrev = () => {
-    handleSelect(activeIndex === 0 ? 5 : activeIndex - 1);
+    handleSelect(activeIndex === 0 ? 9 : activeIndex - 1);
   };
 
   const handleNext = () => {
-    handleSelect(activeIndex === 5 ? 0 : activeIndex + 1);
+    handleSelect(activeIndex === 9 ? 0 : activeIndex + 1);
   };
 
   return (
     <>
       <div id="carouselExampleIndicators" className="carousel slide">
         <ol className="carousel-indicators">
-          {[0, 1, 2, 3, 4, 5].map((index) => (
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
             <li
               key={index}
               data-target="#carouselExampleIndicators"
@@ -29,17 +29,17 @@ function Slider2() {
           ))}
         </ol>
         <div className="carousel-inner resimSlider">
-          {[0, 1, 2, 3, 4, 5].map((index) => (
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
             <div
               key={index}
-              className={`carousel-item ${activeIndex === index ? "active" : ""}`}
+              className={`carousel-item ${
+                activeIndex === index ? "active" : ""
+              }`}
             >
               <img
                 className="d-block w-100 resimSlider"
-                src={`assets/images/slider/slider-${index + 1}.jpg`}
+                src={`assets/images/slider/s-${index + 1}.webp`}
                 alt={`Slide ${index + 1}`}
-                width="100%"
-                height="500px"
               />
             </div>
           ))}
@@ -53,7 +53,10 @@ function Slider2() {
           aria-label="prev"
           onClick={handlePrev}
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="sr-only">Previous</span>
         </a>
         <a
@@ -65,11 +68,13 @@ function Slider2() {
           aria-label="next"
           onClick={handleNext}
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="sr-only">Next</span>
         </a>
       </div>
-      
     </>
   );
 }

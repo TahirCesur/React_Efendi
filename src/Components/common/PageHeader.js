@@ -16,7 +16,7 @@ function PageHeader(props) {
               class="breadcrumb bg-transparent m-0 p-0 justify-content-center"
             >
               <li class="breadcrumb-item">
-                <a href="index.html" title="Home">Anasayfa</a>
+                <Link as={Link} to="/" title="Home">{t("Anasayfa")}</Link>
               </li>
               <li class="breadcrumb-item active">{props.title}</li>
             </ul>

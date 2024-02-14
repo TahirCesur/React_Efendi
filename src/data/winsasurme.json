@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Comfort Slide",
+    "picture": "assets/images/winsa/surme-sistemleri/1.webp",
+    "price": "DETAYLAR",
+    "nav": "/comfort-slide"
+  },
+  {
+    "id": 2,
+    "title": "Panorama HS 76",
+    "picture": "assets/images/winsa/surme-sistemleri/2.webp",
+    "price": "DETAYLAR",
+    "nav": "/panorama-hs-76"
+  },
+  {
+    "id": 3,
+    "title": "Lotus",
+    "picture": "assets/images/winsa/surme-sistemleri/3.webp",
+    "price": "DETAYLAR",
+    "nav": "/lotus"
+  }
+]

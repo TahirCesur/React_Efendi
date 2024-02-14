@@ -442,7 +442,7 @@ mark {
 }
 .initialism {
   font-size: 90%;
-  text-transform: uppercase;
+  
 }
 .blockquote {
   margin-bottom: 1rem;
@@ -586,7 +586,6 @@ pre code {
 .col-lg-5,
 .col-lg-6,
 .col-lg-7,
-.col-lg-8,
 .col-lg-9,
 .col-lg-auto,
 .col-md,
@@ -636,6 +635,12 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.col-lg-8{
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -676,7 +681,7 @@ pre code {
 }
 .col-6 {
   -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
+  /* flex: 0 0 50%; */
   max-width: 50%;
 }
 .col-7 {
@@ -1014,7 +1019,7 @@ pre code {
   }
   .col-md-6 {
     -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    /* flex: 0 0 50%; */
     max-width: 50%;
     margin-top: 20px;
   }
@@ -2910,6 +2915,7 @@ input[type="submit"].btn-block {
 .dropdown-toggle:empty::after {
   margin-left: 0;
 }
+/* Genel dropdown menü stil */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -2917,7 +2923,8 @@ input[type="submit"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: 200px;
+  width: auto;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
@@ -2929,24 +2936,29 @@ input[type="submit"].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
-.dropdown-menu-left {
-  right: auto;
-  left: 0;
+
+/* Alt menü öğelerinin genişliği */
+.dropdown-menu li {
+  width: 100%;
 }
-.dropdown-menu-right {
-  right: 0;
-  left: auto;
-}
-@media (min-width: 576px) {
-  .dropdown-menu-sm-left {
-    right: auto;
-    left: 0;
-  }
-  .dropdown-menu-sm-right {
-    right: 0;
-    left: auto;
+
+/* Responsive tasarım için media query'ler */
+@media (max-width: 576px) {
+  .dropdown-menu {
+    width: 100%;
+    min-width: 0;
   }
 }
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .dropdown-menu {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* İhtiyaç duyulan diğer breakpoint'ler için aynı şablonu kopyalayabilirsiniz */
+
 @media (min-width: 768px) {
   .dropdown-menu-md-left {
     right: auto;
@@ -2957,6 +2969,7 @@ input[type="submit"].btn-block {
     left: auto;
   }
 }
+
 @media (min-width: 992px) {
   .dropdown-menu-lg-left {
     right: auto;
@@ -2967,6 +2980,7 @@ input[type="submit"].btn-block {
     left: auto;
   }
 }
+
 @media (min-width: 1200px) {
   .dropdown-menu-xl-left {
     right: auto;
@@ -2977,6 +2991,9 @@ input[type="submit"].btn-block {
     left: auto;
   }
 }
+
+
+
 .dropup .dropdown-menu {
   top: auto;
   bottom: 100%;
@@ -3887,7 +3904,7 @@ input[type="submit"].btn-block {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.5rem 1rem;
 }
 .navbar > .container,
@@ -3924,12 +3941,13 @@ input[type="submit"].btn-block {
   list-style: none;
 }
 .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
+  padding: 5px;
 }
 .navbar-text {
   display: inline-block;
@@ -3945,12 +3963,15 @@ input[type="submit"].btn-block {
   align-items: center;
 }
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 10px;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: #243f88;
+  border: 1px solid #243f88;
   border-radius: 0.25rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .navbar-toggler:focus,
 .navbar-toggler:hover {

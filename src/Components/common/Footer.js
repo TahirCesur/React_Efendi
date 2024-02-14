@@ -31,132 +31,110 @@ function Footer() {
                   <a href="index.html">
                     <img
                       className="img-fluid"
-                      src="assets/images/logo/prusa-logo.png"
-                      alt="Prusa Logo"
-                      title="Prusa Logo"
+                      src="assets/images/logo/sekir-trans.webp"
+                      alt="Şekir Yapı"
+                      title="Şekir Yapı"
                     />
                   </a>
                 </div>
 
                 <div className="social-icons align-items-center text-center justify-content-center">
-                  <ul className="d-flex flex-row align-items-center text-center justify-content-center">
-                    <li>
-                      <a href="#" title="Facebook">
-                        <i className="icon ti-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" title="Twitter">
-                        <i className="icon ti-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" title="Instagram">
-                        <i className="icon ti-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" title="Google Plus">
-                        <i className="icon ti-google"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" title="Youtube">
-                        <i className="icon ti-youtube"></i>
-                      </a>
-                    </li>
-                  </ul>
+                  <p className="d-flex flex-row align-items-center text-center justify-content-center text-white">
+                    {t("Bizimle Tanışın, Farkı Hissedin!")}
+                    <br />
+                    {t("Şekir Yapı, Bursa ve çevresinde güvenilir,")} <br />
+                    {t(
+                      " kaliteli ve estetik yapı çözümleri sunan bir markadır."
+                    )}{" "}
+                    <br />
+                    {t("Siz de projeleriniz için bize ulaşın,")} <br />
+                    {t("hayallerinizi gerçeğe dönüştürmek için")} <br />
+                    {t("birlikte çalışalım.")}
+                  </p>
                 </div>
               </div>
 
               <div className="col-12 col-sm-12 col-md-12 col-lg-8 newsletter-menulinks align-items-center text-center justify-content-center">
                 <div className="row no-gutters footer-links">
                   <div className="col-12 col-sm-12 col-md-4 col-lg-4 contact ">
-                    <h4>Kurumsal</h4>
+                    <h4>{t("Kurumsal")}</h4>
+                    <hr />
                     <ul className="linklist contact-info d-flex flex-column mb-3">
                       <li>
                         <Link as={Link} to="/" onClick={handleClick}>
-                          Anasayfa
+                          {t("Anasayfa")}
                         </Link>
                       </li>
                       <li>
-                        <Link as={Link} to="/Aboutus" onClick={handleClick}>
-                          Hakkımızda
+                        <Link as={Link} to="/aboutus" onClick={handleClick}>
+                          {t("Hakkımızda")}
                         </Link>
                       </li>
                       <li>
-                        <Link as={Link} to="/Product" onClick={handleClick}>
-                          Ürünlerimiz
+                        <Link as={Link} to="/product" onClick={handleClick}>
+                          {t("Ürünlerimiz")}
                         </Link>
                       </li>
                       <li>
-                        <Link as={Link} to="/Galeri" onClick={handleClick}>
-                          Galeri
+                        <Link
+                          as={Link}
+                          to="/uygulamalarimiz"
+                          onClick={handleClick}
+                        >
+                          {t("Uygulamalarımız")}
                         </Link>
                       </li>
                       <li>
-                        <Link as={Link} to="/Contact" onClick={handleClick}>
-                          iletişim
+                        <Link as={Link} to="/contact" onClick={handleClick}>
+                          {t("İletişim")}
                         </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="col-12 col-sm-12 col-md-4 col-lg-4 contact">
-                    <h4>ürünlerimiz</h4>
+                    <h4>{t("Ürünlerimiz")}</h4>
+                    <hr />
                     <ul className="linklist contact-info d-flex flex-column mb-3">
                       <li>
-                        <Link as={Link} to="/Armur" onClick={handleClick}>
-                          Armür Perde
+                        <Link as={Link} to="/pvc-pencere-kapi-sistemleri" onClick={handleClick}>
+                          {t("PVC Kapı ve Pencere Sistemleri")}
                         </Link>
                       </li>
                       <li>
-                        <Link as={Link} to="/Fonluk" onClick={handleClick}>
-                          Fonluk
+                        <Link as={Link} to="/cam-balkon" onClick={handleClick}>
+                          {t("Cam Balkon Sistemleri")}
                         </Link>
                       </li>
                       <li>
-                        <Link as={Link} to="/Brode" onClick={handleClick}>
-                          Brode Perde
-                        </Link>
-                      </li>
-                      <li>
-                        <Link as={Link} to="/Nakis" onClick={handleClick}>
-                          Nakış Perde
-                        </Link>
-                      </li>
-                      <li>
-                        <Link as={Link} to="/Orme" onClick={handleClick}>
-                          Örme Perde
-                        </Link>
-                      </li>
-                      <li>
-                        <Link as={Link} to="/Baskili" onClick={handleClick}>
-                          Baskılı Ürünler
+                        <Link as={Link} to="/aluminyum" onClick={handleClick}>
+                          {t("Alüminyum Korkuluk Küpeşte")}
                         </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="col-12 col-sm-12 col-md-4 col-lg-4 contact">
-                    <h4>İletişim Bilgileri</h4>
+                    <h4>{t("İletişim Bilgileri")}</h4>
+                    <hr />
                     <ul className="linklist contact-info d-flex flex-column">
                       <li>
                         {/* <i className="icon ti-location-pin"></i> */}
-                        <Link >
-                          Yeni Yalova Yolu Cad. <br />
-                          Buttim İş Merkezi <br />
-                          D Blok Kat: 1 No: 246 <br />
-                          Osmangazi BURSA / TÜRKİYE
+                        <Link>
+                          Yunuseli Mahallesi <br />
+                          Yunus Emre Sokak <br />
+                          No: 27/A Osmangazi
+                          <br />
+                          BURSA / TÜRKİYE
                         </Link>
                       </li>
                       <br />
                       <li>
                         {/* <i className="icon fa fa-phone"></i> */}
-                        <a href="tel:+902242115726">+90 (224) 211 57 26</a>
+                        <a href="tel:+902242486147">+90 (224) 248 61 47</a>
                       </li>
                       <li>
                         {/* <i className="icon ti-email"></i> */}
-                        <a href="mailto:info@efendioglutekstil.com">
-                          info@efendioglutekstil.com
+                        <a href="mailto:info@sekiryapi.com">
+                          info@sekiryapi.com
                         </a>
                       </li>
                     </ul>
@@ -171,8 +149,8 @@ function Footer() {
           <div className="container">
             <div className="copyright-content text-center">
               <span className="content text-center">
-                Copyright &copy; 2023 Efendioğlu Tekstil <br />
-                Tüm hakları Saklıdır.
+                Copyright &copy; 2024 Şekir Yapı <br />
+                {t("Tüm hakları Saklıdır.")}
               </span>
             </div>
           </div>
@@ -180,7 +158,7 @@ function Footer() {
       </footer>
 
       <a
-        href="https://wa.me/905558187775"
+        href="https://wa.me/905512209291"
         className="back-to-tops d-flex align-items-center justify-content-center"
         target="_blank"
         onClick={handleClick}
