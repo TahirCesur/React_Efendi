@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import React, { useEffect } from "react";
 import Footer from "./Components/common/Footer";
 import Header from "./Components/common/Header";
@@ -21,11 +21,11 @@ function App() {
   };
 
   return (
-    <Router>
+    <BrowserRouter>
       <Header changeLanguage={changeLanguage} />
       <CustomRoutes changeLanguage={changeLanguage} />
       <Footer changeLanguage={changeLanguage} />
-    </Router>
+    </BrowserRouter>
   );
 }
 
