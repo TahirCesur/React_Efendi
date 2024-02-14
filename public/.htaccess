@@ -6,7 +6,7 @@ AddDefaultCharset UTF-8
 # www'yi non-www'ye yönlendir
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.yenidunyaendustriyel\.com [NC]
-RewriteRule ^(.*)$ https://yenidunyaendustriyel.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://efendioglutekstil.com/$1 [L,R=301]
 
 # HTTP üzerinden HTTPS'e yönlendirme
 RewriteCond %{HTTPS} off
