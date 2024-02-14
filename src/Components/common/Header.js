@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from "react";
-import { Button, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -38,90 +38,79 @@ function Header() {
   return (
     <>
       <header className="header">
-        <div className="container-fluid full-header top-header">
-          <div className="topbar-Header justify-content-between align-items-center">
-            <div className="row">
-              <div className="col-2 col-sm-3 col-md-4">
-                <p
-                  className="m-0"
-                  style={{
-                    textTransform: "lowercase",
-                    color: "#000",
-                    paddingLeft: "20px",
-                    marginTop: "10px",
-                  }}
-                >
-                  <i
-                    className="fas fa-envelope"
-                    style={{
-                      textTransform: "lowercase",
-                      color: "#000",
-                      paddingLeft: "20px",
-                      marginTop: "10px",
-                    }}
+        <div
+          className="topbar fixed-top sticky-top mb-0"
+          style={{ padding: "7px", backgroundColor: "#bfa87b" }}
+        >
+          <Container>
+            <div className="d-flex justify-content-between align-items-center">
+              <div
+                className="d-flex align-items-center"
+                style={{ color: "#000" }}
+              >
+                <span className="topbar__wrapper">
+                  <ul
+                    className="list-unstyled topbar__list"
+                    style={{ color: "#000" }}
                   >
-                    &nbsp;
-                    <span
-                      style={{
-                        color: "#161617",
+                    <li>
+                      <span className="fas fa-envelope"></span>
+                      <a
+                        href="mailto:info@efendioglutekstil.com"
+                        style={{
+                        color: "#000",
                         fontFamily: "Poppins",
                         fontSize: "12px",
                       }}
-                    >
-                      info@efendioglutekstil.com
-                    </span>
-                  </i>
-                </p>
+                      >
+                        &nbsp; info@efendioglutekstil.com
+                      </a>
+                    </li>
+                  </ul>
+                </span>
               </div>
-              <div className="col col-md-4 text-center d-none d-md-block">
-                <p className="m-0" style={{ textTransform: "lowercase" }}></p>
-              </div>
-              <div className="col-10 col-sm-9 col-md-4 pl-0 text-right">
-                <div className="search-box float-right pr-lg-4">
-                  <div className="d-flex">
-                    <Button
-                      style={{
-                        backgroundColor: "#000",
-                        color: "#bfa867",
-                        padding: "3px 7px 3px 7px",
-                        fontSize: "13px",
-                      }}
-                      onClick={() => changeLanguage("tr")}
-                    >
-                      {t("TR")}
-                    </Button>
-                    &nbsp;
-                    <Button
-                      style={{
-                        backgroundColor: "#000",
-                        color: "#bfa867",
-                        padding: "3px 7px 3px 7px",
-                        fontSize: "13px",
-                      }}
-                      onClick={() => changeLanguage("en")}
-                    >
-                      {t("EN")}
-                    </Button>
-                    &nbsp;
-                    <Button
-                      style={{
-                        backgroundColor: "#000",
-                        color: "#bfa867",
-                        padding: "3px 7px 3px 7px",
-                        fontSize: "13px",
-                      }}
-                      onClick={() => changeLanguage("ar")}
-                    >
-                      {t("AR")}
-                    </Button>
-                  </div>
-                </div>
+              <div className="d-flex">
+                <Button
+                  style={{
+                    backgroundColor: "#000",
+                    color: "#bfa87b",
+                    padding: "3px 7px 3px 7px",
+                    fontSize: "13px",
+                  }}
+                  onClick={() => changeLanguage("tr")}
+                >
+                  {t("TR")}
+                </Button>
+                &nbsp;
+                <Button
+                  style={{
+                    backgroundColor: "#000",
+                    color: "#bfa87b",
+                    padding: "3px 7px 3px 7px",
+                    fontSize: "13px",
+                  }}
+                  onClick={() => changeLanguage("en")}
+                >
+                  {t("EN")}
+                </Button>
+                &nbsp;
+                <Button
+                  style={{
+                    backgroundColor: "#000",
+                    color: "#bfa87b",
+                    padding: "3px 7px 3px 7px",
+                    fontSize: "13px",
+                  }}
+                  onClick={() => changeLanguage("ar")}
+                >
+                  {t("AR")}
+                </Button>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
 
-        <div className="container-fluid full-header main-header">
+        <div className="container-fluid full-header main-header fixed-top sticky-top">
           <div className="d-flex justify-content-between align-items-center">
             <div className="col-6 col-md-6 col-lg-2 navbar-brand logo p-0 m-0">
               <Link as={Link} to="/" className="logo-img">
@@ -258,6 +247,16 @@ function Header() {
                       Galeri
                     </Link>
                   </li>
+                  {/* <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      as={Link}
+                      to="/Sidebar"
+                      onClick={handleClick}
+                    >
+                      Sidebar
+                    </Link>
+                  </li> */}
                   <li className="nav-item">
                     <Link
                       className="nav-link"
@@ -282,18 +281,6 @@ function Header() {
                   data-target="#instagram"
                 >
                   <i className="icon ti-instagram"></i>
-                </a>
-              </div>
-
-              <div className="search-box float-right">
-                <a
-                  href="#"
-                  title="Search"
-                  className="search-open search-toggle"
-                  data-toggle="modal"
-                  data-target="#facebook"
-                >
-                  <i className="icon ti-facebook"></i>
                 </a>
               </div>
 

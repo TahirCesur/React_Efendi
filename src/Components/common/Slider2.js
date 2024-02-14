@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Spacer3 from "./Spacer3";
+
 
 function Slider2() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,8 +40,6 @@ function Slider2() {
                 className="d-block w-100 resimSlider"
                 src={`assets/images/slider/slider-${index + 1}.jpg`}
                 alt={`Slide ${index + 1}`}
-                width="100%"
-                height="500px"
               />
             </div>
           ))}

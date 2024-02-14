@@ -1,7 +1,7 @@
 import React from "react";
 
 const Spacer3 = ({ size }) => {
-  return <div style={{ height: `${size || 58}px` }}></div>;
+  return <div style={{ height: `${size || 156}px` }}></div>;
 };
 
 export default Spacer3;

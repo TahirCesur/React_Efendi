@@ -16,11 +16,13 @@ import BaskiliPage from "../pages/BaskiliPage";
 import NakisPage from "../pages/NakisPage";
 import BrodePage from "../pages/BrodePage";
 import GaleriPage from "../pages/GaleriPage";
+import SidebarPage from "../pages/SidebarPage";
 /* import TopBarPage from "../pages/TopBarPage"; */
 
 const CustomRoutes = () => {
   return (
     <Routes>
+      <Route exact path="/Sidebar" element={<SidebarPage />} />
       <Route exact path="/Galeri" element={<GaleriPage />} />
       <Route exact path="/Brode" element={<BrodePage />} />
       <Route exact path="/Nakis" element={<NakisPage />} />
